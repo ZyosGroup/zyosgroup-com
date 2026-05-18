@@ -27,11 +27,24 @@ const FOOTER_COLS: Array<{ heading: string; links: { href: string; label: string
     ],
   },
   {
+    heading: "By function",
+    links: [
+      { href: "/by-function/sales", label: "Sales" },
+      { href: "/by-function/marketing", label: "Marketing" },
+      { href: "/by-function/information-technology", label: "IT" },
+      { href: "/by-function/hr", label: "HR" },
+      { href: "/by-function/finance", label: "Finance" },
+      { href: "/by-function/logistics", label: "Logistics" },
+    ],
+  },
+  {
     heading: "Company",
     links: [
       { href: "/about", label: "About" },
       { href: "/framework", label: "Framework" },
       { href: "/foundation", label: "Foundation" },
+      { href: "/how-we-deliver", label: "How we deliver" },
+      { href: "/platform", label: "Platform" },
       { href: "/case-studies", label: "Case studies" },
       { href: "/the-brief", label: "The Brief" },
       { href: "/start", label: "Start" },
@@ -44,7 +57,7 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-surface mt-24">
       <div className="container-content py-14">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-6">
           <div className="col-span-2">
             <Link href="/" className="flex items-center gap-2 text-primary">
               <span aria-hidden className="inline-block h-2.5 w-2.5 rounded-full bg-accent" />
