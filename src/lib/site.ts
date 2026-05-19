@@ -17,6 +17,14 @@ export const SITE = {
   facebook: "https://www.facebook.com/zyosgroup",
 } as const;
 
+// Analytics IDs ported from the legacy Gatsby zyosgroup.com so the
+// historical measurement stream continues uninterrupted across the
+// cutover. See benchmarks/2026-05-19-pre-cutover-baseline.md.
+export const ANALYTICS = {
+  gtmId: "GTM-5KJRM3S",
+  hubspotPortalId: "6624575",
+} as const;
+
 // Locked tagline — verbatim from canonical-entity-descriptions §Entity 2.
 export const TAGLINE =
   "Agentic transformation built for ROI. We assess your maturity, architect the right solution for your context, and infuse AI into your operations — measured against business performance.";
