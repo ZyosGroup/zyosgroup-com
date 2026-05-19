@@ -3,6 +3,10 @@ import { Inter_Tight, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import {
+  TrackingScripts,
+  TrackingNoscript,
+} from "@/components/layout/TrackingScripts";
 import { SITE, META_DESCRIPTION, TAGLINE_SHORT } from "@/lib/site";
 import { organizationSchema, jsonLdScript } from "@/lib/schema";
 
@@ -63,7 +67,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${interTight.variable} ${jetBrainsMono.variable}`}>
+      <head>
+        <TrackingScripts />
+      </head>
       <body>
+        <TrackingNoscript />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={jsonLdScript(organizationSchema())}
