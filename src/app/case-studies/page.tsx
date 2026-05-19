@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
-import { OutcomeCard, SAMPLE_OUTCOMES } from "@/components/showcases/OutcomeCard";
+import { OutcomeCatalog } from "@/components/showcases/OutcomeCatalog";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { SITE } from "@/lib/site";
@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Case studies — Outcomes Catalog | Zyos Group",
   description:
-    "Quantified outcomes across Zyos Group engagements. Revenue captured, cost reduced, risk retired, time saved, quality improved.",
+    "Quantified outcomes across Zyos Group engagements. Revenue captured, cost reduced, risk retired, time saved, quality improved. Filterable.",
   alternates: { canonical: "/case-studies" },
 };
 
@@ -19,7 +19,7 @@ export default function CaseStudiesPage() {
       <PageSchema
         path="/case-studies"
         name="Case studies — Zyos Group outcomes catalog"
-        description="Quantified outcomes filtered by type, service line, engagement model, industry."
+        description="Quantified outcomes filtered by type, service line, engagement model, and industry."
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
           { name: "Case studies", url: `${SITE.url}/case-studies` },
@@ -36,35 +36,72 @@ export default function CaseStudiesPage() {
           <QuickAnswer>
             The Zyos Group outcomes catalog. Every engagement names value-impact
             OKRs at kickoff and a recap at termination. Entries are quantified
-            outcomes — revenue captured, cost reduced, risk retired, time saved,
-            quality improved — filtered by type, service line, engagement model,
-            and industry. Pass 2 loads the filterable Sanity CMS-backed catalog;
-            this page previews the shape and a starting set of entries.
+            outcomes — revenue captured, cost reduced, risk retired, time
+            saved, quality improved — filterable by type, service line,
+            engagement model, and industry. Anonymized where customer
+            permission is still pending; named when permissioned.
           </QuickAnswer>
         </div>
       </Section>
 
       <Section className="bg-surface border-y border-border">
         <SectionHeading
-          eyebrow="Outcomes preview"
-          title="A starter set, anonymized where required."
-          description="Real customer names land as permissions clear. Until then — pattern + magnitude."
+          eyebrow="The filterable catalog"
+          title="Filter by outcome type, service line, and engagement model."
+          description="Sanity-backed in pass 3; today the entries are seeded from the working customer engagements with anonymization where required."
         />
-        <div className="mt-10 grid gap-4 md:grid-cols-3">
-          {SAMPLE_OUTCOMES.map((o, i) => (
-            <OutcomeCard key={i} outcome={o} />
-          ))}
+        <div className="mt-10">
+          <OutcomeCatalog />
         </div>
       </Section>
 
       <Section>
         <SectionHeading
-          eyebrow="Empty state"
-          title="Want yours on the list?"
-          description="Start with a measurement. The proposal that comes back will name the value-impact OKRs we'd set together."
+          eyebrow="Full case studies"
+          title="Founder-on-camera reflection + situation / work / outcome arc."
+          description="Each customer's full case study is in production. The shape is the operating-model arc — what PI surfaced in Phase 1, the cycles that ran in Phase 2, what each QBR recalibrated in Phase 3. McMahons and Fresh Start Movers are first."
         />
-        <div className="mt-8">
-          <CtaButton href="/start">Start with a measurement</CtaButton>
+        <div className="mt-10 grid gap-4 md:grid-cols-2 max-w-4xl">
+          <article className="rounded-lg border border-dashed border-border bg-surface p-6">
+            <p className="mono text-[11px] uppercase tracking-[0.16em] text-subtle">
+              In production · McMahons
+            </p>
+            <p className="mt-2 text-sm text-ink/75">
+              Full case-study page lands as customer permission for the
+              headline metric clears. Until then, outcomes appear in the
+              catalog above as anonymized GaaS entries.
+            </p>
+          </article>
+          <article className="rounded-lg border border-dashed border-border bg-surface p-6">
+            <p className="mono text-[11px] uppercase tracking-[0.16em] text-subtle">
+              In production · Fresh Start Movers
+            </p>
+            <p className="mt-2 text-sm text-ink/75">
+              Same shape, different vertical. Permission-pending tags will
+              clear as customer reviews land.
+            </p>
+          </article>
+        </div>
+      </Section>
+
+      <Section className="bg-primary text-white">
+        <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr] items-end">
+          <div>
+            <p className="mono text-[11px] uppercase tracking-[0.18em] text-accent">
+              Want yours on the list?
+            </p>
+            <h2 className="mt-3 text-3xl md:text-4xl font-semibold tracking-tightish text-white">
+              Start with a measurement.
+            </h2>
+            <p className="mt-4 text-white/80 max-w-prose">
+              The proposal that comes back names the value-impact OKRs
+              we&apos;d set together. Those OKRs become the catalog entry when
+              the engagement closes.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3 lg:justify-end">
+            <CtaButton href="/start">Start your intake</CtaButton>
+          </div>
         </div>
       </Section>
     </>

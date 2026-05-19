@@ -1,23 +1,36 @@
 # Sanity Studio for zyosgroup.com
 
-This folder contains the Sanity Studio configuration for the zyosgroup.com case-study and outcomes catalog content models.
+Local Studio for case studies, outcomes catalog, and posts (LinkedIn Newsletter cross-posts).
 
-Pass 1 ships the schema definitions only — they are not yet wired into a deployed Studio. To stand up the Studio locally, install Sanity CLI in this subfolder:
+## Schemas
+
+- `schemas/caseStudy.ts` — customer + permission status + service-component mix + situation / work / outcomes + quote / photo + body
+- `schemas/outcome.ts` — quantified hero number + context line + outcome type + service-line + engagement-model + industry + case-study ref + permission status
+- `schemas/post.ts` — title + slug + author + published-at + categories + body + canonical-URL (for LinkedIn Newsletter cross-posts, so we don't split the entity per content-engine-playbook §5)
+
+## Run locally
 
 ```bash
 cd studio
-npm init -y
-npm install sanity @sanity/vision @sanity/ui styled-components react react-dom
-npx sanity init --bare
-# point at the schemas in ./schemas
+npm install
 npx sanity dev
 ```
 
-The schemas (`schemas/caseStudy.ts`, `schemas/outcome.ts`) are the canonical content models used by:
+Studio runs on http://localhost:3333. Local dataset is in-memory until a real Sanity cloud project is provisioned.
 
-- `/case-studies` — the filterable outcomes catalog (Outcome type)
-- `/case-studies/[slug]` — individual case study pages (CaseStudy type)
-- Homepage outcomes preview (Outcome type, top 6)
-- Per-practice-area outcome filtering (Outcome type, filtered by `serviceLine`)
+## Pass 2 status
 
-Pass 2 wires the Studio + GROQ queries into the Next.js app.
+- Schemas drafted (3 types)
+- Local config in place (`sanity.config.ts` + `sanity.cli.ts`)
+- **NOT deployed to Sanity cloud yet** — by design. Pass 3 wires the cloud project + GROQ queries into Next.js.
+
+When provisioning the real project:
+
+1. Run `npx sanity@latest init` to create a cloud project (or attach to an existing one)
+2. Set `SANITY_STUDIO_PROJECT_ID` + `SANITY_STUDIO_DATASET` env vars (or replace placeholders in `sanity.config.ts`)
+3. `npx sanity deploy` to deploy the Studio (admin UI)
+4. Wire the `next-sanity` client into `src/lib/sanity.ts` and convert OutcomeCard / case-studies to GROQ-fetched data
+
+## Why local-only first
+
+Per the pass 2 spec — case studies live as placeholder/permission-pending data; outcomes catalog runs from the seed list in `OutcomeCard.tsx`; full Sanity wiring defers to pass 3 when there's customer content to publish.
