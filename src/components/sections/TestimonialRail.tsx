@@ -20,7 +20,7 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "Other firms shipped slide decks. Zyos shipped working artifacts every two weeks — and told us what they were choosing not to do.",
+      "Other firms shipped slide decks. Zyos shipped working artifacts each month — and told us what they were choosing not to do.",
     name: "Customer #3 · permission pending",
     context: "Association · Digital Transformation",
   },

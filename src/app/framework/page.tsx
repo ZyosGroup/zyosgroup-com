@@ -53,7 +53,7 @@ const JOURNEY_STAGES = [
   },
   {
     label: "Stage 3 — Roadmap",
-    title: "Execute the prioritized backlog in two-week cycles.",
+    title: "Execute the prioritized backlog in monthly cycles.",
     body: "Each cycle ships a measurable outcome. Quarterly re-prioritization is transparent — what's being killed, promoted, and deferred is visible.",
     href: "/how-we-deliver",
   },

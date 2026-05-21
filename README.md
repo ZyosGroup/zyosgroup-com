@@ -101,7 +101,7 @@ studio/
 
 - **No vendor names** in client-facing copy (per CLAUDE.md). Exception: AMS adapters may name iMIS / NetForum / Personify in scoping context.
 - **Routing language exact:** "Engagement recommended" / "Conditions to address" / "Not yet — revisit."
-- **No agile/sprint jargon** in client-facing copy — "two-week delivery cycle", "delivery review", "phase".
+- **No agile/sprint jargon** in client-facing copy — "monthly delivery cycle", "delivery review", "phase".
 - **No NASPGHAN / Doc4Me** named as marketing proof anywhere.
 - **No customer video** on zyosgroup.com without separate per-property written permission (customer-video-pipeline.md §6).
 - **No real customer names** in case studies/outcomes until permission lands. Placeholder testimonials are clearly tagged "permission pending."

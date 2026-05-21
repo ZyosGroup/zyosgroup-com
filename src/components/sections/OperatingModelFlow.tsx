@@ -13,7 +13,7 @@ const STAGES = [
   {
     label: "Delivery",
     blurb:
-      "Two-week cycles, prioritized to value-impact, cross-component execution, measured outcomes per cycle, visible Kanban.",
+      "Monthly cycles, prioritized to value-impact, cross-component execution, measured outcomes per cycle, visible Kanban.",
     artifact: "Engagement Kanban + delivery review",
   },
   {

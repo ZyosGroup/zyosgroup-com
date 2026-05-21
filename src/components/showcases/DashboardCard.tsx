@@ -36,7 +36,7 @@ export const DASHBOARDS: DashboardEntry[] = [
     slug: "engagement-kanban",
     title: "Engagement Kanban + Burndown",
     description:
-      "Customer-visible delivery board. Every two-week cycle ships against a measurable outcome target.",
+      "Customer-visible delivery board. Every monthly cycle ships against a measurable outcome target.",
     status: "Live in Zyos OS",
     shape: "tiles",
   },

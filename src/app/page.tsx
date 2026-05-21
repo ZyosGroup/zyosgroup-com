@@ -50,7 +50,7 @@ export default function HomePage() {
           operational maturity, architect the right solution for your context
           (regulated, complex, or growth-stage), build the integrated foundation —
           Business Intelligence, Software, Operations, and Agents running across —
-          and execute the roadmap in measured two-week cycles. Engagement models:
+          and execute the roadmap in measured monthly cycles. Engagement models:
           Fixed Price, Retainer, or As-A-Service. Every engagement starts with the
           Opportunity Engine intake and Process Intelligence Implementation.
         </QuickAnswer>

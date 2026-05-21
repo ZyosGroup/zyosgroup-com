@@ -126,7 +126,7 @@ export default function FoundationPage() {
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="Process Intelligence Implementation"
-          title="Six deliverables. Two weeks. The truth-finding pass."
+          title="Six deliverables. 30 days. The truth-finding pass."
           description="Scroll through an anonymized PI deliverable — the artifact that turns a hypothesis into a real plan with a real architecture and a real prioritized backlog."
         />
         <div className="mt-10">

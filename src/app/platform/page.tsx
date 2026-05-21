@@ -29,7 +29,7 @@ const TOUR = [
   {
     n: "03",
     t: "Engagement Kanban",
-    b: "Customer-visible delivery board. Every two-week cycle ships against a measurable outcome target. Visible to customer leadership any time.",
+    b: "Customer-visible delivery board. Every monthly cycle ships against a measurable outcome target. Visible to customer leadership any time.",
   },
   {
     n: "04",

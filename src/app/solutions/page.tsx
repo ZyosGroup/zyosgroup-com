@@ -70,7 +70,7 @@ export default function SolutionsPage() {
         <SectionHeading
           eyebrow="Two parent offerings"
           title="Same operating system. Different productized motion."
-          description="Both run on Zyos OS, both ship two-week delivery cycles, both use the same QBR + monthly-report cadence. The difference is what the agents operate."
+          description="Both run on Zyos OS, both ship monthly delivery cycles, both use the same QBR + monthly-report cadence. The difference is what the agents operate."
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {SOLUTIONS.map((s) => (

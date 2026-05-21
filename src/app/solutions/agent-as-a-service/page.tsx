@@ -198,7 +198,7 @@ export default function AaaSPage() {
               <li>· PI Implementation deliverable (six outputs) — weeks 1–2</li>
               <li>· Architecture Brief signed — by end of week 2</li>
               <li>· First agent in production with visible task log — by week 6</li>
-              <li>· Measured outcome vs target — at the end of each two-week cycle</li>
+              <li>· Measured outcome vs target — at the end of each monthly cycle</li>
               <li>· First QBR with value-impact recap — at month 3</li>
             </ul>
           </article>

@@ -17,13 +17,13 @@ export const metadata: Metadata = {
 const PHASES = [
   {
     name: "Phase 1 — MEASURE",
-    duration: "2 weeks",
+    duration: "30 days",
     artifact: "PI Implementation deliverable (six outputs)",
     body: "The first delivery cycle of every Retainer and As-A-Service engagement. ROI gate: every detected gap gets an estimated value-impact + expected payback period before Phase 2 begins.",
   },
   {
     name: "Phase 2 — DELIVERY",
-    duration: "two-week cycles, indefinitely",
+    duration: "monthly cycles, indefinitely",
     artifact: "Cycle Delivery Review (30 min + 1-page recap)",
     body: "Each cycle commits to 2–4 measurable outcomes with target metrics named at cycle start. Each cycle ends with a delivery review and explicit variance vs target. Visible Kanban in Zyos OS — nothing happens off-board.",
   },
@@ -43,22 +43,16 @@ const CADENCE_LADDER = [
     skill: "zyos-kickoff",
   },
   {
-    cadence: "Weeks 1–2",
+    cadence: "Month 1",
     runs: "PI Implementation",
     output: "Six PI deliverables",
     skill: "zyos-process-intelligence + Stage 1 suite",
   },
   {
-    cadence: "Every 2 weeks",
-    runs: "Cycle Delivery Review",
-    output: "1-page recap + visible Kanban update",
-    skill: "zyos-transformation-roadmap",
-  },
-  {
     cadence: "Every month",
-    runs: "Monthly Report",
-    output: "Monthly Report (variant per engagement type)",
-    skill: "zyos-monthly-report",
+    runs: "Cycle Delivery Review + Monthly Report",
+    output: "1-page recap + Monthly Report (variant per engagement type) + visible Kanban update",
+    skill: "zyos-transformation-roadmap + zyos-monthly-report",
   },
   {
     cadence: "Every quarter",
@@ -95,9 +89,9 @@ const CS_FEATURES = [
   },
   {
     n: "03",
-    name: "Two-Week Delivery Cycles",
-    result: "Value-impact movement every 14 days. Stale projects can't hide.",
-    body: "Each cycle commits to 2–4 measured outcomes. Each cycle ends with a delivery review showing variance vs target. We say 'two-week cycle' and 'delivery review,' never 'sprint.'",
+    name: "Monthly Delivery Cycles",
+    result: "Value-impact movement each month. Stale projects can't hide.",
+    body: "Each cycle commits to 2–4 measured outcomes. Each cycle ends with a delivery review showing variance vs target. We say 'monthly cycle' and 'delivery review,' never 'sprint.'",
   },
   {
     n: "04",
@@ -152,7 +146,7 @@ const CS_FEATURES = [
 const RESULTS_MATRIX = [
   ["Engagement Kickoff", "100% clarity at Day 1 (no 'what are we doing?' by Week 2)"],
   ["Visible Kanban", "Customer login frequency → trust signal"],
-  ["Two-Week Cycles", "Cycle hit rate (% meeting outcome targets) — published in QBR"],
+  ["Monthly Cycles", "Cycle hit rate (% meeting outcome targets) — published in QBR"],
   ["Monthly Reports", "Engagement health score + value-impact-to-date metric"],
   ["QBRs", "Quarter-over-quarter value-impact captured (headline KPI)"],
   ["GaaS QBR", "SMB customer engagement renewal rate"],
@@ -179,16 +173,16 @@ export default function HowWeDeliverPage() {
       <Section>
         <p className="eyebrow mb-4">How we deliver</p>
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Measurable value-impact every two weeks. Re-prioritization every
+          Measurable value-impact each month. Re-prioritization every
           quarter.
         </h1>
 
         <div className="mt-10 max-w-3xl">
           <QuickAnswer>
             Zyos Group&apos;s delivery model is built around two promises: you
-            see measurable value-impact every two weeks, and you see us
-            choosing what to defer or kill at every QBR. The model runs in
-            three phases — Measure, Deliver, Continuously Improve — with the
+            see measurable value-impact each month, and you see us choosing
+            what to defer or kill at every QBR. The model runs in three
+            phases — Measure, Deliver, Continuously Improve — with the
             Customer Success function (eleven named features) operationalizing
             the Continuous Improvement phase.
           </QuickAnswer>
@@ -196,7 +190,7 @@ export default function HowWeDeliverPage() {
 
         <p className="mt-10 max-w-prose text-[15px] text-ink/85 leading-relaxed">
           Most consulting firms scope once and grind. Big-4 ships slide decks
-          every six weeks. Zyos ships working artifacts every two weeks with a
+          every six weeks. Zyos ships working artifacts each month with a
           transparent prioritization decision at each QBR. Customers see the
           firm choosing what <em>not</em> to do — the rarest trust signal in
           services.
