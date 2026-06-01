@@ -14,14 +14,16 @@ import { Section } from "@/components/ui/Section";
 import { jsonLdScript, webPageSchema } from "@/lib/schema";
 import { SITE, META_DESCRIPTION } from "@/lib/site";
 
-// Keyword target: "digital transformation consulting" (KD 1) per research §6.2.
+// Keyword targets (ZYOS-KEYWORD-MAP.md): "digital transformation consulting"
+// (1,900/mo, KD 0–1) + "ai consulting services" (2,400/mo). Single-vendor blend
+// (operations + technology + data + software) is the differentiator.
 export const metadata: Metadata = {
-  title: "Zyos Group — Agentic Transformation, Measured",
+  title: "Digital Transformation & AI Consulting | Zyos Group",
   description: META_DESCRIPTION,
   alternates: { canonical: "/" },
   openGraph: {
     url: SITE.url,
-    title: "Zyos Group — Agentic Transformation, Measured",
+    title: "Digital Transformation & AI Consulting | Zyos Group",
     description: META_DESCRIPTION,
   },
 };
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const pageSchema = webPageSchema({
     url: SITE.url,
-    name: "Zyos Group — Agentic Transformation, Measured",
+    name: "Digital Transformation & AI Consulting | Zyos Group",
     description: META_DESCRIPTION,
   });
 

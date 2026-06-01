@@ -6,7 +6,7 @@ export function Hero() {
     <section className="relative overflow-hidden">
       {/* Background — subtle navy-on-cream gradient line, no glow */}
       <div className="container-content pt-16 pb-20 md:pt-24 md:pb-28">
-        <p className="eyebrow mb-5">Agentic transformation, measured</p>
+        <p className="eyebrow mb-5">Digital transformation &amp; AI consulting · one vendor</p>
         <h1 className="text-4xl md:text-6xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
           {/* Hero rebuild — the locked tagline as H1, fragmented for hierarchy */}
           Agentic transformation built for ROI.

@@ -8,11 +8,12 @@ import { DashboardGallery } from "@/components/showcases/DashboardCard";
 import { AutomationReel } from "@/components/showcases/AutomationReel";
 import { SITE } from "@/lib/site";
 
-// Primary KW: "operations consulting" (vol 1,900, KD 0) per research §6.2.
+// Primary KW: "operations consulting" + "fractional operations" (1,600/mo, KD 1)
+// per ZYOS-KEYWORD-MAP.md A1.
 export const metadata: Metadata = {
-  title: "Operations & Scaling Consulting | Zyos Group",
+  title: "Operations Consulting & Fractional Operations | Zyos Group",
   description:
-    "Operations consulting: OKR + KPI systems, Customer Success cadence, service-desk discipline, operating-model design. Productize your founder's playbook.",
+    "Operations consulting and fractional operations: OKR + KPI systems, Customer Success cadence, service-desk discipline, operating-model design. Productize your founder's playbook.",
   alternates: { canonical: "/consulting/operations-and-scaling" },
 };
 

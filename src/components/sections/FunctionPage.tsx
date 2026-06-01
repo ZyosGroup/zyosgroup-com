@@ -219,7 +219,15 @@ export function FunctionPage({
             <p className="mt-4 text-white/80 max-w-prose">
               The Opportunity Engine intake routes by function. Pick this one
               in the bottleneck question and the diagnostic will identify the
-              two or three workflows worth deploying first.
+              two or three workflows worth deploying first. Want it run for you
+              as a managed service? Agent as a Service is productized on{" "}
+              <a
+                href="https://zyos.io"
+                className="text-accent underline underline-offset-2 hover:text-white"
+              >
+                zyos.io
+              </a>
+              .
             </p>
           </div>
           <div className="flex flex-wrap gap-3 lg:justify-end">
