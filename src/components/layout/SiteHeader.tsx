@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV = [
   { href: "/solutions", label: "Solutions" },
@@ -16,11 +17,17 @@ export function SiteHeader() {
       <div className="container-content flex h-16 items-center justify-between gap-6">
         <Link
           href="/"
-          className="flex items-center gap-2 text-primary"
+          className="flex items-center"
           aria-label="Zyos Group — home"
         >
-          <span aria-hidden className="inline-block h-2.5 w-2.5 rounded-full bg-accent" />
-          <span className="font-semibold tracking-tightish">Zyos Group</span>
+          <Image
+            src="/brand/logo-horizontal-color.png"
+            alt="Zyos Group"
+            width={116}
+            height={36}
+            priority
+            className="h-8 w-auto"
+          />
         </Link>
 
         <nav aria-label="Primary" className="hidden md:block">

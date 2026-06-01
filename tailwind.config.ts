@@ -9,13 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Locked design tokens — research §8
+        // Aligned to canonical zyos-brand skill (navy #1569ac + cyan #48c1eb)
+        // so the site matches the logo wordmark + icon exactly.
         bg: "#FAFAF9",       // off-white cream
         surface: "#FFFFFF",
-        ink: "#0A0E1F",
-        primary: "#0F1B3F",  // Zyos navy
-        accent: "#22D3EE",   // Zyos cyan (single-token use)
-        subtle: "#64748B",
+        ink: "#0F1729",      // body text (dark, not pure black)
+        primary: "#1569ac",  // brand navy — headings, CTAs, logo "ZYOS"
+        "primary-deep": "#0d4a7a", // darker navy for hero/footer fills + hover
+        accent: "#48c1eb",   // brand cyan — accents, logo nodes, "GROUP"
+        "accent-vivid": "#31c6f6", // hover/focus/active only
+        subtle: "#676869",   // brand neutral gray for muted text
         border: "#E2E8F0",
       },
       fontFamily: {

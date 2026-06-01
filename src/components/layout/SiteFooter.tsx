@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE, TAGLINE_SHORT } from "@/lib/site";
 
 const FOOTER_COLS: Array<{ heading: string; links: { href: string; label: string }[] }> = [
@@ -59,9 +60,14 @@ export function SiteFooter() {
       <div className="container-content py-14">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-6">
           <div className="col-span-2">
-            <Link href="/" className="flex items-center gap-2 text-primary">
-              <span aria-hidden className="inline-block h-2.5 w-2.5 rounded-full bg-accent" />
-              <span className="font-semibold tracking-tightish">Zyos Group</span>
+            <Link href="/" className="flex items-center" aria-label="Zyos Group — home">
+              <Image
+                src="/brand/logo-horizontal-color.png"
+                alt="Zyos Group"
+                width={116}
+            height={36}
+                className="h-8 w-auto"
+              />
             </Link>
             <p className="mt-3 max-w-sm text-sm text-subtle leading-relaxed">
               {TAGLINE_SHORT} We assess maturity, architect the right solution, and infuse AI into your operations — measured against business performance.
