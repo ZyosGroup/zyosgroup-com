@@ -7,10 +7,13 @@ import { PageSchema } from "@/components/seo/PageSchema";
 import { OutcomeCard, SAMPLE_OUTCOMES } from "@/components/showcases/OutcomeCard";
 import { SITE } from "@/lib/site";
 
+// Target: "ai automation for small business" (210/mo, $22 CPC) + "ai
+// consulting for small business" niche per ZYOS-KEYWORD-MAP.md A2. SMB is the
+// HIGHLIGHTED ICP among the three.
 export const metadata: Metadata = {
-  title: "For High-Growth SMBs — Productize Your Playbook | Zyos Group",
+  title: "AI Automation for Small Business — High-Growth SMBs | Zyos Group",
   description:
-    "Zyos Group for High-Growth SMBs (10–200 employees). Productize how you operate. Growth as a Service, Agent as a Service, operating-model rollout.",
+    "AI automation and consulting for high-growth SMBs (10–200 employees). One vendor across operations, technology, data, and software — productize how you operate, without an enterprise budget.",
   alternates: { canonical: "/who-we-serve/high-growth-smbs" },
 };
 
@@ -41,7 +44,7 @@ export default function HighGrowthSmbsPage() {
       />
 
       <Section>
-        <p className="eyebrow mb-4">Who we serve · High-Growth SMBs</p>
+        <p className="eyebrow mb-4">Who we serve · AI for High-Growth SMBs</p>
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
           You&apos;re scaling. The founder&apos;s playbook isn&apos;t keeping
           up.
@@ -49,13 +52,14 @@ export default function HighGrowthSmbsPage() {
 
         <div className="mt-10 max-w-3xl">
           <QuickAnswer>
-            Zyos Group&apos;s high-growth-SMB practice is for 10–200-employee
+            AI automation and consulting for high-growth SMBs — 10–200-employee
             B2B companies on a growth trajectory. We productize how you operate
-            so the next hire and the next customer cost less than the last —
+            so the next hire and the next customer cost less than the last:
             operating-model design, integrated marketing, Growth as a Service,
-            Agent as a Service. The only firm productizing agentic AI plus
-            growth ops at SMB-tier monthly pricing. Start with the Opportunity
-            Engine intake.
+            Agent as a Service. One vendor across operations, technology, data,
+            and software — enterprise-grade structure, right-sized for an SMB,
+            without an enterprise budget or a data-science team. Start with the
+            Opportunity Engine intake.
           </QuickAnswer>
         </div>
       </Section>

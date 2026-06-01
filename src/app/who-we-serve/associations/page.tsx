@@ -6,10 +6,12 @@ import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { SITE } from "@/lib/site";
 
+// Target: "ai for associations" (40/mo, KD 0, $296 CPC — tiny volume, huge
+// lead value) + member-experience niche per ZYOS-KEYWORD-MAP.md A2.
 export const metadata: Metadata = {
-  title: "For Associations — Member Experience + AMS-aware AI | Zyos Group",
+  title: "AI for Associations — Member Experience & AMS-aware AI | Zyos Group",
   description:
-    "Zyos Group for non-profit and member organizations. AMS-aware architecture, member content operations, audit-trail discipline, regulated multi-stakeholder reality.",
+    "AI for associations and member organizations. AMS-aware architecture, member content operations, audit-trail discipline. One vendor across operations, technology, data, and software.",
   alternates: { canonical: "/who-we-serve/associations" },
 };
 
@@ -47,7 +49,7 @@ export default function AssociationsPage() {
       />
 
       <Section>
-        <p className="eyebrow mb-4">Who we serve · Associations</p>
+        <p className="eyebrow mb-4">Who we serve · AI for Associations</p>
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
           Built for the multi-stakeholder, regulated reality associations live
           in.
@@ -55,14 +57,14 @@ export default function AssociationsPage() {
 
         <div className="mt-10 max-w-3xl">
           <QuickAnswer>
-            Zyos Group serves non-profit and member organizations. Member
-            experience, content operations, and AMS-aware architectures (iMIS,
-            NetForum, Personify in scoping context). Architecture is
-            conservative where regulation demands — audit trails, human-in-loop
-            defaults, clear ownership matrices. Engagement models: Build &
-            Operate Retainer (primary, for tech rebuilds + member engagement
-            programs), Fixed Price for defined builds, or As-A-Service for
-            ongoing growth operations.
+            Zyos Group brings AI to associations, non-profits, and member
+            organizations. Member experience, content operations, and AMS-aware
+            architectures (iMIS, NetForum, Personify in scoping context).
+            Architecture is conservative where regulation demands — audit
+            trails, human-in-loop defaults, clear ownership matrices. One vendor
+            across operations, technology, data, and software. Flexible
+            engagement: Build & Operate Retainer (primary), Fixed Price for
+            defined builds, or As-A-Service for ongoing growth operations.
           </QuickAnswer>
         </div>
       </Section>

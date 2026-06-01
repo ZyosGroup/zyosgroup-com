@@ -6,10 +6,12 @@ import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { SITE } from "@/lib/site";
 
+// Target: "ai for private equity" (140/mo, KD 0, $22 CPC) + "portfolio
+// operations" niche per ZYOS-KEYWORD-MAP.md A2.
 export const metadata: Metadata = {
-  title: "For Private Equity — Repeatable Value Creation | Zyos Group",
+  title: "AI for Private Equity — Portfolio Value Creation | Zyos Group",
   description:
-    "Zyos Group for PE firms and portfolio companies. Maturity assessment per holding, operating-model rollout, agentic AI across the portfolio. Same OS underneath.",
+    "AI for private equity: maturity assessment per holding, operating-model rollout, and agentic AI across the portfolio. One vendor — operations, technology, data, software — on one OS.",
   alternates: { canonical: "/who-we-serve/private-equity" },
 };
 
@@ -47,21 +49,21 @@ export default function PrivateEquityPage() {
       />
 
       <Section>
-        <p className="eyebrow mb-4">Who we serve · Private Equity</p>
+        <p className="eyebrow mb-4">Who we serve · AI for Private Equity</p>
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Repeatable value-creation across the portfolio.
+          AI for private equity: repeatable value creation across the portfolio.
         </h1>
 
         <div className="mt-10 max-w-3xl">
           <QuickAnswer>
-            Zyos Group serves PE firms and their portfolio companies. We assess
-            maturity per holding, architect the right solution per context
-            (regulated, complex, or growth-stage), and roll out the operating
-            model that compounds value-impact across the portfolio. Same Zyos
-            OS underneath every engagement — so engagement-N is faster,
-            cheaper, and better-measured than engagement N–1. Engagement
-            models: Build & Operate Retainer (primary), Standard Retainer, or
-            As-A-Service for specific motions.
+            Zyos Group brings AI to private equity firms and their portfolio
+            companies. We assess operational maturity per holding, architect the
+            right solution per context (regulated, complex, or growth-stage),
+            and roll out the operating model that compounds value-impact across
+            the portfolio. As one vendor across operations, technology, data,
+            and software — on one Zyos OS — engagement-N is faster and
+            better-measured than N–1. Flexible engagement: Build & Operate
+            Retainer (primary), Standard Retainer, or As-A-Service per motion.
           </QuickAnswer>
         </div>
       </Section>
