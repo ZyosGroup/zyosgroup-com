@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
+import Link from "next/link";
 import { OutcomeCatalog } from "@/components/showcases/OutcomeCatalog";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { SITE } from "@/lib/site";
+import { CASE_STUDIES } from "@/lib/case-studies";
 
 export const metadata: Metadata = {
   title: "Case studies — Outcomes Catalog | Zyos Group",
@@ -62,25 +64,24 @@ export default function CaseStudiesPage() {
           description="Each customer's full case study is in production. The shape is the operating-model arc — what PI surfaced in Phase 1, the cycles that ran in Phase 2, what each QBR recalibrated in Phase 3. McMahons and Fresh Start Movers are first."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 max-w-4xl">
-          <article className="rounded-lg border border-dashed border-border bg-surface p-6">
-            <p className="mono text-[11px] uppercase tracking-[0.16em] text-subtle">
-              In production · McMahons
-            </p>
-            <p className="mt-2 text-sm text-ink/75">
-              Full case-study page lands as customer permission for the
-              headline metric clears. Until then, outcomes appear in the
-              catalog above as anonymized GaaS entries.
-            </p>
-          </article>
-          <article className="rounded-lg border border-dashed border-border bg-surface p-6">
-            <p className="mono text-[11px] uppercase tracking-[0.16em] text-subtle">
-              In production · Fresh Start Movers
-            </p>
-            <p className="mt-2 text-sm text-ink/75">
-              Same shape, different vertical. Permission-pending tags will
-              clear as customer reviews land.
-            </p>
-          </article>
+          {CASE_STUDIES.map((c) => (
+            <Link
+              key={c.slug}
+              href={`/case-studies/${c.slug}`}
+              className="group rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent"
+            >
+              <p className="mono text-[11px] uppercase tracking-[0.16em] text-subtle">
+                {c.industry} · {c.serviceLine}
+              </p>
+              <h3 className="mt-2 text-lg font-semibold tracking-tightish text-primary">
+                {c.title}
+              </h3>
+              <p className="mt-2 text-sm text-ink/75">{c.description}</p>
+              <p className="mt-3 mono text-[12px] text-accent group-hover:underline">
+                Read the case study →
+              </p>
+            </Link>
+          ))}
         </div>
       </Section>
 
