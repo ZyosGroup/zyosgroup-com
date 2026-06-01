@@ -3,9 +3,33 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { Faq } from "@/components/seo/Faq";
 import { DashboardGallery } from "@/components/showcases/DashboardCard";
 import { SITE } from "@/lib/site";
 import { ArrowUpRight } from "lucide-react";
+
+const GAAS_FAQS = [
+  {
+    q: "What is Growth as a Service?",
+    a: "Growth as a Service (GaaS) is a monthly recurring service in which Zyos Group operates a small business's entire growth function — website, Google Business Profile, paid ads + Local Services Ads, SEO content, generative engine optimization (GEO), reviews and citations — measured against quarterly OKRs. The only productized agentic-AI play visible at SMB-tier monthly pricing. Powered by Zyos OS.",
+  },
+  {
+    q: "Who is GaaS for?",
+    a: "SMB B2B — local trades, home services, professional practices — that are structurally underserved by Big-4 firms (which won't touch SMB-tier engagements) and by enterprise boutiques (which chase higher pricing). McMahon's Jersey Shore Powerwash and Fresh Start Movers are two live GaaS engagements running today.",
+  },
+  {
+    q: "What are the five GaaS variants?",
+    a: "Website (build + operate the customer-facing site), GBP optimization (Google Business Profile cadence: posts, Q&A monitoring, citation health, review velocity), Ads + LSA (paid optimization including Local Services Ads), SEO content (topic discovery → draft → editorial review → publish → measure), and GEO (generative engine optimization — getting cited by ChatGPT, Perplexity, Claude, and Google AI Overviews).",
+  },
+  {
+    q: "How is GaaS priced and what is included?",
+    a: "GaaS is As-A-Service: monthly recurring, variant-priced. Customers can buy one variant, several, or the bundle. Support is baked into the recurring fee — Zyos Service Desk handles ticketing, SLA, and escalation routing. Every engagement begins with Process Intelligence Implementation as the first delivery cycle.",
+  },
+  {
+    q: "What is GEO (generative engine optimization)?",
+    a: "GEO is the practice of structuring website content and metadata so it gets cited as a source by LLM-mediated answer engines — ChatGPT, Perplexity, Claude, Google AI Overviews, Bing Copilot. Tactics include quick-answer-shaped content, entity stacking via JSON-LD schema, llms.txt publishing, explicit AI-crawler allowlisting, FAQ schema, and citation tracking. GEO sits next to classical SEO; the two rankers are different.",
+  },
+];
 
 // Primary KW: "growth as a service" (vol 20, KD 0) — own the category.
 export const metadata: Metadata = {
@@ -182,6 +206,13 @@ export default function GaaSPage() {
           </a>
         </div>
       </Section>
+
+      <Faq
+        eyebrow="Growth as a Service — FAQ"
+        title="What buyers ask about GaaS."
+        description="Lifted from prospect calls. Published as FAQPage schema for AI Overview + PAA citation."
+        faqs={GAAS_FAQS}
+      />
 
       <Section className="bg-primary text-white">
         <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr] items-end">

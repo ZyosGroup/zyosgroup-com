@@ -3,7 +3,31 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { Faq } from "@/components/seo/Faq";
 import { SITE } from "@/lib/site";
+
+const DELIVERY_FAQS = [
+  {
+    q: "What is Zyos Group's delivery model?",
+    a: "Zyos Group's delivery model runs in three phases: Measure, Deliver, Continuously Improve. Phase 1 is Process Intelligence Implementation (30 days, six deliverables). Phase 2 is monthly delivery cycles, each committing to 2–4 measurable outcomes with target metrics named at cycle start and variance vs target shared at cycle end. Phase 3 is Continuous Improvement, operationalized through eleven named Customer Success features.",
+  },
+  {
+    q: "What is the difference between a monthly delivery cycle and a sprint?",
+    a: "We deliberately do not use 'sprint' or 'Sprint 1' in customer-facing language. We use 'monthly delivery cycle' and 'delivery review'. The shape is the same — fixed-length cycles, measurable outcomes — but the framing emphasizes business outcome over agile ceremony. Each cycle ships value-impact, not story points.",
+  },
+  {
+    q: "What happens at a Quarterly Business Review (QBR)?",
+    a: "A QBR is the quarterly artifact every Retainer and As-A-Service engagement produces. It includes a recap of what shipped, an Optimization Score refresh across the five dimensions, re-prioritization decisions (including what we are killing), next-quarter commitments, and the strategic agenda. The QBR is the renewal evidence the customer's CFO can defend.",
+  },
+  {
+    q: "How is Customer Success delivered?",
+    a: "Customer Success runs through Phase 3 (Continuous Improvement) as eleven named features: Engagement Kickoff, Visible Kanban, Monthly Delivery Cycles, Monthly Reports, Quarterly Business Reviews, GaaS QBR specialized variant, OKRs + Optimization Score, Transformation Roadmap, Customer Support / Service Desk, Engagement Tracks + Handoff Logic, and Exit Readiness. Each feature is a real artifact plus a measurable behavior.",
+  },
+  {
+    q: "What is Exit Readiness?",
+    a: "Every Zyos engagement has an explicit exit path articulated in the Architecture Brief signed at Foundation kickoff. Ownership boundaries, portability of the solution, lock-in mitigation, and the customer's ability to take the solution independent are all named. You choose Zyos because we deliver, not because you can't leave.",
+  },
+];
 
 // Target: "AI engagement model" + "agentic AI delivery framework" — GEO surface
 // per zyosgroup-com-delivery-model-customer-success.md.
@@ -353,6 +377,13 @@ export default function HowWeDeliverPage() {
           </article>
         </div>
       </Section>
+
+      <Faq
+        eyebrow="Delivery model — FAQ"
+        title="What buyers ask about how Zyos delivers."
+        description="Lifted from prospect calls. Published as FAQPage schema for AI Overview + PAA citation."
+        faqs={DELIVERY_FAQS}
+      />
 
       <Section className="bg-primary text-white">
         <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr] items-end">

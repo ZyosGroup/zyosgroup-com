@@ -3,9 +3,37 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { Faq } from "@/components/seo/Faq";
 import { DashboardGallery } from "@/components/showcases/DashboardCard";
 import { SITE } from "@/lib/site";
 import { ArrowUpRight } from "lucide-react";
+import {
+  softwareApplicationSchema,
+  jsonLdScript,
+} from "@/lib/schema";
+
+const PLATFORM_FAQS = [
+  {
+    q: "What is Zyos OS?",
+    a: "Zyos OS is the AI operating system that runs every Zyos Group customer engagement end-to-end — intake, scoring, proposal generation, engagement Kanban, OKR + KPI tracking, Customer Success cadence, monthly reports, and Quarterly Business Reviews — on one connected system. It is the operating system Zyos Group built to run its own services firm, and the same platform powers Agent as a Service and Growth as a Service.",
+  },
+  {
+    q: "Is Zyos OS the same thing as Zyos Group?",
+    a: "No. Zyos Group is the services firm (consulting + productized solutions, founded by Paul Ruddy in 2009). Zyos OS is the software product that runs the firm — available at zyos.io as a SaaS platform for other B2B services firms that want to operate on the same operating system rather than rebuild it.",
+  },
+  {
+    q: "What is the Foundational AI Layer?",
+    a: "The Foundational AI Layer is the agent runtime + orchestration + tool integrations + observability + multi-tenant isolation that sits under Zyos OS. It powers Agent as a Service and Growth as a Service on the same platform. It is the engine; it is not pitched as a standalone customer-facing product.",
+  },
+  {
+    q: "How does Zyos OS handle multi-tenancy and security?",
+    a: "Every Zyos OS engagement is isolated across data, agents, configurations, and observability scoped to that customer. The platform enforces IAM, encryption, audit trails, and secret management as table-stakes. Security posture for each customer's architecture is articulated in the Solution Architecture brief signed at Foundation kickoff.",
+  },
+  {
+    q: "Can I license Zyos OS for my own services firm?",
+    a: "Yes. zyos.io is the SaaS product surface for services firms that want to license the operating system rather than rebuild it. The platform is the same one running Zyos Group's customer engagements — your engagements, your team, your IP compounding on the platform that runs ours.",
+  },
+];
 
 // Primary KW: "ai operating system" (vol 1,000, KD 26) + "agentic ai platform" (vol 880).
 export const metadata: Metadata = {
@@ -59,6 +87,12 @@ export default function PlatformPage() {
           { name: "Home", url: SITE.url },
           { name: "Platform", url: `${SITE.url}/platform` },
         ]}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(
+          softwareApplicationSchema({ url: `${SITE.url}/platform` })
+        )}
       />
 
       <Section>
@@ -186,6 +220,13 @@ export default function PlatformPage() {
           </a>
         </div>
       </Section>
+
+      <Faq
+        eyebrow="Frequently asked"
+        title="What buyers ask about Zyos OS."
+        description="Lifted directly from prospect calls. Each answer is also published as FAQPage schema for citation in AI Overviews and answer engines."
+        faqs={PLATFORM_FAQS}
+      />
 
       <Section className="bg-primary text-white">
         <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr] items-end">

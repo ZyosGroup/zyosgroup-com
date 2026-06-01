@@ -8,7 +8,11 @@ import {
   TrackingNoscript,
 } from "@/components/layout/TrackingScripts";
 import { SITE, META_DESCRIPTION, TAGLINE_SHORT } from "@/lib/site";
-import { organizationSchema, jsonLdScript } from "@/lib/schema";
+import {
+  organizationSchema,
+  personSchema,
+  jsonLdScript,
+} from "@/lib/schema";
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -75,6 +79,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={jsonLdScript(organizationSchema())}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLdScript(personSchema())}
         />
         <a
           href="#main"

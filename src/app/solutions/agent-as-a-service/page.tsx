@@ -4,9 +4,33 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { Faq } from "@/components/seo/Faq";
 import { AgentWorkflowCard } from "@/components/showcases/AgentWorkflowCard";
 import { SAMPLE_WORKFLOWS } from "@/components/showcases/sample-workflows";
 import { SITE } from "@/lib/site";
+
+const AAAS_FAQS = [
+  {
+    q: "What is agentic AI consulting?",
+    a: "Agentic AI consulting is the design, deployment, and ongoing operation of AI agents — autonomous, multi-step software workers — across business functions. Unlike single-task chatbots, agentic systems span discovery, decision-making, execution, and reporting. Zyos Group's Agent as a Service (AaaS) productizes this work into monthly recurring engagements with five named variants: Workflows, Systems, Middleware, Lean, and Insights.",
+  },
+  {
+    q: "What does Agent as a Service include?",
+    a: "Agent as a Service is a monthly recurring service in which Zyos designs, deploys, and operates AI agents on the customer's behalf. The customer does not manage prompts, infrastructure, agent reliability, model updates, framework migrations, or integration drift — Zyos does, as a service. Every engagement begins with Process Intelligence Implementation as the first delivery cycle. Support is baked into the recurring fee.",
+  },
+  {
+    q: "What are the five AaaS variants?",
+    a: "Workflows (multi-step agent orchestrations across a function), Systems (cross-system agents that monitor and act across the stack), Middleware (integration-tier agents that translate events between systems), Lean (single-purpose, narrowly-scoped agents like ticket triage or expense compliance), and Insights (read-only agents that draft analysis, narrate dashboards, prepare executive packets).",
+  },
+  {
+    q: "How is agent reliability measured?",
+    a: "Reliability is part of the SLA. Every agent ships with a visible task log — the agent's reasoning trace, recorded and displayed to the customer. Monthly reports include agent throughput, reliability, cost, drift, and value-impact captured. The QBR shows the trend. Visible task log is the moat: most agentic-AI sites show outputs; we show the reasoning.",
+  },
+  {
+    q: "How does AaaS pricing work?",
+    a: "AaaS is monthly recurring, variant-priced. Narrow scope (Lean) costs less than broad scope (Systems or Middleware). Support is baked into the recurring fee — no separate ticket. Process Intelligence Implementation is the first delivery cycle, always. Customers who refuse PI are customers we politely decline.",
+  },
+];
 
 // Primary KW: "agentic ai consulting" (vol 90, KD 5, $39 CPC) per research §6.2.
 export const metadata: Metadata = {
@@ -212,6 +236,13 @@ export default function AaaSPage() {
           </Link>
         </div>
       </Section>
+
+      <Faq
+        eyebrow="Agentic AI consulting — FAQ"
+        title="What buyers ask about Agent as a Service."
+        description="Lifted from prospect calls. Published as FAQPage schema for AI Overview + PAA citation."
+        faqs={AAAS_FAQS}
+      />
 
       <Section className="bg-primary text-white">
         <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr] items-end">

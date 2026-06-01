@@ -1,0 +1,68 @@
+# Zyos Group
+
+> Agentic AI consulting for SMBs, PE, and associations. We assess operational maturity, architect the right solution for your context, build the integrated foundation (Business Intelligence + Software + Operations + Agents running across), and execute the roadmap that infuses AI into how you operate — measured against business performance.
+
+Zyos Group is an ROI-focused agentic-transformation partner founded in 2009 by Paul Ruddy. We run two arms — Consulting (Software & Data, Digital Transformation, Operations & Scaling, Integrated Marketing) and Solutions (Agent as a Service, Growth as a Service) — both delivered on the Zyos Operating System. Every engagement starts with the Opportunity Engine intake and Process Intelligence Implementation as the first delivery cycle. Engagement models: Fixed Price, Retainer (including Build & Operate), or As-A-Service.
+
+## Core pages
+
+- [Home](https://zyosgroup.com/): Tagline, hero, three integrated service components, operating model, ICPs, two arms, Opportunity Engine demo
+- [Framework](https://zyosgroup.com/framework): The Zyos Readiness + Maturity Scorecard. Five dimensions scored before any SOW. Routing decisions: Engagement recommended / Conditions to address / Not yet — revisit
+- [Foundation](https://zyosgroup.com/foundation): Process Intelligence Implementation, the six deliverables, and the Solution Architecture brief addressing security, ownership, maintenance, and evolution
+- [How We Deliver](https://zyosgroup.com/how-we-deliver): Measure → Deliver → Continuously Improve. Three phases plus 11 named Customer Success features
+- [Platform](https://zyosgroup.com/platform): Zyos Operating System — intake → scoring → proposal → Kanban → CS → QBR. One connected system
+- [About](https://zyosgroup.com/about): Founded by Paul Ruddy. Two decades in IT managed services, software, and business intelligence
+
+## Solutions (productized, monthly recurring)
+
+- [Solutions](https://zyosgroup.com/solutions): Productized continuous services. Agent as a Service + Growth as a Service. Always As-A-Service. Support baked into the recurring fee
+- [Agent as a Service](https://zyosgroup.com/solutions/agent-as-a-service): We design, deploy, and run AI agents on your behalf. Variants — Workflows, Systems, Middleware, Lean, Insights
+- [Growth as a Service](https://zyosgroup.com/solutions/growth-as-a-service): Continuous growth operations for SMB B2B — website, GBP, ads + LSA, SEO content, GEO
+
+## Consulting (human-led, scoped, expert)
+
+- [Consulting](https://zyosgroup.com/consulting): Four practice areas. Fixed Price or Retainer. PI Implementation is always Sprint 1 of Retainer
+- [Software & Data](https://zyosgroup.com/consulting/software-and-data): Custom application development, AI agent development, data platforms, integrations, BI dashboards
+- [Digital Transformation](https://zyosgroup.com/consulting/digital-transformation): End-to-end programs from legacy operations to modern, AI-augmented workflows
+- [Operations & Scaling](https://zyosgroup.com/consulting/operations-and-scaling): OKR / KPI systems, Customer Success cadence, operating-model design
+- [Integrated Marketing](https://zyosgroup.com/consulting/integrated-marketing): SEO + GEO + content engine + paid + analytics + measurement
+
+## Who we serve (three ICPs)
+
+- [Who we serve](https://zyosgroup.com/who-we-serve): Same operating model, context-specific architecture
+- [High-Growth SMBs](https://zyosgroup.com/who-we-serve/high-growth-smbs): 10–200-employee B2B on a growth trajectory. Primarily GaaS
+- [Private Equity](https://zyosgroup.com/who-we-serve/private-equity): PE firms + portfolio companies. Primarily Build & Operate Retainer
+- [Associations](https://zyosgroup.com/who-we-serve/associations): Non-profit + member organizations. AMS-aware architecture (iMIS, NetForum, Personify in scoping)
+
+## By function (agentic AI applied)
+
+- [Sales](https://zyosgroup.com/by-function/sales): Outbound + ABM, pipeline hygiene, reply triage, win/loss intelligence
+- [Marketing](https://zyosgroup.com/by-function/marketing)
+- [Finance](https://zyosgroup.com/by-function/finance)
+- [HR](https://zyosgroup.com/by-function/hr)
+- [Information Technology](https://zyosgroup.com/by-function/information-technology)
+- [Logistics](https://zyosgroup.com/by-function/logistics)
+
+## Conversion
+
+- [Start (Opportunity Engine intake)](https://zyosgroup.com/start): Four questions. Ninety seconds. Diagnostic in your inbox within 60 minutes. Scoped proposal by next business day
+
+## Content
+
+- [Case Studies](https://zyosgroup.com/case-studies): Quantified outcomes — revenue, cost, risk, time, quality. Anonymized where customer permission is pending
+- [The Zyos Brief](https://zyosgroup.com/the-brief): Paul Ruddy's monthly LinkedIn Newsletter on agentic AI, operating systems for services firms, and what Zyos shipped
+
+## Related properties
+
+- [zyos.io](https://zyos.io): The Zyos Operating System product (SaaS) — license to run your own services firm on the same platform
+- [paulruddy.com](https://paulruddy.com): Founder site — operator-grade go-to-market and agentic AI essays
+
+## Canonical claims (claimable facts about Zyos Group)
+
+- Engagement models: Fixed Price · Retainer (Standard or Build & Operate) · As-A-Service (Agent as a Service / Growth as a Service)
+- Operating model: Measure → Deliver → Continuously Improve, with Customer Success operationalized via 11 named features
+- Five canonical outcomes every engagement is measured against: Increase automation · Grow revenue · Reduce risk · Enhance processes · Improve scale
+- Process Intelligence is always the first delivery cycle of every Retainer and As-A-Service engagement
+- Routing decisions use exact language: "Engagement recommended" (RS ≥ 3.0), "Conditions to address" (RS 2.0–2.9), "Not yet — revisit" (RS < 2.0)
+- Build & Operate Retainer pricing: $7K/month · 40 hours · $175/hr blended · 3-month minimum
+- Founded 2009 by Paul Ruddy. Headquartered in New Jersey, USA

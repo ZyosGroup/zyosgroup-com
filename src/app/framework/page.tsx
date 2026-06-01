@@ -4,7 +4,31 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { Faq } from "@/components/seo/Faq";
 import { SITE } from "@/lib/site";
+
+const FRAMEWORK_FAQS = [
+  {
+    q: "What is an AI readiness assessment?",
+    a: "An AI readiness assessment scores a company across the dimensions that determine whether AI investment will yield value. The Zyos Readiness + Maturity Scorecard scores five dimensions — Process Maturity, Tech + Integration, Data Quality, Automation + AI Readiness, and People + Knowledge Risk — each rated 1 to 5. The composite Readiness Score (RS) drives the routing decision before any SOW is written.",
+  },
+  {
+    q: "What does the Zyos Readiness Score mean?",
+    a: "The Readiness Score (RS) routes the engagement decision in three honest shapes. RS ≥ 3.0: Engagement recommended — proceed to PI Implementation. RS 2.0 to 2.9: Conditions to address — specific gaps to close before engaging. RS < 2.0: Not yet — revisit — we disqualify honestly and name the conditions that would change the answer. Disqualification is the trust signal.",
+  },
+  {
+    q: "How long does the assessment take?",
+    a: "The Opportunity Engine intake takes about ninety seconds — four questions about your industry, size, and current bottleneck. An automated diagnostic snapshot lands in your inbox within sixty minutes. A human-reviewed scoped proposal with the routing decision and value-impact OKRs lands by the next business day.",
+  },
+  {
+    q: "What are the five dimensions Zyos scores?",
+    a: "Process Maturity (how documented, repeatable, measured your processes are). Tech + Integration (what's integrated vs siloed, modern vs legacy). Data Quality (trustworthy, current, addressable data). Automation + AI Readiness (prior wins, current pilots, internal literacy, change-tolerance). People + Knowledge Risk (how concentrated critical knowledge is, change-tolerance).",
+  },
+  {
+    q: "Why does Zyos disqualify engagements?",
+    a: "Firms desperate for revenue accept every engagement. Firms operating at quality refuse engagements that won't yield value. We publish the 'Not yet — revisit' routing decision because prospects who see we'll say no to bad-fit engagements trust us more on engagements we do accept. The published disqualification is the trust signal — and the scoped 'conditions that would change the answer' is the path back.",
+  },
+];
 
 // Primary KW: "ai readiness assessment" (vol 590, KD 15) per research §6.2.
 export const metadata: Metadata = {
@@ -248,6 +272,13 @@ export default function FrameworkPage() {
           </article>
         </div>
       </Section>
+
+      <Faq
+        eyebrow="AI readiness assessment — FAQ"
+        title="What buyers ask about the Zyos Framework."
+        description="Direct from prospect calls. Each answer is published as FAQPage schema so AI Overviews and answer engines can lift it cleanly."
+        faqs={FRAMEWORK_FAQS}
+      />
 
       <Section className="bg-primary text-white">
         <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr] items-end">

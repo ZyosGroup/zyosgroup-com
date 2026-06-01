@@ -1,42 +1,63 @@
 import type { MetadataRoute } from "next";
+import { promises as fs } from "node:fs";
+import path from "node:path";
 import { SITE } from "@/lib/site";
 
-const PATHS = [
-  "/",
-  "/about",
-  "/start",
-  "/solutions",
-  "/solutions/agent-as-a-service",
-  "/solutions/growth-as-a-service",
-  "/consulting",
-  "/consulting/software-and-data",
-  "/consulting/digital-transformation",
-  "/consulting/operations-and-scaling",
-  "/consulting/integrated-marketing",
-  "/who-we-serve",
-  "/who-we-serve/high-growth-smbs",
-  "/who-we-serve/private-equity",
-  "/who-we-serve/associations",
-  "/by-function/sales",
-  "/by-function/marketing",
-  "/by-function/information-technology",
-  "/by-function/hr",
-  "/by-function/finance",
-  "/by-function/logistics",
-  "/how-we-deliver",
-  "/platform",
-  "/case-studies",
-  "/framework",
-  "/foundation",
-  "/the-brief",
-];
+// Auto-discover every static App-Router page. We walk src/app and emit a URL
+// for every directory that contains a page.tsx file, except segments that
+// start with parentheses (route groups) or underscores (private).
+//
+// Hand-maintained sitemaps drift the moment a page is added or removed.
+// The legacy site shipped six 404 URLs in its sitemap for months — this
+// generator removes that failure mode at the source.
 
-export default function sitemap(): MetadataRoute.Sitemap {
+async function collectRoutes(
+  dir: string,
+  parent: string,
+  out: string[]
+): Promise<void> {
+  const entries = await fs.readdir(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    const name = entry.name;
+    if (name.startsWith("_") || name.startsWith("(")) continue;
+    // Skip dynamic / catch-all segments — they need explicit generators.
+    if (name.startsWith("[")) continue;
+    if (name === "api") continue;
+    const childDir = path.join(dir, name);
+    const segment = `${parent}/${name}`;
+    const hasPage = await fileExists(path.join(childDir, "page.tsx"));
+    if (hasPage) out.push(segment);
+    await collectRoutes(childDir, segment, out);
+  }
+}
+
+async function fileExists(p: string): Promise<boolean> {
+  try {
+    await fs.access(p);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const appDir = path.join(process.cwd(), "src", "app");
+  const routes: string[] = ["/"];
+  await collectRoutes(appDir, "", routes);
+
+  // Stable ordering — root first, then alphabetical.
+  const unique = Array.from(new Set(routes)).sort((a, b) => {
+    if (a === "/") return -1;
+    if (b === "/") return 1;
+    return a.localeCompare(b);
+  });
+
   const lastModified = new Date();
-  return PATHS.map((p) => ({
-    url: `${SITE.url}${p}`,
+  return unique.map((p) => ({
+    url: `${SITE.url}${p === "/" ? "" : p}`,
     lastModified,
     changeFrequency: "weekly" as const,
-    priority: p === "/" ? 1 : 0.8,
+    priority: p === "/" ? 1 : p.split("/").length === 2 ? 0.9 : 0.8,
   }));
 }
