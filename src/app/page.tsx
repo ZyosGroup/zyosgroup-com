@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Hero } from "@/components/sections/Hero";
 import { ComponentsBar } from "@/components/sections/ComponentsBar";
-import { OperatingModelFlow } from "@/components/sections/OperatingModelFlow";
 import { IcpCards } from "@/components/sections/IcpCards";
 import { TwoArmsBlock } from "@/components/sections/TwoArmsBlock";
 import { OpportunityEngineDemo } from "@/components/sections/OpportunityEngineDemo";
-import { HomeShowcasePreview } from "@/components/sections/HomeShowcasePreview";
 import { TestimonialRail } from "@/components/sections/TestimonialRail";
 import { FounderBlock } from "@/components/sections/FounderBlock";
 import { NewsletterSignup } from "@/components/sections/NewsletterSignup";
@@ -13,6 +12,16 @@ import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { Section } from "@/components/ui/Section";
 import { jsonLdScript, webPageSchema } from "@/lib/schema";
 import { SITE, META_DESCRIPTION } from "@/lib/site";
+
+// Below-the-fold, client-heavy sections — code-split so their JS (framer-motion,
+// showcase widgets) is not in the homepage's initial bundle. SSR stays on (default)
+// so server-rendered content + SEO are unaffected; only the hydration cost defers.
+const OperatingModelFlow = dynamic(() =>
+  import("@/components/sections/OperatingModelFlow").then((m) => m.OperatingModelFlow)
+);
+const HomeShowcasePreview = dynamic(() =>
+  import("@/components/sections/HomeShowcasePreview").then((m) => m.HomeShowcasePreview)
+);
 
 // Keyword targets (ZYOS-KEYWORD-MAP.md): "digital transformation consulting"
 // (1,900/mo, KD 0–1) + "ai consulting services" (2,400/mo). Single-vendor blend

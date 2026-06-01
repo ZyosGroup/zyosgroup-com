@@ -110,7 +110,7 @@ export default function CaseStudyPage({
           {c.metrics.map((m) => (
             <div
               key={m.label}
-              className="rounded-lg border border-white/15 bg-white/5 p-6"
+              className="rounded-lg border border-white/15 bg-white/5 p-6 min-h-[140px]"
             >
               <p className="mono text-[11px] uppercase tracking-[0.16em] text-accent">
                 {METRIC_TYPE_LABEL[m.type]}
