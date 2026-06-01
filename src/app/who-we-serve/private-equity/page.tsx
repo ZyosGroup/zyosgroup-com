@@ -110,8 +110,8 @@ export default function PrivateEquityPage() {
             </h3>
             <p className="mt-3 text-[15px] text-ink/80 leading-relaxed flex-1">
               Build the transformation, then run it. Customer owns the
-              solution at exit. $7K/mo · 40 hrs · $175/hr blended · 3-month
-              minimum per portco.
+              solution at exit. Scoped per portfolio company — discovery
+              happens in the engagement.
             </p>
             <p className="mt-4 text-sm text-primary hover:underline">
               Read more →

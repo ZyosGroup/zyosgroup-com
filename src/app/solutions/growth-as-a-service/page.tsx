@@ -11,19 +11,19 @@ import { ArrowUpRight } from "lucide-react";
 const GAAS_FAQS = [
   {
     q: "What is Growth as a Service?",
-    a: "Growth as a Service (GaaS) is a monthly recurring service in which Zyos Group operates a small business's entire growth function — website, Google Business Profile, paid ads + Local Services Ads, SEO content, generative engine optimization (GEO), reviews and citations — measured against quarterly OKRs. The only productized agentic-AI play visible at SMB-tier monthly pricing. Powered by Zyos OS.",
+    a: "Growth as a Service (GaaS) is a continuous service in which Zyos Group operates a small business's entire growth function — website, Google Business Profile, paid ads + Local Services Ads, SEO content, generative engine optimization (GEO), reviews and citations — measured against quarterly OKRs. A productized agentic-AI growth play built for the SMB tier. Powered by Zyos OS.",
   },
   {
     q: "Who is GaaS for?",
-    a: "SMB B2B — local trades, home services, professional practices — that are structurally underserved by Big-4 firms (which won't touch SMB-tier engagements) and by enterprise boutiques (which chase higher pricing). McMahon's Jersey Shore Powerwash and Fresh Start Movers are two live GaaS engagements running today.",
+    a: "SMB B2B — local trades, home services, professional practices — that are structurally underserved by Big-4 firms (which won't touch SMB-tier engagements) and by enterprise boutiques (which chase larger accounts). McMahon's Jersey Shore Powerwash and Fresh Start Movers are two live GaaS engagements running today.",
   },
   {
     q: "What are the five GaaS variants?",
     a: "Website (build + operate the customer-facing site), GBP optimization (Google Business Profile cadence: posts, Q&A monitoring, citation health, review velocity), Ads + LSA (paid optimization including Local Services Ads), SEO content (topic discovery → draft → editorial review → publish → measure), and GEO (generative engine optimization — getting cited by ChatGPT, Perplexity, Claude, and Google AI Overviews).",
   },
   {
-    q: "How is GaaS priced and what is included?",
-    a: "GaaS is As-A-Service: monthly recurring, variant-priced. Customers can buy one variant, several, or the bundle. Support is baked into the recurring fee — Zyos Service Desk handles ticketing, SLA, and escalation routing. Every engagement begins with Process Intelligence Implementation as the first delivery cycle.",
+    q: "How does a GaaS engagement work?",
+    a: "GaaS is As-A-Service: a continuous engagement scoped by variant. Customers can take one variant, several, or the bundle. Support is part of the service — Zyos Service Desk handles ticketing, SLA, and escalation routing. Every engagement begins with Process Intelligence Implementation as the first delivery cycle.",
   },
   {
     q: "What is GEO (generative engine optimization)?",
@@ -85,7 +85,7 @@ export default function GaaSPage() {
 
         <div className="mt-10 max-w-3xl">
           <QuickAnswer>
-            Growth as a Service (GaaS) is a monthly recurring service in which
+            Growth as a Service (GaaS) is a continuous service in which
             Zyos Group operates a small business&apos;s entire growth function
             — website, Google Business Profile, ads + LSA, SEO content, reviews
             and citations — measured against quarterly OKRs. Variants:

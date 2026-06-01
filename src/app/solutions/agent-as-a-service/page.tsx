@@ -12,11 +12,11 @@ import { SITE } from "@/lib/site";
 const AAAS_FAQS = [
   {
     q: "What is agentic AI consulting?",
-    a: "Agentic AI consulting is the design, deployment, and ongoing operation of AI agents — autonomous, multi-step software workers — across business functions. Unlike single-task chatbots, agentic systems span discovery, decision-making, execution, and reporting. Zyos Group's Agent as a Service (AaaS) productizes this work into monthly recurring engagements with five named variants: Workflows, Systems, Middleware, Lean, and Insights.",
+    a: "Agentic AI consulting is the design, deployment, and ongoing operation of AI agents — autonomous, multi-step software workers — across business functions. Unlike single-task chatbots, agentic systems span discovery, decision-making, execution, and reporting. Zyos Group's Agent as a Service (AaaS) productizes this work into a continuous engagement with five named variants: Workflows, Systems, Middleware, Lean, and Insights.",
   },
   {
     q: "What does Agent as a Service include?",
-    a: "Agent as a Service is a monthly recurring service in which Zyos designs, deploys, and operates AI agents on the customer's behalf. The customer does not manage prompts, infrastructure, agent reliability, model updates, framework migrations, or integration drift — Zyos does, as a service. Every engagement begins with Process Intelligence Implementation as the first delivery cycle. Support is baked into the recurring fee.",
+    a: "Agent as a Service is a continuous service in which Zyos designs, deploys, and operates AI agents on the customer's behalf. The customer does not manage prompts, infrastructure, agent reliability, model updates, framework migrations, or integration drift — Zyos does, as a service. Every engagement begins with Process Intelligence Implementation as the first delivery cycle. Support is part of the service.",
   },
   {
     q: "What are the five AaaS variants?",
@@ -27,8 +27,8 @@ const AAAS_FAQS = [
     a: "Reliability is part of the SLA. Every agent ships with a visible task log — the agent's reasoning trace, recorded and displayed to the customer. Monthly reports include agent throughput, reliability, cost, drift, and value-impact captured. The QBR shows the trend. Visible task log is the moat: most agentic-AI sites show outputs; we show the reasoning.",
   },
   {
-    q: "How does AaaS pricing work?",
-    a: "AaaS is monthly recurring, variant-priced. Narrow scope (Lean) costs less than broad scope (Systems or Middleware). Support is baked into the recurring fee — no separate ticket. Process Intelligence Implementation is the first delivery cycle, always. Customers who refuse PI are customers we politely decline.",
+    q: "How does an AaaS engagement work?",
+    a: "AaaS is a flexible, continuous engagement scoped to the variant that fits — narrow (Lean) or broad (Systems, Middleware). Support is part of the service, not a separate ticket. Process Intelligence Implementation is the first delivery cycle, always. Customers who refuse PI are customers we politely decline.",
   },
 ];
 
@@ -36,7 +36,7 @@ const AAAS_FAQS = [
 export const metadata: Metadata = {
   title: "Agent as a Service — Agentic AI Consulting | Zyos Group",
   description:
-    "Agent as a Service: we design, deploy, and run AI agents on your behalf. Workflows, Systems, Middleware, Lean, Insights variants. Monthly recurring. Support baked in.",
+    "Agent as a Service: we design, deploy, and run AI agents on your behalf. Workflows, Systems, Middleware, Lean, Insights variants. Continuous engagement, support included.",
   alternates: { canonical: "/solutions/agent-as-a-service" },
 };
 
@@ -87,7 +87,7 @@ export default function AaaSPage() {
 
         <div className="mt-10 max-w-3xl">
           <QuickAnswer>
-            Agent as a Service (AaaS) is a monthly recurring service in which
+            Agent as a Service (AaaS) is a continuous service in which
             Zyos Group designs, deploys, and operates AI agents on the
             customer&apos;s behalf — sales outbound, content engine, support
             tier-1, process anomaly detection, finance reconciliation, HR
@@ -112,7 +112,7 @@ export default function AaaSPage() {
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="Five productized variants"
-          title="Each variant earns its name — buyer recognition, pricing structure stability, and productization compounding."
+          title="Each variant earns its name — buyer recognition, scope clarity, and productization compounding."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {VARIANTS.map((v, i) => (
@@ -200,7 +200,7 @@ export default function AaaSPage() {
       <Section>
         <SectionHeading
           eyebrow="How AaaS buys"
-          title="Monthly recurring. Variant-priced. PI Implementation always Sprint 1."
+          title="Continuous engagement. Scoped by variant. PI Implementation always Sprint 1."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 max-w-4xl">
           <article className="rounded-lg border border-border bg-surface p-6">
@@ -208,9 +208,9 @@ export default function AaaSPage() {
               Engagement model
             </h3>
             <ul className="mt-3 space-y-2 text-[15px] text-ink/80 leading-relaxed">
-              <li>· As-A-Service · monthly recurring fee</li>
-              <li>· Variant priced — narrow scope (Lean) costs less than broad scope (Systems / Middleware)</li>
-              <li>· Support baked into the recurring fee — no separate ticket</li>
+              <li>· As-A-Service · continuous engagement</li>
+              <li>· Scoped to the variant that fits — narrow (Lean) or broad (Systems / Middleware)</li>
+              <li>· Support is part of the service — no separate ticket</li>
               <li>· PI Implementation is the first delivery cycle, always</li>
             </ul>
           </article>

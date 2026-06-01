@@ -121,9 +121,9 @@ export default function HighGrowthSmbsPage() {
               Build & Operate Retainer
             </h3>
             <p className="mt-3 text-[15px] text-ink/80 leading-relaxed flex-1">
-              For when the operating model itself needs rebuilding. $7K/mo · 40
-              hrs · $175/hr blended · 3-month minimum. Discovery happens IN
-              the engagement.
+              For when the operating model itself needs rebuilding.
+              Build-then-run — discovery happens IN the engagement, and you own
+              the solution at exit.
             </p>
             <p className="mt-4 text-sm text-primary hover:underline">
               Read more →

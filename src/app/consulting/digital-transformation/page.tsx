@@ -71,9 +71,8 @@ export default function DigitalTransformationPage() {
             AI-augmented workflows. CRM/ERP modernization, process redesign,
             cloud migration, AI-native operating-model rollout. Every program
             starts with a Readiness & Maturity scorecard and Process
-            Intelligence Implementation. Engagement models: Fixed Price,
-            Retainer, or Build & Operate Retainer ($7K/mo · 40 hrs · $175/hr
-            blended · 3-month minimum).
+            Intelligence Implementation. Flexible engagement: Fixed Price,
+            Retainer, or Build & Operate Retainer — we meet you where you are.
           </QuickAnswer>
         </div>
       </Section>
@@ -151,14 +150,14 @@ export default function DigitalTransformationPage() {
           </article>
           <article className="rounded-lg border border-border bg-surface p-6">
             <h3 className="text-lg font-semibold text-primary tracking-tightish">
-              Pricing structure (productized)
+              How it runs
             </h3>
             <ul className="mt-3 space-y-2 text-[15px] text-ink/80 leading-relaxed">
-              <li>· $7,000 / month · 40 hours included</li>
-              <li>· Scalable to 60 hours / month at the same blended rate</li>
-              <li>· $175 / hour blended (build + ops)</li>
-              <li>· 3-month minimum</li>
+              <li>· Build-then-run — the spec can be incomplete at signing; discovery happens in the engagement</li>
+              <li>· Scales with the work as scope becomes clear</li>
+              <li>· One vendor across operations, technology, data, and software</li>
               <li>· Solution Architecture brief is the first deliverable</li>
+              <li>· Customer owns the solution at exit</li>
             </ul>
           </article>
         </div>

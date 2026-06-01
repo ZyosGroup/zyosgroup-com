@@ -48,9 +48,9 @@ export function TwoArmsBlock() {
             Solutions
           </h3>
           <p className="mt-3 text-[15px] text-white/85 leading-relaxed">
-            Productized continuous services. Monthly recurring, scoped variants,
-            platform-led execution. The same team that consults also operates
-            agents and growth motions on the same operating system.
+            Productized continuous services. Scoped variants, platform-led
+            execution. The same team that consults also operates agents and
+            growth motions on the same operating system.
           </p>
           <ul className="mt-5 grid grid-cols-1 gap-y-2 text-sm text-white/85">
             <li>· Agent as a Service (AaaS) — Workflows / Systems / Middleware / Lean / Insights</li>

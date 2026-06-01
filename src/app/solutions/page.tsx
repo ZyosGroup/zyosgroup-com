@@ -10,7 +10,7 @@ import { ArrowUpRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Solutions — Agent + Growth as a Service | Zyos Group",
   description:
-    "Zyos Group Solutions: productized continuous services. Agent as a Service and Growth as a Service. Monthly recurring, scoped variants, platform-led.",
+    "Zyos Group Solutions: productized continuous services. Agent as a Service and Growth as a Service. Continuous, scoped variants, platform-led.",
   alternates: { canonical: "/solutions" },
 };
 
@@ -50,7 +50,7 @@ export default function SolutionsPage() {
       <Section>
         <p className="eyebrow mb-4">Solutions arm</p>
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Productized continuous services. Monthly recurring. Platform-led.
+          Productized continuous services. Platform-led. Measured.
         </h1>
 
         <div className="mt-10 max-w-3xl">
@@ -59,9 +59,9 @@ export default function SolutionsPage() {
             parent offerings: Agent as a Service (AaaS — Workflows, Systems,
             Middleware, Lean, Insights variants) and Growth as a Service (GaaS
             — Website, GBP, Ads + LSA, SEO content, GEO variants). Always
-            As-A-Service: monthly recurring, defined SLA, support baked into
-            the recurring fee. Every engagement begins with Process Intelligence
-            Implementation as the first delivery cycle.
+            As-A-Service: continuous, defined SLA, support included. Every
+            engagement begins with Process Intelligence Implementation as the
+            first delivery cycle.
           </QuickAnswer>
         </div>
       </Section>
@@ -117,11 +117,11 @@ export default function SolutionsPage() {
           {[
             {
               t: "Engagement model",
-              b: "As-A-Service — monthly recurring. Variant-priced. No project-based work in Solutions.",
+              b: "As-A-Service — continuous, scoped by variant. No project-based work in Solutions.",
             },
             {
               t: "Support",
-              b: "Baked into the recurring fee. The Zyos Service Desk handles ticketing + SLA + escalation routing.",
+              b: "Included in the service. The Zyos Service Desk handles ticketing + SLA + escalation routing.",
             },
             {
               t: "First delivery cycle",

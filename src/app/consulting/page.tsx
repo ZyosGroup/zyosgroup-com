@@ -124,7 +124,7 @@ export default function ConsultingPage() {
               audits, one-time architecture briefs.
             </p>
             <p className="mt-4 mono text-[11px] text-subtle uppercase tracking-[0.16em]">
-              Single shape · project total
+              Defined scope · defined endpoint
             </p>
           </article>
           <article className="rounded-lg border border-border bg-surface p-6">
@@ -136,7 +136,7 @@ export default function ConsultingPage() {
               The default Retainer shape — &quot;I need ongoing help.&quot;
             </p>
             <p className="mt-4 mono text-[11px] text-subtle uppercase tracking-[0.16em]">
-              Monthly recurring · bespoke
+              Evolving scope · ongoing
             </p>
           </article>
           <article className="rounded-lg border border-border bg-surface p-6">
@@ -148,7 +148,7 @@ export default function ConsultingPage() {
               incomplete at signing. Discovery happens IN the engagement.
             </p>
             <p className="mt-4 mono text-[11px] text-subtle uppercase tracking-[0.16em]">
-              $7K/mo · 40 hrs · 3-mo min
+              Build-then-run · discovery in-engagement
             </p>
           </article>
         </div>
