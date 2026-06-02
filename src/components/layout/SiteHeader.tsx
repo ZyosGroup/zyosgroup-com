@@ -13,7 +13,7 @@ const NAV = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-bg/85 backdrop-blur-sm">
+    <header className="sticky top-0 z-40 border-b border-border bg-white/90 backdrop-blur-md">
       <div className="container-content flex h-20 items-center justify-between gap-6">
         <Link
           href="/"

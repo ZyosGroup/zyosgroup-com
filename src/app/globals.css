@@ -68,8 +68,33 @@
     0%, 100% { opacity: 0.55; }
     50% { opacity: 1; }
   }
+
+  /* Premium dark-hero motion: drifting aurora, floating stack layers,
+     a light pulse traveling up the stack. Slow + ambient, not busy. */
+  .aurora-a { animation: aurora-a 18s ease-in-out infinite alternate; }
+  .aurora-b { animation: aurora-b 22s ease-in-out infinite alternate; }
+  @keyframes aurora-a {
+    from { transform: translate3d(-4%, -3%, 0) scale(1); opacity: 0.8; }
+    to   { transform: translate3d(6%, 4%, 0) scale(1.12); opacity: 1; }
+  }
+  @keyframes aurora-b {
+    from { transform: translate3d(4%, 3%, 0) scale(1.05); opacity: 0.7; }
+    to   { transform: translate3d(-5%, -4%, 0) scale(1); opacity: 0.95; }
+  }
+  .layer-float { animation: layer-float 9s ease-in-out infinite; }
+  @keyframes layer-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+  .layer-sheen { animation: layer-sheen 6s ease-in-out infinite; }
+  @keyframes layer-sheen {
+    0%, 100% { opacity: 0.25; }
+    50% { opacity: 0.7; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
-    .hero-ring-spin, .hero-orbit, .hero-pulse { animation: none; }
+    .hero-ring-spin, .hero-orbit, .hero-pulse,
+    .aurora-a, .aurora-b, .layer-float, .layer-sheen { animation: none; }
   }
 
   .hairline {

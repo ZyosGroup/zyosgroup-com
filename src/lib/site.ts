@@ -42,9 +42,10 @@ export const TAGLINE =
 export const TAGLINE_SHORT =
   "Agentic transformation built for ROI.";
 
-// Hero from positioning architecture — preserved entity nouns.
+// Hero subhead — equal billing: (1) build the foundation agentic AI needs,
+// (2) run the service offerings on top once you're there. (Paul 2026-06-01.)
 export const HERO_SUBHEAD =
-  "Zyos Group turns companies into agentic-driven companies, by uncovering operational maturity, building the integrated foundation, and executing the roadmap that infuses AI into how you operate. Outcomes: increased revenue, improved efficiency, scaled operations, reduced risk, and real-time business insight.";
+  "Two things, under one roof. First, we lay the foundation agentic AI needs: business intelligence, technology, operations, and data, measured and made ready. Then we serve you on top of it, with the agents, builds, and growth operations that fit where you are. Foundation and service, one vendor.";
 
 // Brand line for foundational-builders positioning.
 export const FOUNDATIONAL_LINE =
