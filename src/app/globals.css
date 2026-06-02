@@ -52,6 +52,26 @@
     @apply mx-auto w-full max-w-container px-6 lg:px-8;
   }
 
+  /* Hero graphic animations — slow, ambient, premium (not flashy).
+     transform-box/origin so SVG groups rotate about their own center. */
+  .hero-ring-spin,
+  .hero-orbit {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  .hero-ring-spin { animation: hero-ring-spin 70s linear infinite; }
+  .hero-orbit { animation: hero-orbit 36s linear infinite; }
+  .hero-pulse { animation: hero-pulse 4s ease-in-out infinite; }
+  @keyframes hero-ring-spin { to { transform: rotate(360deg); } }
+  @keyframes hero-orbit { to { transform: rotate(-360deg); } }
+  @keyframes hero-pulse {
+    0%, 100% { opacity: 0.55; }
+    50% { opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-ring-spin, .hero-orbit, .hero-pulse { animation: none; }
+  }
+
   .hairline {
     @apply border-t border-border;
   }

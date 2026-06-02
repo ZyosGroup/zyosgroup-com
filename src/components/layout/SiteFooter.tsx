@@ -64,9 +64,9 @@ export function SiteFooter() {
               <Image
                 src="/brand/logo-horizontal-color.png"
                 alt="Zyos Group"
-                width={116}
-            height={36}
-                className="h-8 w-auto"
+                width={161}
+                height={50}
+                className="h-10 w-auto"
               />
             </Link>
             <p className="mt-3 max-w-sm text-sm text-subtle leading-relaxed">

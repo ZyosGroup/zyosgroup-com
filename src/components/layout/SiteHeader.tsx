@@ -14,7 +14,7 @@ const NAV = [
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-bg/85 backdrop-blur-sm">
-      <div className="container-content flex h-16 items-center justify-between gap-6">
+      <div className="container-content flex h-20 items-center justify-between gap-6">
         <Link
           href="/"
           className="flex items-center"
@@ -23,10 +23,10 @@ export function SiteHeader() {
           <Image
             src="/brand/logo-horizontal-color.png"
             alt="Zyos Group"
-            width={116}
-            height={36}
+            width={193}
+            height={60}
             priority
-            className="h-8 w-auto"
+            className="h-11 w-auto md:h-12"
           />
         </Link>
 
