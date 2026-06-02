@@ -10,15 +10,15 @@ import { SITE } from "@/lib/site";
 const FRAMEWORK_FAQS = [
   {
     q: "What is an AI readiness assessment?",
-    a: "An AI readiness assessment scores a company across the dimensions that determine whether AI investment will yield value. The Zyos Readiness + Maturity Scorecard scores five dimensions — Process Maturity, Tech + Integration, Data Quality, Automation + AI Readiness, and People + Knowledge Risk — each rated 1 to 5. The composite Readiness Score (RS) drives the routing decision before any SOW is written.",
+    a: "An AI readiness assessment scores a company across the dimensions that determine whether AI investment will yield value. The Zyos Readiness + Maturity Scorecard scores five dimensions, Process Maturity, Tech + Integration, Data Quality, Automation + AI Readiness, and People + Knowledge Risk, each rated 1 to 5. The composite Readiness Score (RS) drives the routing decision before any SOW is written.",
   },
   {
     q: "What does the Zyos Readiness Score mean?",
-    a: "The Readiness Score (RS) routes the engagement decision in three honest shapes. RS ≥ 3.0: Engagement recommended — proceed to PI Implementation. RS 2.0 to 2.9: Conditions to address — specific gaps to close before engaging. RS < 2.0: Not yet — revisit — we disqualify honestly and name the conditions that would change the answer. Disqualification is the trust signal.",
+    a: "The Readiness Score (RS) routes the engagement decision in three honest shapes. RS ≥ 3.0: Engagement recommended, proceed to PI Implementation. RS 2.0 to 2.9: Conditions to address, specific gaps to close before engaging. RS < 2.0: Not yet, revisit, we disqualify honestly and name the conditions that would change the answer. Disqualification is the trust signal.",
   },
   {
     q: "How long does the assessment take?",
-    a: "The Opportunity Engine intake takes about ninety seconds — four questions about your industry, size, and current bottleneck. An automated diagnostic snapshot lands in your inbox within sixty minutes. A human-reviewed scoped proposal with the routing decision and value-impact OKRs lands by the next business day.",
+    a: "The Opportunity Engine intake takes about ninety seconds, four questions about your industry, size, and current bottleneck. An automated diagnostic snapshot lands in your inbox within sixty minutes. A human-reviewed scoped proposal with the routing decision and value-impact OKRs lands by the next business day.",
   },
   {
     q: "What are the five dimensions Zyos scores?",
@@ -26,15 +26,15 @@ const FRAMEWORK_FAQS = [
   },
   {
     q: "Why does Zyos disqualify engagements?",
-    a: "Firms desperate for revenue accept every engagement. Firms operating at quality refuse engagements that won't yield value. We publish the 'Not yet — revisit' routing decision because prospects who see we'll say no to bad-fit engagements trust us more on engagements we do accept. The published disqualification is the trust signal — and the scoped 'conditions that would change the answer' is the path back.",
+    a: "Firms desperate for revenue accept every engagement. Firms operating at quality refuse engagements that won't yield value. We publish the 'Not yet, revisit' routing decision because prospects who see we'll say no to bad-fit engagements trust us more on engagements we do accept. The published disqualification is the trust signal, and the scoped 'conditions that would change the answer' is the path back.",
   },
 ];
 
 // Primary KW: "ai readiness assessment" (vol 590, KD 15) per research §6.2.
 export const metadata: Metadata = {
-  title: "Framework — AI Readiness + Maturity Assessment | Zyos Group",
+  title: "Framework: AI Readiness + Maturity Assessment | Zyos Group",
   description:
-    "The Zyos Readiness + Maturity Scorecard. Five dimensions scored before any SOW. Routing decision: Engagement recommended, Conditions to address, Not yet — revisit.",
+    "The Zyos Readiness + Maturity Scorecard. Five dimensions scored before any SOW. Routing decision: Engagement recommended, Conditions to address, Not yet, revisit.",
   alternates: { canonical: "/framework" },
 };
 
@@ -45,7 +45,7 @@ const DIMENSIONS = [
   },
   {
     name: "Tech + Integration",
-    body: "The shape of your stack — what's integrated vs siloed, what's modern vs legacy, what's documented vs tribal. Drives whether agents have systems to pull signals from + act on.",
+    body: "The shape of your stack, what's integrated vs siloed, what's modern vs legacy, what's documented vs tribal. Drives whether agents have systems to pull signals from + act on.",
   },
   {
     name: "Data Quality",
@@ -63,26 +63,26 @@ const DIMENSIONS = [
 
 const JOURNEY_STAGES = [
   {
-    label: "Stage 1 — Assess",
+    label: "Stage 1, Assess",
     title: "Where are we on the agentic-readiness curve?",
     body: "Opportunity Engine intake (90 seconds) + automated diagnostic (within 60 minutes) + scoped proposal (next business day). The five-dimension scorecard surfaces here.",
     href: "/framework",
     current: true,
   },
   {
-    label: "Stage 2 — Foundation",
+    label: "Stage 2, Foundation",
     title: "Build the integrated foundation.",
     body: "PI Implementation (the first delivery cycle) + Solution Architecture brief. Security, ownership, maintenance, evolution articulated in writing.",
     href: "/foundation",
   },
   {
-    label: "Stage 3 — Roadmap",
+    label: "Stage 3, Roadmap",
     title: "Execute the prioritized backlog in monthly cycles.",
-    body: "Each cycle ships a measurable outcome. Quarterly re-prioritization is transparent — what's being killed, promoted, and deferred is visible.",
+    body: "Each cycle ships a measurable outcome. Quarterly re-prioritization is transparent, what's being killed, promoted, and deferred is visible.",
     href: "/how-we-deliver",
   },
   {
-    label: "Stage 4 — Agentic-driven",
+    label: "Stage 4, Agentic-driven",
     title: "Operate as an agentic-driven company.",
     body: "Agents handle the work that should be agents. Humans handle the work that should be humans. BI tells you what's working. Operations adjusts continuously.",
     href: "/platform",
@@ -99,12 +99,12 @@ const ROUTING_OUTCOMES = [
   {
     score: "RS 2.0–2.9",
     label: "Conditions to address",
-    body: "Partnered approach can work — but specific gaps need to close first. We articulate the gaps. You address them. Then we engage. The proposal names exactly what to fix and how long it typically takes.",
+    body: "Partnered approach can work, but specific gaps need to close first. We articulate the gaps. You address them. Then we engage. The proposal names exactly what to fix and how long it typically takes.",
     tone: "hold" as const,
   },
   {
     score: "RS < 2.0",
-    label: "Not yet — revisit",
+    label: "Not yet, revisit",
     body: "Partnered approach won't yield value yet. We disqualify the engagement honestly, name the conditions that would change the answer, and tell you when to come back. Disqualification is the trust signal.",
     tone: "stop" as const,
   },
@@ -121,7 +121,7 @@ export default function FrameworkPage() {
     <>
       <PageSchema
         path="/framework"
-        name="The Zyos Framework — Stage 1, Assess"
+        name="The Zyos Framework: Stage 1, Assess"
         description="Readiness & Maturity scorecard, five-dimension scoring model, and Opportunity Engine diagnostic. Routing decisions use the canonical Zyos language."
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
@@ -130,7 +130,7 @@ export default function FrameworkPage() {
       />
 
       <Section>
-        <p className="eyebrow mb-4">Framework · Stage 1 — Assess</p>
+        <p className="eyebrow mb-4">Framework · Stage 1, Assess</p>
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
           Measure the opportunity before we promise the outcome.
         </h1>
@@ -141,7 +141,7 @@ export default function FrameworkPage() {
             dimensions before any SOW: Process Maturity, Tech + Integration,
             Data Quality, Automation + AI Readiness, People + Knowledge Risk.
             Score 1–5 per dimension. Routing decision: Engagement recommended
-            (RS ≥ 3.0), Conditions to address (2.0–2.9), or Not yet — revisit
+            (RS ≥ 3.0), Conditions to address (2.0–2.9), or Not yet, revisit
             (&lt; 2.0). Stage 1 of the four-stage Customer Journey.
           </QuickAnswer>
         </div>
@@ -175,9 +175,9 @@ export default function FrameworkPage() {
 
       <Section>
         <SectionHeading
-          eyebrow="Routing — the predict-the-fit filter"
+          eyebrow="Routing, the predict-the-fit filter"
           title="The honest answer comes back in three shapes."
-          description="Firms desperate for revenue accept every engagement. Firms operating at quality refuse the engagements that won't yield value. The 'Not yet — revisit' outcome is published, not buried."
+          description="Firms desperate for revenue accept every engagement. Firms operating at quality refuse the engagements that won't yield value. The 'Not yet, revisit' outcome is published, not buried."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {ROUTING_OUTCOMES.map((o) => (
@@ -200,14 +200,14 @@ export default function FrameworkPage() {
         <p className="mt-8 max-w-prose text-[15px] text-ink/85 leading-relaxed">
           Prospects who see we&apos;ll say no to bad-fit engagements trust us
           more on the engagements we do accept. That&apos;s why disqualification
-          is featured here — not hidden.
+          is featured here, not hidden.
         </p>
       </Section>
 
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="The four-stage Customer Journey"
-          title="From traditional to agentic-driven — in four measurable stages."
+          title="From traditional to agentic-driven, in four measurable stages."
           description="Each stage has an ROI gate. Each stage has a named artifact. Each stage is a page on this site."
         />
         <ol className="mt-10 grid gap-4 md:grid-cols-2">
@@ -261,20 +261,20 @@ export default function FrameworkPage() {
           </article>
           <article className="rounded-lg border border-border bg-surface p-6">
             <h3 className="text-lg font-semibold text-primary tracking-tightish">
-              What you walk away with — even if we don&apos;t engage
+              What you walk away with, even if we don&apos;t engage
             </h3>
             <ul className="mt-3 space-y-2 text-[15px] text-ink/80 leading-relaxed">
               <li>· Your composite Readiness Score across five dimensions</li>
               <li>· Named gaps with rough value-impact estimates</li>
               <li>· The honest routing decision in writing</li>
-              <li>· If &quot;Not yet — revisit,&quot; the conditions that would change the answer</li>
+              <li>· If &quot;Not yet, revisit,&quot; the conditions that would change the answer</li>
             </ul>
           </article>
         </div>
       </Section>
 
       <Faq
-        eyebrow="AI readiness assessment — FAQ"
+        eyebrow="AI readiness assessment, FAQ"
         title="What buyers ask about the Zyos Framework."
         description="Direct from prospect calls. Each answer is published as FAQPage schema so AI Overviews and answer engines can lift it cleanly."
         faqs={FRAMEWORK_FAQS}
@@ -301,7 +301,7 @@ export default function FrameworkPage() {
               href="/foundation"
               className="inline-flex items-center gap-2 text-white/85 hover:text-white text-sm"
             >
-              Stage 2 — Foundation →
+              Stage 2, Foundation →
             </Link>
           </div>
         </div>

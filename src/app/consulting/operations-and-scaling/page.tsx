@@ -32,7 +32,7 @@ const CAPABILITIES = [
   },
   {
     t: "Service Desk discipline",
-    b: "Productized customer-support function via the Zyos Service Desk module — email-in → ticket → SLA → status emails → reminder cron → escalation routing.",
+    b: "Productized customer-support function via the Zyos Service Desk module, email-in → ticket → SLA → status emails → reminder cron → escalation routing.",
   },
   {
     t: "Process Intelligence",
@@ -49,7 +49,7 @@ export default function OperationsScalingPage() {
     <>
       <PageSchema
         path="/consulting/operations-and-scaling"
-        name="Operations & Scaling Consulting — Zyos Group"
+        name="Operations & Scaling Consulting: Zyos Group"
         description="Operating-model design, OKR + KPI systems, Customer Success cadence, service-desk discipline."
         service={{ type: "Operations consulting" }}
         breadcrumbTrail={[
@@ -62,7 +62,7 @@ export default function OperationsScalingPage() {
       <Section>
         <p className="eyebrow mb-4">Consulting · Operations & Scaling</p>
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Scale headcount, throughput, and revenue — without proportional cost.
+          Scale headcount, throughput, and revenue, without proportional cost.
         </h1>
 
         <div className="mt-10 max-w-3xl">
@@ -72,7 +72,7 @@ export default function OperationsScalingPage() {
             Success cadence, service-desk discipline (Zyos Service Desk
             module), and the operating-model work that turns a founder&apos;s
             playbook into a repeatable system. Engagement models: Retainer
-            (most common — ongoing operating-model work) or Fixed Price
+            (most common, ongoing operating-model work) or Fixed Price
             (one-time operating-model designs). Continuous Improvement phase
             delivers the Customer Success function.
           </QuickAnswer>
@@ -114,7 +114,7 @@ export default function OperationsScalingPage() {
         <SectionHeading
           eyebrow="Automation reel"
           title="Workflow automation that compounds."
-          description="Beyond agent workflows (those live in AaaS), Operations delivers traditional workflow automation: a thing happens in System A, the right downstream action happens in B, C, D — measured + observable."
+          description="Beyond agent workflows (those live in AaaS), Operations delivers traditional workflow automation: a thing happens in System A, the right downstream action happens in B, C, D, measured + observable."
         />
         <div className="mt-10">
           <AutomationReel />
@@ -125,7 +125,7 @@ export default function OperationsScalingPage() {
         <SectionHeading
           eyebrow="Customer Success function"
           title="The proof layer lives here."
-          description="Customer Success isn't a separate component — it's how Operations as a service shows up in the Continuous Improvement phase for every Retainer and As-A-Service engagement."
+          description="Customer Success isn't a separate component, it's how Operations as a service shows up in the Continuous Improvement phase for every Retainer and As-A-Service engagement."
         />
         <div className="mt-8">
           <Link
@@ -148,7 +148,7 @@ export default function OperationsScalingPage() {
             </h2>
             <p className="mt-4 text-white/80 max-w-prose">
               Most founders scale by adding people. Zyos&apos;s Operations work
-              scales the operating model so the same people can do more — and
+              scales the operating model so the same people can do more, and
               the next hire onboards into a system, not a void.
             </p>
           </div>

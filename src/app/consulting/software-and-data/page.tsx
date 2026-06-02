@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
 
 // Primary KW: "software development services" (vol 2,900) + "ai agent development" (vol 590).
 export const metadata: Metadata = {
-  title: "Software & Data Consulting — Custom Builds + BI | Zyos Group",
+  title: "Software & Data Consulting: Custom Builds + BI | Zyos Group",
   description:
     "Custom software development, AI agent development, data platforms, integrations, BI dashboards. Built when off-the-shelf can't.",
   alternates: { canonical: "/consulting/software-and-data" },
@@ -20,7 +20,7 @@ const BUILD_VS_CONFIGURE = [
     t: "We build when…",
     items: [
       "Off-the-shelf can't do what your workflow needs (custom intake-to-quote, custom agent runtime, custom member portal)",
-      "Integration glue is the actual value — connecting systems that don't ship integrations",
+      "Integration glue is the actual value, connecting systems that don't ship integrations",
       "Your IP is the differentiator and configuring someone else's tool would dilute it",
       "Compliance + ownership boundaries require code you can audit and own",
     ],
@@ -41,7 +41,7 @@ export default function SoftwareDataPage() {
     <>
       <PageSchema
         path="/consulting/software-and-data"
-        name="Software & Data — Zyos Group Consulting"
+        name="Software & Data: Zyos Group Consulting"
         description="Custom application development, data platforms, BI dashboards, integrations, and AI agent development."
         service={{ type: "Software development services" }}
         breadcrumbTrail={[
@@ -61,7 +61,7 @@ export default function SoftwareDataPage() {
           <QuickAnswer>
             Zyos Group&apos;s Software & Data practice is the build practice.
             Custom application development, AI agent development, data
-            platforms, integrations, BI dashboards — informed by two decades of
+            platforms, integrations, BI dashboards, informed by two decades of
             IT managed services, software, and business intelligence lineage.
             ZyosApp itself is the working proof, shipped weekly. When
             off-the-shelf is the right answer, we say so and integrate cleanly.
@@ -74,7 +74,7 @@ export default function SoftwareDataPage() {
         <SectionHeading
           eyebrow="System topology"
           title="The fabric Zyos integrates and the layer Zyos OS adds on top."
-          description="Most agentic-AI consulting firms are configurators — they assemble Salesforce + HubSpot + Snowflake + a vendor's agent platform. Zyos builds when building is the right answer."
+          description="Most agentic-AI consulting firms are configurators, they assemble Salesforce + HubSpot + Snowflake + a vendor's agent platform. Zyos builds when building is the right answer."
         />
         <div className="mt-10">
           <TopologyDiagram />
@@ -164,7 +164,7 @@ export default function SoftwareDataPage() {
             </h2>
             <p className="mt-4 text-white/80 max-w-prose">
               The Opportunity Engine intake tells you whether your project is
-              Fixed Price or Retainer shape — and whether a Build & Operate
+              Fixed Price or Retainer shape, and whether a Build & Operate
               wrapper is the right fit when discovery is going to happen IN
               the engagement.
             </p>

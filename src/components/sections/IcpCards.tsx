@@ -31,7 +31,7 @@ export function IcpCards() {
       <SectionHeading
         eyebrow="Who we serve"
         title="Three ICPs. One operating model. Context-specific architecture."
-        description="The architecture changes by context (regulated, complex, growth-stage). The operating model — Measure → Delivery → Continuous Improvement — does not."
+        description="The architecture changes by context (regulated, complex, growth-stage). The operating model, Measure → Delivery → Continuous Improvement, does not."
       />
 
       <div className="mt-12 grid gap-4 md:grid-cols-3">

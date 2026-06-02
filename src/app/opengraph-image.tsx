@@ -6,7 +6,7 @@ import { TAGLINE_SHORT, SITE } from "@/lib/site";
 // override with its own opengraph-image.tsx.
 
 export const runtime = "edge";
-export const alt = `${SITE.name} — ${TAGLINE_SHORT}`;
+export const alt = `${SITE.name}, ${TAGLINE_SHORT}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -71,7 +71,7 @@ export default async function Image() {
             }}
           >
             Assess maturity. Architect the right solution. Infuse AI into
-            operations — measured against business performance.
+            operations, measured against business performance.
           </div>
         </div>
 

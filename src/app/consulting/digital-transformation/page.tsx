@@ -34,7 +34,7 @@ const TRANSFORMATION_LANES = [
   },
   {
     t: "AI-native operating-model rollout",
-    b: "The big one. Process Intelligence on every function; agents deployed against the highest-value processes; the operating model — Measure → Deliver → Continuously Improve — rolled out organization-wide.",
+    b: "The big one. Process Intelligence on every function; agents deployed against the highest-value processes; the operating model, Measure → Deliver → Continuously Improve, rolled out organization-wide.",
   },
   {
     t: "Cloud + security modernization",
@@ -47,7 +47,7 @@ export default function DigitalTransformationPage() {
     <>
       <PageSchema
         path="/consulting/digital-transformation"
-        name="Digital Transformation Consulting — Zyos Group"
+        name="Digital Transformation Consulting: Zyos Group"
         description="End-to-end transformation from legacy operations to AI-augmented workflows. Assessment-first, architecture-first, ROI-gated."
         service={{ type: "Digital transformation consulting" }}
         breadcrumbTrail={[
@@ -60,7 +60,7 @@ export default function DigitalTransformationPage() {
       <Section>
         <p className="eyebrow mb-4">Consulting · Digital Transformation</p>
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          From legacy operations to AI-augmented workflows — measured every
+          From legacy operations to AI-augmented workflows, measured every
           cycle.
         </h1>
 
@@ -72,7 +72,7 @@ export default function DigitalTransformationPage() {
             cloud migration, AI-native operating-model rollout. Every program
             starts with a Readiness & Maturity scorecard and Process
             Intelligence Implementation. Flexible engagement: Fixed Price,
-            Retainer, or Build & Operate Retainer — we meet you where you are.
+            Retainer, or Build & Operate Retainer, we meet you where you are.
           </QuickAnswer>
         </div>
       </Section>
@@ -81,7 +81,7 @@ export default function DigitalTransformationPage() {
         <SectionHeading
           eyebrow="Six transformation lanes"
           title="What we actually do under the 'digital transformation' label."
-          description="Most digital-transformation pitches are abstract. These are the concrete lanes we deliver — pick one, or run the Opportunity Engine and we'll route."
+          description="Most digital-transformation pitches are abstract. These are the concrete lanes we deliver, pick one, or run the Opportunity Engine and we'll route."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {TRANSFORMATION_LANES.map((l, i) => (
@@ -106,7 +106,7 @@ export default function DigitalTransformationPage() {
       <Section>
         <SectionHeading
           eyebrow="Architecture-first"
-          title="Regulated, complex, or growth-stage — each context gets a different architecture."
+          title="Regulated, complex, or growth-stage, each context gets a different architecture."
           description="Solution Architecture is a first-class deliverable. The Architecture Brief addresses security, ownership, maintenance, and evolution before construction begins."
         />
         <div className="mt-8">
@@ -114,7 +114,7 @@ export default function DigitalTransformationPage() {
             href="/foundation"
             className="text-sm text-primary hover:underline"
           >
-            Read the Foundation page — what the Architecture Brief contains →
+            Read the Foundation page, what the Architecture Brief contains →
           </Link>
         </div>
       </Section>
@@ -142,7 +142,7 @@ export default function DigitalTransformationPage() {
               Why Build & Operate
             </h3>
             <ul className="mt-3 space-y-2 text-[15px] text-ink/80 leading-relaxed">
-              <li>· Spec is incomplete — we discover the answer with you</li>
+              <li>· Spec is incomplete, we discover the answer with you</li>
               <li>· Build phase and operate phase are explicitly separated in reporting</li>
               <li>· Architecture Brief at end of week 2 sets the construction contract</li>
               <li>· Customer owns the solution at exit (key feature of this variant)</li>
@@ -153,7 +153,7 @@ export default function DigitalTransformationPage() {
               How it runs
             </h3>
             <ul className="mt-3 space-y-2 text-[15px] text-ink/80 leading-relaxed">
-              <li>· Build-then-run — the spec can be incomplete at signing; discovery happens in the engagement</li>
+              <li>· Build-then-run, the spec can be incomplete at signing; discovery happens in the engagement</li>
               <li>· Scales with the work as scope becomes clear</li>
               <li>· One vendor across operations, technology, data, and software</li>
               <li>· Solution Architecture brief is the first deliverable</li>

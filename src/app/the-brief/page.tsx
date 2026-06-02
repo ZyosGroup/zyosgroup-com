@@ -6,19 +6,19 @@ import { SITE } from "@/lib/site";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "The Zyos Brief — LinkedIn Newsletter | Zyos Group",
+  title: "The Zyos Brief: LinkedIn Newsletter | Zyos Group",
   description:
     "The Zyos Brief is Paul Ruddy's monthly read on agentic AI, operating systems for services firms, and what Zyos Group shipped this month. Subscribe on LinkedIn.",
   alternates: { canonical: "/the-brief" },
 };
 
 const TOPICS = [
-  "What's happening in the agentic-AI category — the publications, the model releases, the procurement shifts that actually move the SMB and mid-market floor.",
-  "The operating-systems-for-services-firms thesis — why services firms that operate on owned platforms compound differently from those that don't.",
-  "Founder reads from paulruddy.com — the longer-form thinking that quotes into pitch artifacts + sales conversations.",
-  "Product notes from zyos.io — what shipped this month in Zyos OS and what's queued for next.",
-  "One outside read worth your time — usually a research paper, a competitor positioning shift, or an operator essay.",
-  "What Zyos Group shipped this month — outcomes captured, cycles delivered, QBRs run.",
+  "What's happening in the agentic-AI category, the publications, the model releases, the procurement shifts that actually move the SMB and mid-market floor.",
+  "The operating-systems-for-services-firms thesis, why services firms that operate on owned platforms compound differently from those that don't.",
+  "Founder reads from paulruddy.com, the longer-form thinking that quotes into pitch artifacts + sales conversations.",
+  "Product notes from zyos.io, what shipped this month in Zyos OS and what's queued for next.",
+  "One outside read worth your time, usually a research paper, a competitor positioning shift, or an operator essay.",
+  "What Zyos Group shipped this month, outcomes captured, cycles delivered, QBRs run.",
 ];
 
 export default function TheBriefPage() {
@@ -26,7 +26,7 @@ export default function TheBriefPage() {
     <>
       <PageSchema
         path="/the-brief"
-        name="The Zyos Brief — Newsletter archive"
+        name="The Zyos Brief: Newsletter archive"
         description="Monthly LinkedIn Newsletter on agentic AI, operating systems, and what Zyos Group shipped."
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
@@ -47,7 +47,7 @@ export default function TheBriefPage() {
             AI, the operating-systems-for-services-firms thesis, founder reads
             from paulruddy.com, product notes from zyos.io, one outside read
             worth your time, and what Zyos Group shipped this month. Subscribe
-            on LinkedIn — canonical archive lives there.
+            on LinkedIn, canonical archive lives there.
           </QuickAnswer>
         </div>
 
@@ -57,7 +57,7 @@ export default function TheBriefPage() {
           </p>
           <p className="mt-3 text-[15px] text-ink/80 leading-relaxed">
             Per the content engine playbook, we don&apos;t republish in full
-            here — that would split the entity. The canonical archive is on
+            here, that would split the entity. The canonical archive is on
             LinkedIn, and the subscribe action lives there.
           </p>
           <a

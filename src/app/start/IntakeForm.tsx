@@ -48,7 +48,7 @@ export function IntakeForm() {
         </ol>
         <p className="mt-6 text-sm text-subtle">
           The diagnostic could route you to an engagement, to conditions to
-          address first, or to &ldquo;not yet — revisit&rdquo;. We disqualify when we should.
+          address first, or to &ldquo;not yet, revisit&rdquo;. We disqualify when we should.
         </p>
       </div>
     );

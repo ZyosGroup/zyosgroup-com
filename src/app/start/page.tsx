@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 
 // Target: "ai opportunity assessment" / "ai readiness assessment" (research §6.2).
 export const metadata: Metadata = {
-  title: "Start — The Zyos Opportunity Engine intake",
+  title: "Start, The Zyos Opportunity Engine intake",
   description:
     "Four questions. Ninety seconds. Diagnostic in your inbox within 60 minutes. Scoped proposal by next business day. The Zyos Group Opportunity Engine.",
   alternates: { canonical: "/start" },
@@ -49,11 +49,11 @@ export default function StartPage() {
             <QuickAnswer label="What happens next">
               You answer four questions about your industry, size, and current
               bottleneck. Within 60 minutes you receive a scored diagnostic
-              snapshot — Process Maturity, Tech + Integration, Data Quality,
+              snapshot, Process Maturity, Tech + Integration, Data Quality,
               Automation + AI Readiness, People + Knowledge Risk. By next
               business day, a real-human-reviewed scoped proposal lands. The
               routing decision is honest: Engagement recommended, Conditions to
-              address, or Not yet — revisit.
+              address, or Not yet, revisit.
             </QuickAnswer>
             <div className="mt-10 rounded-lg border border-border bg-surface p-6 md:p-8">
               <IntakeForm />
@@ -77,16 +77,16 @@ export default function StartPage() {
               </p>
               <ul className="mt-3 space-y-2 text-sm text-white/85">
                 <li>
-                  <span className="text-accent">Engagement recommended</span> —
+                  <span className="text-accent">Engagement recommended</span> , 
                   ready for PI Implementation + the first delivery cycle.
                 </li>
                 <li>
-                  <span className="text-accent">Conditions to address</span> —
+                  <span className="text-accent">Conditions to address</span> , 
                   one or two pre-conditions before we&apos;d take the engagement;
                   we tell you which.
                 </li>
                 <li>
-                  <span className="text-accent">Not yet — revisit</span> — wrong
+                  <span className="text-accent">Not yet, revisit</span>, wrong
                   fit today, here&apos;s what would change that. Disqualification is
                   itself a trust signal.
                 </li>

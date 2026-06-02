@@ -10,7 +10,7 @@ import { PageSchema } from "@/components/seo/PageSchema";
 import { SITE, FOUNDATIONAL_LINE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Foundation — PI Implementation + Solution Architecture | Zyos Group",
+  title: "Foundation: PI Implementation + Solution Architecture | Zyos Group",
   description:
     "Process Intelligence Implementation, the six deliverables, and the Solution Architecture brief addressing security, ownership, maintenance, and evolution.",
   alternates: { canonical: "/foundation" },
@@ -27,7 +27,7 @@ const NON_NEGOTIABLES = [
   },
   {
     t: "Maintenance",
-    b: "Operational responsibility (runbooks, monitoring, alerting, on-call), update responsibility (security patches, model updates, framework migrations), and SLA + escalation paths — articulated in writing before construction begins.",
+    b: "Operational responsibility (runbooks, monitoring, alerting, on-call), update responsibility (security patches, model updates, framework migrations), and SLA + escalation paths, articulated in writing before construction begins.",
   },
   {
     t: "Evolution",
@@ -39,17 +39,17 @@ const CONTEXT_TABLE = [
   {
     dim: "Regulatory",
     drives:
-      "Healthcare (HIPAA + HITRUST), finance (SOC2, SOX, PCI-DSS), legal (privilege + work-product), education (FERPA), government (FedRAMP) — shapes data residency, audit trails, IAM, agent autonomy levels, human-in-loop defaults.",
+      "Healthcare (HIPAA + HITRUST), finance (SOC2, SOX, PCI-DSS), legal (privilege + work-product), education (FERPA), government (FedRAMP), shapes data residency, audit trails, IAM, agent autonomy levels, human-in-loop defaults.",
   },
   {
     dim: "Complexity",
     drives:
-      "Distributed enterprise vs single-instance mid-market vs lean SMB — informs whether agents are per-tenant or shared, whether data is centralized or federated, whether change governance is heavyweight or lightweight.",
+      "Distributed enterprise vs single-instance mid-market vs lean SMB, informs whether agents are per-tenant or shared, whether data is centralized or federated, whether change governance is heavyweight or lightweight.",
   },
   {
     dim: "Scale",
     drives:
-      "User count, transaction volume, integration breadth, geographic distribution — drives infrastructure decisions, agent runtime capacity, observability investment.",
+      "User count, transaction volume, integration breadth, geographic distribution, drives infrastructure decisions, agent runtime capacity, observability investment.",
   },
   {
     dim: "Risk",
@@ -66,7 +66,7 @@ const CONTEXT_TABLE = [
 const ARCHITECTURE_BRIEF_SECTIONS = [
   "Context summary (regulatory + complexity + scale + risk + maturity, from Stage 1 PI)",
   "Architecture diagram (the topology component, customer-specific)",
-  "Component selection rationale — for each layer, why we built vs configured, what we bought vs hosted, what we own vs license",
+  "Component selection rationale, for each layer, why we built vs configured, what we bought vs hosted, what we own vs license",
   "Security posture + certifications mapped to compliance",
   "Ownership matrix (who owns each artifact at each lifecycle stage)",
   "Maintenance + operational responsibility matrix + SLAs",
@@ -79,7 +79,7 @@ export default function FoundationPage() {
     <>
       <PageSchema
         path="/foundation"
-        name="Foundation — PI Implementation + Solution Architecture"
+        name="Foundation: PI Implementation + Solution Architecture"
         description="Stage 2 of the customer journey: build the integrated foundation with PI Implementation and a context-specific architecture brief."
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
@@ -88,7 +88,7 @@ export default function FoundationPage() {
       />
 
       <Section>
-        <p className="eyebrow mb-4">Foundation · Stage 2 — Build</p>
+        <p className="eyebrow mb-4">Foundation · Stage 2, Build</p>
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
           Foundational builders. Process Intelligence first. Agents second.
           Value-impact always.
@@ -98,7 +98,7 @@ export default function FoundationPage() {
           <QuickAnswer>
             Process Intelligence maps your processes and your value stream. We
             discover where you need automation, where you need insights, where
-            you need new technology — and we architect a plan to get all of
+            you need new technology, and we architect a plan to get all of
             that in place. Then we begin to automate the most important
             processes across your business with agents that either operate them
             or scale them. Every Retainer and As-A-Service engagement starts
@@ -116,7 +116,7 @@ export default function FoundationPage() {
         </p>
         <p className="mt-4 max-w-prose text-[15px] text-ink/85 leading-relaxed">
           You don&apos;t deploy an agent on top of an unobserved process and
-          hope it works. You first <em>see</em> the process — its inputs,
+          hope it works. You first <em>see</em> the process, its inputs,
           decisions, exceptions, handoffs, latency, value-impact per step.
           That&apos;s Process Intelligence. Then you deploy the agent on the
           right slice of the process, instrumented to prove what it changed.
@@ -127,7 +127,7 @@ export default function FoundationPage() {
         <SectionHeading
           eyebrow="Process Intelligence Implementation"
           title="Six deliverables. 30 days. The truth-finding pass."
-          description="Scroll through an anonymized PI deliverable — the artifact that turns a hypothesis into a real plan with a real architecture and a real prioritized backlog."
+          description="Scroll through an anonymized PI deliverable, the artifact that turns a hypothesis into a real plan with a real architecture and a real prioritized backlog."
         />
         <div className="mt-10">
           <PiDeliverableScrollthrough />
@@ -177,7 +177,7 @@ export default function FoundationPage() {
         <SectionHeading
           eyebrow="The four non-negotiables"
           title="Security · Ownership · Maintenance · Evolution."
-          description="Beyond functional design, every Zyos architecture explicitly addresses these four — articulated in the Architecture Brief before construction begins."
+          description="Beyond functional design, every Zyos architecture explicitly addresses these four, articulated in the Architecture Brief before construction begins."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {NON_NEGOTIABLES.map((c) => (
@@ -249,7 +249,7 @@ export default function FoundationPage() {
               Start your PI Implementation.
             </h2>
             <p className="mt-4 text-white/80 max-w-prose">
-              Customers who refuse PI are customers we politely decline —
+              Customers who refuse PI are customers we politely decline , 
               without it, every downstream cycle is guessing.
             </p>
           </div>

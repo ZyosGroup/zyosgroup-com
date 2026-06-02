@@ -12,11 +12,11 @@ import { SITE } from "@/lib/site";
 const AAAS_FAQS = [
   {
     q: "What is agentic AI consulting?",
-    a: "Agentic AI consulting is the design, deployment, and ongoing operation of AI agents — autonomous, multi-step software workers — across business functions. Unlike single-task chatbots, agentic systems span discovery, decision-making, execution, and reporting. Zyos Group's Agent as a Service (AaaS) productizes this work into a continuous engagement with five named variants: Workflows, Systems, Middleware, Lean, and Insights.",
+    a: "Agentic AI consulting is the design, deployment, and ongoing operation of AI agents, autonomous, multi-step software workers, across business functions. Unlike single-task chatbots, agentic systems span discovery, decision-making, execution, and reporting. Zyos Group's Agent as a Service (AaaS) productizes this work into a continuous engagement with five named variants: Workflows, Systems, Middleware, Lean, and Insights.",
   },
   {
     q: "What does Agent as a Service include?",
-    a: "Agent as a Service is a continuous service in which Zyos designs, deploys, and operates AI agents on the customer's behalf. The customer does not manage prompts, infrastructure, agent reliability, model updates, framework migrations, or integration drift — Zyos does, as a service. Every engagement begins with Process Intelligence Implementation as the first delivery cycle. Support is part of the service.",
+    a: "Agent as a Service is a continuous service in which Zyos designs, deploys, and operates AI agents on the customer's behalf. The customer does not manage prompts, infrastructure, agent reliability, model updates, framework migrations, or integration drift, Zyos does, as a service. Every engagement begins with Process Intelligence Implementation as the first delivery cycle. Support is part of the service.",
   },
   {
     q: "What are the five AaaS variants?",
@@ -24,17 +24,17 @@ const AAAS_FAQS = [
   },
   {
     q: "How is agent reliability measured?",
-    a: "Reliability is part of the SLA. Every agent ships with a visible task log — the agent's reasoning trace, recorded and displayed to the customer. Monthly reports include agent throughput, reliability, cost, drift, and value-impact captured. The QBR shows the trend. Visible task log is the moat: most agentic-AI sites show outputs; we show the reasoning.",
+    a: "Reliability is part of the SLA. Every agent ships with a visible task log, the agent's reasoning trace, recorded and displayed to the customer. Monthly reports include agent throughput, reliability, cost, drift, and value-impact captured. The QBR shows the trend. Visible task log is the moat: most agentic-AI sites show outputs; we show the reasoning.",
   },
   {
     q: "How does an AaaS engagement work?",
-    a: "AaaS is a flexible, continuous engagement scoped to the variant that fits — narrow (Lean) or broad (Systems, Middleware). Support is part of the service, not a separate ticket. Process Intelligence Implementation is the first delivery cycle, always. Customers who refuse PI are customers we politely decline.",
+    a: "AaaS is a flexible, continuous engagement scoped to the variant that fits, narrow (Lean) or broad (Systems, Middleware). Support is part of the service, not a separate ticket. Process Intelligence Implementation is the first delivery cycle, always. Customers who refuse PI are customers we politely decline.",
   },
 ];
 
 // Primary KW: "agentic ai consulting" (vol 90, KD 5, $39 CPC) per research §6.2.
 export const metadata: Metadata = {
-  title: "Agent as a Service — Agentic AI Consulting | Zyos Group",
+  title: "Agent as a Service: Agentic AI Consulting | Zyos Group",
   description:
     "Agent as a Service: we design, deploy, and run AI agents on your behalf. Workflows, Systems, Middleware, Lean, Insights variants. Continuous engagement, support included.",
   alternates: { canonical: "/solutions/agent-as-a-service" },
@@ -43,19 +43,19 @@ export const metadata: Metadata = {
 const VARIANTS = [
   {
     name: "Workflows",
-    body: "Multi-step agent orchestrations that span an entire business function — sales outbound + ABM, content + distribution, support tier-1, onboarding orchestration. The default starting variant for most engagements.",
+    body: "Multi-step agent orchestrations that span an entire business function, sales outbound + ABM, content + distribution, support tier-1, onboarding orchestration. The default starting variant for most engagements.",
   },
   {
     name: "Systems",
-    body: "Cross-system agents that monitor + act across the stack — anomaly detection, root-cause hypothesis, alert triage. The agent layer that closes the BI → action gap.",
+    body: "Cross-system agents that monitor + act across the stack, anomaly detection, root-cause hypothesis, alert triage. The agent layer that closes the BI → action gap.",
   },
   {
     name: "Middleware",
-    body: "Integration-tier agents that sit between systems — translating events, enriching records, routing tasks. Replaces brittle iPaaS workflows with adaptive agents.",
+    body: "Integration-tier agents that sit between systems, translating events, enriching records, routing tasks. Replaces brittle iPaaS workflows with adaptive agents.",
   },
   {
     name: "Lean",
-    body: "Single-purpose, narrowly-scoped agents — Tier-1 ticket triage, expense compliance, reconciliation, simple reply triage. Lower-cost variant for one focused job.",
+    body: "Single-purpose, narrowly-scoped agents, Tier-1 ticket triage, expense compliance, reconciliation, simple reply triage. Lower-cost variant for one focused job.",
   },
   {
     name: "Insights",
@@ -68,8 +68,8 @@ export default function AaaSPage() {
     <>
       <PageSchema
         path="/solutions/agent-as-a-service"
-        name="Agent as a Service (AaaS) — Zyos Group"
-        description="Continuous AI-agent operations. Design, deploy, run AI agents on your behalf — across Workflows, Systems, Middleware, Lean, and Insights variants."
+        name="Agent as a Service (AaaS): Zyos Group"
+        description="Continuous AI-agent operations. Design, deploy, run AI agents on your behalf, across Workflows, Systems, Middleware, Lean, and Insights variants."
         service={{ type: "Agent as a Service" }}
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
@@ -89,7 +89,7 @@ export default function AaaSPage() {
           <QuickAnswer>
             Agent as a Service (AaaS) is a continuous service in which
             Zyos Group designs, deploys, and operates AI agents on the
-            customer&apos;s behalf — sales outbound, content engine, support
+            customer&apos;s behalf, sales outbound, content engine, support
             tier-1, process anomaly detection, finance reconciliation, HR
             onboarding. Variants: Workflows, Systems, Middleware, Lean,
             Insights. The customer doesn&apos;t manage prompts, infrastructure,
@@ -99,8 +99,8 @@ export default function AaaSPage() {
         </div>
 
         <p className="mt-10 max-w-prose text-[15px] text-ink/85 leading-relaxed">
-          Most agentic-AI vendors sell single-task agents — a sales agent, a
-          marketing agent, a support agent — operated in isolation. Zyos
+          Most agentic-AI vendors sell single-task agents, a sales agent, a
+          marketing agent, a support agent, operated in isolation. Zyos
           deploys comprehensive agent workflows that span an entire business
           function, and we run them across BI + Software + Operations as the
           integration layer. That integration is what makes agents <em>worth
@@ -112,7 +112,7 @@ export default function AaaSPage() {
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="Five productized variants"
-          title="Each variant earns its name — buyer recognition, scope clarity, and productization compounding."
+          title="Each variant earns its name, buyer recognition, scope clarity, and productization compounding."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {VARIANTS.map((v, i) => (
@@ -155,7 +155,7 @@ export default function AaaSPage() {
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="What you don't manage"
-          title="Prompts. Infrastructure. Reliability. Drift. We do — as a service."
+          title="Prompts. Infrastructure. Reliability. Drift. We do, as a service."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {[
@@ -165,7 +165,7 @@ export default function AaaSPage() {
             },
             {
               t: "Infrastructure",
-              b: "Agent runtime, observability, scaling, secret management, IAM — all on the Foundational AI Layer.",
+              b: "Agent runtime, observability, scaling, secret management, IAM, all on the Foundational AI Layer.",
             },
             {
               t: "Reliability",
@@ -173,11 +173,11 @@ export default function AaaSPage() {
             },
             {
               t: "Evolution",
-              b: "Model updates, framework migrations, capability upgrades — we absorb the platform churn.",
+              b: "Model updates, framework migrations, capability upgrades, we absorb the platform churn.",
             },
             {
               t: "Integrations",
-              b: "Connecting agents into your CRM, ERP, support, BI, marketing stack — once, then maintained.",
+              b: "Connecting agents into your CRM, ERP, support, BI, marketing stack, once, then maintained.",
             },
             {
               t: "Reporting",
@@ -209,8 +209,8 @@ export default function AaaSPage() {
             </h3>
             <ul className="mt-3 space-y-2 text-[15px] text-ink/80 leading-relaxed">
               <li>· As-A-Service · continuous engagement</li>
-              <li>· Scoped to the variant that fits — narrow (Lean) or broad (Systems / Middleware)</li>
-              <li>· Support is part of the service — no separate ticket</li>
+              <li>· Scoped to the variant that fits, narrow (Lean) or broad (Systems / Middleware)</li>
+              <li>· Support is part of the service, no separate ticket</li>
               <li>· PI Implementation is the first delivery cycle, always</li>
             </ul>
           </article>
@@ -219,11 +219,11 @@ export default function AaaSPage() {
               What we ship in the first 90 days
             </h3>
             <ul className="mt-3 space-y-2 text-[15px] text-ink/80 leading-relaxed">
-              <li>· PI Implementation deliverable (six outputs) — weeks 1–2</li>
-              <li>· Architecture Brief signed — by end of week 2</li>
-              <li>· First agent in production with visible task log — by week 6</li>
-              <li>· Measured outcome vs target — at the end of each monthly cycle</li>
-              <li>· First QBR with value-impact recap — at month 3</li>
+              <li>· PI Implementation deliverable (six outputs), weeks 1–2</li>
+              <li>· Architecture Brief signed, by end of week 2</li>
+              <li>· First agent in production with visible task log, by week 6</li>
+              <li>· Measured outcome vs target, at the end of each monthly cycle</li>
+              <li>· First QBR with value-impact recap, at month 3</li>
             </ul>
           </article>
         </div>
@@ -238,7 +238,7 @@ export default function AaaSPage() {
       </Section>
 
       <Faq
-        eyebrow="Agentic AI consulting — FAQ"
+        eyebrow="Agentic AI consulting, FAQ"
         title="What buyers ask about Agent as a Service."
         description="Lifted from prospect calls. Published as FAQPage schema for AI Overview + PAA citation."
         faqs={AAAS_FAQS}
@@ -255,7 +255,7 @@ export default function AaaSPage() {
             </h2>
             <p className="mt-4 text-white/80 max-w-prose">
               Three years from now, the procurement question every B2B buyer
-              asks won&apos;t be &quot;do you build agents?&quot; — it&apos;ll
+              asks won&apos;t be &quot;do you build agents?&quot;, it&apos;ll
               be &quot;show me your customers&apos; agents that are still
               running.&quot; We build for that question.
             </p>

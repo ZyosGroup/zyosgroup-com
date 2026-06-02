@@ -156,7 +156,7 @@ export const SAMPLE_OUTCOMES: Outcome[] = [
   {
     hero: "1 piece / week",
     context: "Content engine + GEO · ongoing",
-    customer: "Internal — content-engine-playbook cadence",
+    customer: "Internal, content-engine-playbook cadence",
     type: "quality",
     serviceLine: "Integrated Marketing",
     engagementModel: "Retainer",

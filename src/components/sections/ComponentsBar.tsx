@@ -16,7 +16,7 @@ const COMPONENTS = [
   {
     title: "Software",
     blurb:
-      "Custom application development plus the technology layer — infrastructure, platforms, integrations, cloud, security, devops. We build when off-the-shelf can't, and integrate cleanly when it can.",
+      "Custom application development plus the technology layer, infrastructure, platforms, integrations, cloud, security, devops. We build when off-the-shelf can't, and integrate cleanly when it can.",
     proof: "Zyos OS itself, shipped weekly",
     href: "/consulting/software-and-data",
   },
@@ -34,7 +34,7 @@ export function ComponentsBar() {
     <Section>
       <SectionHeading
         eyebrow="Three integrated components"
-        title="Business Intelligence, Software, Operations — with Agents running across all three."
+        title="Business Intelligence, Software, Operations, with Agents running across all three."
         description="Most firms deliver one or two of these as separate practices. Almost nobody integrates all three with Agents as the cross-cutting layer. That integration is the differentiator."
       />
 
@@ -62,7 +62,7 @@ export function ComponentsBar() {
         ))}
       </div>
 
-      {/* Agents bar — horizontal layer beneath the three components */}
+      {/* Agents bar, horizontal layer beneath the three components */}
       <Link
         href="/solutions/agent-as-a-service"
         className="mt-4 group block rounded-lg border border-primary/15 bg-primary text-white p-6 md:p-7 hover:bg-ink transition-colors"
@@ -70,7 +70,7 @@ export function ComponentsBar() {
         <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
           <div className="md:w-1/3">
             <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
-              Agents — running across all three
+              Agents, running across all three
             </p>
             <h3 className="mt-1 text-xl font-semibold">
               The AI-native integration + operational layer

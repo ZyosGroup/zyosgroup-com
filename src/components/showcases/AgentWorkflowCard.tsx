@@ -43,7 +43,7 @@ export function AgentWorkflowCard({
       <header className="px-6 py-5 border-b border-border flex flex-wrap items-baseline justify-between gap-3">
         <div>
           <p className="mono text-[11px] uppercase tracking-[0.16em] text-subtle">
-            {area} · AaaS — {variant}
+            {area} · AaaS, {variant}
           </p>
           <h3 className="mt-1 text-xl font-semibold text-primary tracking-tightish">
             {title}
@@ -56,7 +56,7 @@ export function AgentWorkflowCard({
         {/* Animated workflow nodes (Framer Motion stagger on scroll-into-view) */}
         <ol
           className="border-b md:border-b-0 md:border-r border-border p-6 space-y-3"
-          aria-label={`${title} — workflow steps`}
+          aria-label={`${title}, workflow steps`}
         >
           {steps.map((step, idx) => (
             <motion.li

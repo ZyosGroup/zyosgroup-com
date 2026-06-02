@@ -66,7 +66,7 @@ export function NetworkMotif({ className = "" }: { className?: string }) {
       {outer.map((p, i) => (
         <circle key={`n${i}`} cx={p.x} cy={p.y} r="11" fill="#48c1eb" />
       ))}
-      {/* center node — navy, the anchor */}
+      {/* center node, navy, the anchor */}
       <circle cx={cx} cy={cy} r="14" fill="#1569ac" />
     </svg>
   );

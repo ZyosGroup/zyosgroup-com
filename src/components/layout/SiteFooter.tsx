@@ -60,7 +60,7 @@ export function SiteFooter() {
       <div className="container-content py-14">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-6">
           <div className="col-span-2">
-            <Link href="/" className="flex items-center" aria-label="Zyos Group — home">
+            <Link href="/" className="flex items-center" aria-label="Zyos Group, home">
               <Image
                 src="/brand/logo-horizontal-color.png"
                 alt="Zyos Group"
@@ -70,7 +70,7 @@ export function SiteFooter() {
               />
             </Link>
             <p className="mt-3 max-w-sm text-sm text-subtle leading-relaxed">
-              {TAGLINE_SHORT} We assess maturity, architect the right solution, and infuse AI into your operations — measured against business performance.
+              {TAGLINE_SHORT} We assess maturity, architect the right solution, and infuse AI into your operations, measured against business performance.
             </p>
             <p className="mt-4 text-xs text-subtle">
               Engagement models: Fixed Price · Retainer · As-A-Service (AaaS / GaaS)

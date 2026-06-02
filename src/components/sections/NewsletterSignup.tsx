@@ -13,7 +13,7 @@ export function NewsletterSignup() {
           </h2>
           <p className="mt-4 text-[15px] text-ink/80 leading-relaxed max-w-prose">
             Paul&apos;s monthly take on agentic AI, operating systems, and what we
-            shipped this month. Published on LinkedIn Newsletter — no inbox spam,
+            shipped this month. Published on LinkedIn Newsletter, no inbox spam,
             just one Tuesday-morning issue with the patterns worth your time.
           </p>
         </div>

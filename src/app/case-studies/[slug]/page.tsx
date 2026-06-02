@@ -72,7 +72,7 @@ export default function CaseStudyPage({
         )}
       />
 
-      {/* HERO — distinct from blog: meta chips + KPI band on dark primary */}
+      {/* HERO, distinct from blog: meta chips + KPI band on dark primary */}
       <Section className="bg-primary text-white">
         <Link
           href="/case-studies"
@@ -130,7 +130,7 @@ export default function CaseStudyPage({
         </div>
       </Section>
 
-      {/* Situation / Work / Outcome arc — three columns (distinct from blog prose) */}
+      {/* Situation / Work / Outcome arc, three columns (distinct from blog prose) */}
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="The arc"
@@ -159,7 +159,7 @@ export default function CaseStudyPage({
         <SectionHeading
           eyebrow="The operating-model arc"
           title="What discovery surfaced, what we built, what the QBR recalibrated."
-          description="Every engagement runs the same three-phase shape — foundation before automation, measured every cycle."
+          description="Every engagement runs the same three-phase shape, foundation before automation, measured every cycle."
         />
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {c.phases.map((ph) => (
@@ -195,7 +195,7 @@ export default function CaseStudyPage({
               &ldquo;{c.testimonial.quote}&rdquo;
             </p>
             <cite className="mono mt-5 block text-[12px] not-italic text-subtle">
-              — {c.testimonial.attribution}
+              {c.testimonial.attribution}
             </cite>
           </blockquote>
         </Section>
@@ -203,7 +203,7 @@ export default function CaseStudyPage({
 
       {c.faqs.length > 0 ? (
         <Faq
-          eyebrow="Case study — FAQ"
+          eyebrow="Case study, FAQ"
           title="Questions about this engagement."
           description="Published as FAQPage schema for AI Overview + People Also Ask citation."
           faqs={c.faqs}

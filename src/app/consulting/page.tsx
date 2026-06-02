@@ -10,7 +10,7 @@ import { ArrowUpRight } from "lucide-react";
 // Primary KW: "ai consulting services" (vol 2,900, KD 20) — secondary: digital
 // transformation consulting (vol 1,900, KD 1), operations consulting (vol 1,900, KD 0).
 export const metadata: Metadata = {
-  title: "Consulting — AI Consulting Services | Zyos Group",
+  title: "Consulting: AI Consulting Services | Zyos Group",
   description:
     "Zyos Group Consulting: Software & Data, Digital Transformation, Operations & Scaling, Integrated Marketing. Fixed Price or Retainer. Delivered on Zyos OS.",
   alternates: { canonical: "/consulting" },
@@ -49,7 +49,7 @@ export default function ConsultingPage() {
       <PageSchema
         path="/consulting"
         name="Zyos Group Consulting"
-        description="Human-led, scoped, expert work — delivered on Zyos OS so deliverables compound into reusable IP."
+        description="Human-led, scoped, expert work, delivered on Zyos OS so deliverables compound into reusable IP."
         service={{ type: "AI consulting services" }}
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
@@ -60,7 +60,7 @@ export default function ConsultingPage() {
       <Section>
         <p className="eyebrow mb-4">Consulting arm</p>
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Human-led, scoped, expert work — delivered on the operating system.
+          Human-led, scoped, expert work, delivered on the operating system.
         </h1>
 
         <div className="mt-10 max-w-3xl">
@@ -69,7 +69,7 @@ export default function ConsultingPage() {
             practice areas: Software & Data, Digital Transformation, Operations
             & Scaling, and Integrated Marketing. Every engagement is delivered
             on Zyos OS so deliverables compound into reusable IP. Engagement
-            models: Fixed Price (defined scope) or Retainer (evolving scope —
+            models: Fixed Price (defined scope) or Retainer (evolving scope , 
             Standard or Build & Operate variants). Process Intelligence
             Implementation is always the first delivery cycle of every Retainer.
           </QuickAnswer>
@@ -79,7 +79,7 @@ export default function ConsultingPage() {
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="Four practice areas"
-          title="Pick a starting practice — or run the Opportunity Engine and we'll route."
+          title="Pick a starting practice, or run the Opportunity Engine and we'll route."
           description="Most engagements touch 2–3 practice areas. Practice-area boundaries are how we organize our experts; from the customer side it's one team on Zyos OS."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2">
@@ -133,7 +133,7 @@ export default function ConsultingPage() {
             </h3>
             <p className="mt-2 text-sm text-ink/80 leading-relaxed">
               Ongoing advisory + iteration where scope evolves continuously.
-              The default Retainer shape — &quot;I need ongoing help.&quot;
+              The default Retainer shape, &quot;I need ongoing help.&quot;
             </p>
             <p className="mt-4 mono text-[11px] text-subtle uppercase tracking-[0.16em]">
               Evolving scope · ongoing

@@ -37,14 +37,14 @@ export const ANALYTICS = {
 
 // Locked tagline — verbatim from canonical-entity-descriptions §Entity 2.
 export const TAGLINE =
-  "Agentic transformation built for ROI. We assess your maturity, architect the right solution for your context, and infuse AI into your operations — measured against business performance.";
+  "Agentic transformation built for ROI. We assess your maturity, architect the right solution for your context, and infuse AI into your operations, measured against business performance.";
 
 export const TAGLINE_SHORT =
   "Agentic transformation built for ROI.";
 
 // Hero from positioning architecture — preserved entity nouns.
 export const HERO_SUBHEAD =
-  "Zyos Group turns companies into agentic-driven companies — by uncovering operational maturity, building the integrated foundation, and executing the roadmap that infuses AI into how you operate. Outcomes: increased revenue, improved efficiency, scaled operations, reduced risk, and real-time business insight.";
+  "Zyos Group turns companies into agentic-driven companies, by uncovering operational maturity, building the integrated foundation, and executing the roadmap that infuses AI into how you operate. Outcomes: increased revenue, improved efficiency, scaled operations, reduced risk, and real-time business insight.";
 
 // Brand line for foundational-builders positioning.
 export const FOUNDATIONAL_LINE =
@@ -52,11 +52,11 @@ export const FOUNDATIONAL_LINE =
 
 // Canonical Org description (short, for meta)
 export const META_DESCRIPTION =
-  "Digital transformation & AI consulting for SMBs, PE portfolios, and associations. One vendor across operations, technology, data, and software — agentic transformation built for ROI.";
+  "Digital transformation & AI consulting for SMBs, PE portfolios, and associations. One vendor across operations, technology, data, and software, agentic transformation built for ROI.";
 
 // Canonical Org description (long, for /about hero + footer schema)
 export const ORG_LONG_DESCRIPTION =
-  "Zyos Group is an ROI-focused agentic-transformation partner. We assess operational maturity, architect the right solution for your context (regulated, complex, or growth-stage), build the integrated foundation — Business Intelligence + Software + Operations + Agents running across — and execute the roadmap that infuses AI into how you operate. Every architecture addresses security, ownership, maintenance, and evolution as first-class concerns. Our operating model (Measure → Deliver → Continuously Improve) governs every engagement; Customer Success (QBRs, OKRs, monthly reports, customer support) runs through Continuous Improvement. We target High-Growth SMBs, Private Equity, and Associations. Founded by Paul Ruddy.";
+  "Zyos Group is an ROI-focused agentic-transformation partner. We assess operational maturity, architect the right solution for your context (regulated, complex, or growth-stage), build the integrated foundation, Business Intelligence + Software + Operations + Agents running across, and execute the roadmap that infuses AI into how you operate. Every architecture addresses security, ownership, maintenance, and evolution as first-class concerns. Our operating model (Measure → Deliver → Continuously Improve) governs every engagement; Customer Success (QBRs, OKRs, monthly reports, customer support) runs through Continuous Improvement. We target High-Growth SMBs, Private Equity, and Associations. Founded by Paul Ruddy.";
 
 // Topical authority — the entity-anchor claims Zyos makes for LLM + Google
 // E-E-A-T and entity recognition. Every term must appear somewhere in the
@@ -95,7 +95,7 @@ export const KNOWS_ABOUT = [
 
 // Paul Ruddy biography — drives Person schema and the About page founder copy.
 export const PAUL_BIO_SHORT =
-  "Founder and CEO of Zyos Group. Two decades scaling practices in IT managed services, software development, and business intelligence — now compounding into the Zyos Operating System.";
+  "Founder and CEO of Zyos Group. Two decades scaling practices in IT managed services, software development, and business intelligence, now compounding into the Zyos Operating System.";
 
 // Paul's verifiable identity surfaces for Person.sameAs.
 export const PAUL_SAME_AS = [
@@ -132,7 +132,7 @@ export const SERVICE_CATALOG: ReadonlyArray<{
     path: "/solutions/growth-as-a-service",
     serviceType: "Growth as a Service",
     description:
-      "Continuous growth operations for SMB B2B — website, GBP, ads + LSA, SEO content, GEO — operated on Zyos OS.",
+      "Continuous growth operations for SMB B2B, website, GBP, ads + LSA, SEO content, GEO, operated on Zyos OS.",
   },
   {
     name: "Software & Data Consulting",

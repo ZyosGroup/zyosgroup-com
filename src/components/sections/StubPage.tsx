@@ -45,7 +45,7 @@ export function StubPage({
           <p className="mt-3 text-[15px] text-ink/80 leading-relaxed">
             This page is scaffolded with the locked positioning. Detailed
             showcases, case studies, and pricing detail land in the next
-            content pass. Until then — start with a measurement.
+            content pass. Until then, start with a measurement.
           </p>
           <div className="mt-5">
             <CtaButton href="/start">Start with a measurement</CtaButton>

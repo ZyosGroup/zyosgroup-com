@@ -15,11 +15,11 @@ import {
 const PLATFORM_FAQS = [
   {
     q: "What is Zyos OS?",
-    a: "Zyos OS is the AI operating system that runs every Zyos Group customer engagement end-to-end — intake, scoring, proposal generation, engagement Kanban, OKR + KPI tracking, Customer Success cadence, monthly reports, and Quarterly Business Reviews — on one connected system. It is the operating system Zyos Group built to run its own services firm, and the same platform powers Agent as a Service and Growth as a Service.",
+    a: "Zyos OS is the AI operating system that runs every Zyos Group customer engagement end-to-end, intake, scoring, proposal generation, engagement Kanban, OKR + KPI tracking, Customer Success cadence, monthly reports, and Quarterly Business Reviews, on one connected system. It is the operating system Zyos Group built to run its own services firm, and the same platform powers Agent as a Service and Growth as a Service.",
   },
   {
     q: "Is Zyos OS the same thing as Zyos Group?",
-    a: "No. Zyos Group is the services firm (consulting + productized solutions, founded by Paul Ruddy in 2009). Zyos OS is the software product that runs the firm — available at zyos.io as a SaaS platform for other B2B services firms that want to operate on the same operating system rather than rebuild it.",
+    a: "No. Zyos Group is the services firm (consulting + productized solutions, founded by Paul Ruddy in 2009). Zyos OS is the software product that runs the firm, available at zyos.io as a SaaS platform for other B2B services firms that want to operate on the same operating system rather than rebuild it.",
   },
   {
     q: "What is the Foundational AI Layer?",
@@ -31,13 +31,13 @@ const PLATFORM_FAQS = [
   },
   {
     q: "Can I license Zyos OS for my own services firm?",
-    a: "Yes. zyos.io is the SaaS product surface for services firms that want to license the operating system rather than rebuild it. The platform is the same one running Zyos Group's customer engagements — your engagements, your team, your IP compounding on the platform that runs ours.",
+    a: "Yes. zyos.io is the SaaS product surface for services firms that want to license the operating system rather than rebuild it. The platform is the same one running Zyos Group's customer engagements, your engagements, your team, your IP compounding on the platform that runs ours.",
   },
 ];
 
 // Primary KW: "ai operating system" (vol 1,000, KD 26) + "agentic ai platform" (vol 880).
 export const metadata: Metadata = {
-  title: "Platform — The Zyos Operating System | Zyos Group",
+  title: "Platform: The Zyos Operating System | Zyos Group",
   description:
     "Zyos OS is the operating system that runs every Zyos Group engagement. Intake → scoring → proposal → Kanban → Customer Success → QBR. One connected system.",
   alternates: { canonical: "/platform" },
@@ -52,7 +52,7 @@ const TOUR = [
   {
     n: "02",
     t: "Proposal generation",
-    b: "Scoped proposal generated from the diagnostic — engagement type, variant, value-impact OKRs named. Human-reviewed before send.",
+    b: "Scoped proposal generated from the diagnostic, engagement type, variant, value-impact OKRs named. Human-reviewed before send.",
   },
   {
     n: "03",
@@ -81,7 +81,7 @@ export default function PlatformPage() {
     <>
       <PageSchema
         path="/platform"
-        name="The Zyos Operating System — Zyos Group platform"
+        name="The Zyos Operating System: Zyos Group platform"
         description="The operating system that runs every Zyos Group customer engagement end-to-end."
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
@@ -107,9 +107,9 @@ export default function PlatformPage() {
             An AI Operating System is the platform that runs an enterprise&apos;s
             agent fleet, data pipelines, and operational measurements
             end-to-end. Zyos OS is the operating system Zyos Group built to run
-            its own customer engagements — intake, scoring, proposal generation,
+            its own customer engagements, intake, scoring, proposal generation,
             engagement Kanban, OKR + KPI tracking, Customer Success cadence,
-            and Quarterly Business Reviews — on one connected system.
+            and Quarterly Business Reviews, on one connected system.
           </QuickAnswer>
         </div>
       </Section>
@@ -145,7 +145,7 @@ export default function PlatformPage() {
       <Section>
         <SectionHeading
           eyebrow="The dashboards"
-          title="Eight standard surfaces — the same ones live in every customer's Zyos OS."
+          title="Eight standard surfaces, the same ones live in every customer's Zyos OS."
           description="Real product capabilities. Anonymized previews; demo-data screenshots replace these as ZyosApp captures are pulled."
         />
         <div className="mt-10">
@@ -163,7 +163,7 @@ export default function PlatformPage() {
           {[
             {
               t: "Agent runtime",
-              b: "Orchestrates multi-step agent workflows. Visible task logs — the agent's reasoning trace — recorded and displayed.",
+              b: "Orchestrates multi-step agent workflows. Visible task logs, the agent's reasoning trace, recorded and displayed.",
             },
             {
               t: "Tool integrations",
@@ -196,7 +196,7 @@ export default function PlatformPage() {
         <SectionHeading
           eyebrow="Want to license Zyos OS?"
           title="For services firms that want to run engagements on the same operating system."
-          description="If you operate a B2B services firm and want to license the operating system rather than rebuild it — visit zyos.io. This is the one canonical Org → Product editorial link."
+          description="If you operate a B2B services firm and want to license the operating system rather than rebuild it, visit zyos.io. This is the one canonical Org → Product editorial link."
         />
         <div className="mt-8">
           <a

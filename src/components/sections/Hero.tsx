@@ -5,7 +5,7 @@ import { TAGLINE, HERO_SUBHEAD, FOUNDATIONAL_LINE } from "@/lib/site";
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      {/* Brand gradient wash — navy→cyan, subtle, top-right */}
+      {/* Brand gradient wash, navy→cyan, subtle, top-right */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
@@ -16,7 +16,7 @@ export function Hero() {
       />
       <div className="container-content pt-16 pb-20 md:pt-24 md:pb-28">
         <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
-          {/* LEFT — copy */}
+          {/* LEFT, copy */}
           <div>
             <p className="eyebrow mb-5">Digital transformation &amp; AI consulting · one vendor</p>
             <h1 className="text-4xl md:text-6xl font-semibold tracking-tightish text-primary leading-[1.05]">
@@ -42,7 +42,7 @@ export function Hero() {
             </p>
           </div>
 
-          {/* RIGHT — brand network motif (decorative, hidden on small screens) */}
+          {/* RIGHT, brand network motif (decorative, hidden on small screens) */}
           <div className="hidden lg:block">
             <NetworkMotif className="mx-auto w-full max-w-md" />
           </div>

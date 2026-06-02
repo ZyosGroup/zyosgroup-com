@@ -10,12 +10,12 @@ const STEPS = [
   {
     n: "02",
     label: "Diagnostic",
-    body: "Scored snapshot in your inbox within 60 minutes — Process Maturity, Tech + Integration, Data Quality, AI Readiness, People + Knowledge Risk.",
+    body: "Scored snapshot in your inbox within 60 minutes, Process Maturity, Tech + Integration, Data Quality, AI Readiness, People + Knowledge Risk.",
   },
   {
     n: "03",
     label: "Proposal",
-    body: "Engagement recommended · Conditions to address · Not yet — revisit. Real-human-reviewed proposal by next business day.",
+    body: "Engagement recommended · Conditions to address · Not yet, revisit. Real-human-reviewed proposal by next business day.",
   },
 ];
 
@@ -25,7 +25,7 @@ export function OpportunityEngineDemo() {
       <SectionHeading
         eyebrow="The Opportunity Engine"
         title="The sales process is a working product, not a sales pitch."
-        description="Most firms sell outcomes and figure out scope after the contract. We sell the measurement — scope follows from what the measurement surfaces."
+        description="Most firms sell outcomes and figure out scope after the contract. We sell the measurement, scope follows from what the measurement surfaces."
       />
 
       <div className="mt-12 grid gap-6 lg:grid-cols-[1.1fr_1fr]">

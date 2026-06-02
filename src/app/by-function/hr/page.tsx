@@ -5,7 +5,7 @@ import { SAMPLE_WORKFLOWS } from "@/components/showcases/sample-workflows";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "AI Agents for HR — Onboarding + Help Desk + Talent | Zyos Group",
+  title: "AI Agents for HR: Onboarding + Help Desk + Talent | Zyos Group",
   description:
     "AI agents for HR: onboarding orchestration, employee help desk, talent screening, performance review prep, compliance training. People work to humans; policy + process to agents.",
   alternates: { canonical: "/by-function/hr" },
@@ -18,9 +18,9 @@ export default function HRFunctionPage() {
     <>
       <PageSchema
         path="/by-function/hr"
-        name="AI Agents for Human Resources — Zyos Group"
-        description="Agentic AI applied to the HR function — onboarding, employee help desk, talent screening, performance review prep, compliance training."
-        service={{ type: "Agent as a Service — HR" }}
+        name="AI Agents for Human Resources: Zyos Group"
+        description="Agentic AI applied to the HR function, onboarding, employee help desk, talent screening, performance review prep, compliance training."
+        service={{ type: "Agent as a Service, HR" }}
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
           { name: "By function", url: `${SITE.url}/by-function/hr` },
@@ -70,12 +70,12 @@ export default function HRFunctionPage() {
           "Project completion records",
           "Learning system usage",
         ]}
-        software="HRIS, payroll, learning management, ATS, employee survey platform, internal communications, knowledge base — plus the identity provider that handles the IT cross-function provisioning signal. Capability language only."
+        software="HRIS, payroll, learning management, ATS, employee survey platform, internal communications, knowledge base, plus the identity provider that handles the IT cross-function provisioning signal. Capability language only."
         operationsChanges={[
-          "Onboarding moves from manual checklist to orchestrated workflow — same outcome quality, 80% less HR time.",
+          "Onboarding moves from manual checklist to orchestrated workflow, same outcome quality, 80% less HR time.",
           "Employee help desk goes from 'ask HR' to 'ask the agent, escalate the 20% that need judgment.'",
           "Performance review prep shrinks from 40 hours to 5 hours per manager per cycle.",
-          "Compliance training auto-tracks — no quarterly fire drill.",
+          "Compliance training auto-tracks, no quarterly fire drill.",
         ]}
         outcomes={[
           { metric: "Time-to-productivity (new hires)", movement: "−25–40%" },

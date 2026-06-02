@@ -41,7 +41,7 @@ const TOPOLOGIES: Record<IndustryKey, Topology> = {
       { id: "hub", label: "Zyos OS", x: 360, y: 175, category: "agent", description: "The integration + agent runtime. Every workflow runs through here." },
       { id: "kanban", label: "Engagement Kanban", x: 110, y: 300, category: "system", description: "Customer-visible delivery board; nothing happens off-board." },
       { id: "qbr", label: "QBR + OKR tracker", x: 360, y: 300, category: "system", description: "Quarterly value-impact recap + re-prioritization decisions." },
-      { id: "agents", label: "Agent fleet", x: 610, y: 300, category: "agent", description: "Outbound · ABM · Support · Anomaly · Finance · HR agents — all visible task logs." },
+      { id: "agents", label: "Agent fleet", x: 610, y: 300, category: "agent", description: "Outbound · ABM · Support · Anomaly · Finance · HR agents, all visible task logs." },
     ],
   },
   "smb-services": {
@@ -54,7 +54,7 @@ const TOPOLOGIES: Record<IndustryKey, Topology> = {
       { id: "ga", label: "GA4 + Ads pipelines", x: 640, y: 50, category: "data", description: "Analytics integrations feed the GaaS pipeline-health dashboard." },
       { id: "hub", label: "Zyos OS (GaaS variant)", x: 360, y: 175, category: "agent", description: "Single operating system for every GaaS customer." },
       { id: "content", label: "Content engine", x: 110, y: 300, category: "agent", description: "Topic discovery → draft → editorial review → publish → measure." },
-      { id: "gaas-qbr", label: "GaaS QBR", x: 360, y: 300, category: "system", description: "Specialized SMB QBR — SEO + GEO + reviews + ads + content." },
+      { id: "gaas-qbr", label: "GaaS QBR", x: 360, y: 300, category: "system", description: "Specialized SMB QBR, SEO + GEO + reviews + ads + content." },
       { id: "citations", label: "Citation manager", x: 610, y: 300, category: "agent", description: "Citation consistency + GEO mention tracking." },
     ],
   },
@@ -75,7 +75,7 @@ const TOPOLOGIES: Record<IndustryKey, Topology> = {
   "association": {
     label: "Association (AMS-aware)",
     nodes: [
-      { id: "ams", label: "AMS", x: 80, y: 50, category: "source", description: "iMIS / NetForum / Personify — scoped via AMS adapter skills." },
+      { id: "ams", label: "AMS", x: 80, y: 50, category: "source", description: "iMIS / NetForum / Personify, scoped via AMS adapter skills." },
       { id: "cms", label: "Member CMS", x: 220, y: 50, category: "source", description: "Member content + access tiering instrumented for measurement." },
       { id: "events", label: "Events + LMS", x: 360, y: 50, category: "source", description: "Registration + LMS + CE tracking joined to member record." },
       { id: "email", label: "Member email", x: 500, y: 50, category: "source", description: "Lifecycle agent + segmentation aware of membership stage." },
@@ -116,7 +116,7 @@ function nodeTextColor(category: TopologyNode["category"]) {
 
 export function TopologyDiagram({
   className,
-  caption = "System topology — Zyos integrates the stack and runs agents across all of it. Pick an industry to see how the fabric shifts.",
+  caption = "System topology, Zyos integrates the stack and runs agents across all of it. Pick an industry to see how the fabric shifts.",
   initialIndustry = "mid-market-saas",
 }: {
   className?: string;
@@ -211,7 +211,7 @@ export function TopologyDiagram({
                   onClick={() => setActiveId(n.id)}
                   tabIndex={0}
                   role="button"
-                  aria-label={`${n.label} — show details`}
+                  aria-label={`${n.label}, show details`}
                 >
                   <rect
                     x={0}
@@ -253,7 +253,7 @@ export function TopologyDiagram({
           <p className="mt-2 text-sm text-ink/80 leading-relaxed">
             {active
               ? active.description
-              : "Most agentic-AI vendors deploy single-task agents on top of disconnected systems. Zyos integrates the stack first, then runs agents across — which is what makes them compound."}
+              : "Most agentic-AI vendors deploy single-task agents on top of disconnected systems. Zyos integrates the stack first, then runs agents across, which is what makes them compound."}
           </p>
         </aside>
       </div>

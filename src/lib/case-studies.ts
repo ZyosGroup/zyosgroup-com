@@ -65,10 +65,10 @@ export const CASE_STUDIES: CaseStudy[] = [
       "A High-Growth SMB Replaced Its Manual Intake Queue With a Governed Agent",
     seoTitle: "SMB Agentic AI Case Study | Zyos Group",
     description:
-      "How a High-Growth SMB went from one-person email intake to a governed AI operating model — foundation first, agent second — with measured cycle-time and capacity gains.",
+      "How a High-Growth SMB went from one-person email intake to a governed AI operating model, foundation first, agent second, with measured cycle-time and capacity gains.",
     quickAnswer:
-      "A High-Growth SMB had a single person manually triaging all inbound requests by email — no SLA, no audit trail, no way to scale without hiring. Zyos built the foundational layer (policy, data classification, reusable skills), then deployed a governed intake agent on top. Result: structured intake with a visible task log, faster response, and capacity recovered without added headcount.",
-    client: "Anonymized — High-Growth SMB (B2B services)",
+      "A High-Growth SMB had a single person manually triaging all inbound requests by email, no SLA, no audit trail, no way to scale without hiring. Zyos built the foundational layer (policy, data classification, reusable skills), then deployed a governed intake agent on top. Result: structured intake with a visible task log, faster response, and capacity recovered without added headcount.",
+    client: "Anonymized, High-Growth SMB (B2B services)",
     anonymized: true,
     industry: "B2B Services",
     engagementModel: "As-A-Service",
@@ -88,32 +88,32 @@ export const CASE_STUDIES: CaseStudy[] = [
       { value: "0", label: "Added headcount to scale intake", type: "cost" },
     ],
     situation:
-      "All inbound work arrived as unstructured email and text. One person was the queue — no priority, no SLA, no audit trail, and no way to scale without adding headcount.",
+      "All inbound work arrived as unstructured email and text. One person was the queue, no priority, no SLA, no audit trail, and no way to scale without adding headcount.",
     work:
-      "Foundation before automation: an AI usage policy, data classification, and a small set of reusable skills came first. Only then did a single-purpose intake agent go live on top of the validated foundation — with a visible task log the team could audit.",
+      "Foundation before automation: an AI usage policy, data classification, and a small set of reusable skills came first. Only then did a single-purpose intake agent go live on top of the validated foundation, with a visible task log the team could audit.",
     outcome:
-      "Intake became structured and measurable. Requests are captured, prioritized, and routed by the agent; the team reviews the reasoning trace, not the raw inbox. Capacity that was lost to triage came back — without a new hire.",
+      "Intake became structured and measurable. Requests are captured, prioritized, and routed by the agent; the team reviews the reasoning trace, not the raw inbox. Capacity that was lost to triage came back, without a new hire.",
     phases: [
       {
-        name: "Phase 1 — Discover",
+        name: "Phase 1, Discover",
         window: "Weeks 1–4",
         points: [
           "Interviewed the function; mapped the intake value stream end-to-end.",
-          "Scored the gap on the Opportunity Index — high frequency, high impact, low effort.",
+          "Scored the gap on the Opportunity Index, high frequency, high impact, low effort.",
           "Classified the data the agent would touch; published the one-page AI usage policy.",
         ],
       },
       {
-        name: "Phase 2 — Build",
+        name: "Phase 2, Build",
         window: "Weeks 5–10",
         points: [
           "Stood up the shared knowledge base + reusable skills (the foundation).",
           "Deployed the Lean intake agent with a visible task log.",
-          "Wired it into the existing CRM — no rip-and-replace.",
+          "Wired it into the existing CRM, no rip-and-replace.",
         ],
       },
       {
-        name: "Phase 3 — Improve",
+        name: "Phase 3, Improve",
         window: "Ongoing",
         points: [
           "Monthly report on agent throughput, reliability, and value-impact captured.",
@@ -123,17 +123,17 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     testimonial: {
       quote:
-        "We didn't buy a tool. We got an operating model — and one partner who handled the process, the data, the integration, and the agent.",
+        "We didn't buy a tool. We got an operating model, and one partner who handled the process, the data, the integration, and the agent.",
       attribution: "Operations lead, anonymized client",
     },
     faqs: [
       {
         q: "Why build the foundation before deploying the agent?",
-        a: "Because AI accelerates whatever already exists — deploy an agent on a broken, ungoverned process and you scale the mess. The foundation (policy, data classification, reusable skills, shared knowledge base) is what makes the agent safe, auditable, and able to compound.",
+        a: "Because AI accelerates whatever already exists, deploy an agent on a broken, ungoverned process and you scale the mess. The foundation (policy, data classification, reusable skills, shared knowledge base) is what makes the agent safe, auditable, and able to compound.",
       },
       {
         q: "What makes this different from buying an AI tool?",
-        a: "A tool is an island — its own data, its own prompts, no governance, no audit trail. This was one vendor delivering operations + technology + data + software together: the process redesign, the data foundation, the integration, and the governed agent on top, measured against business outcomes.",
+        a: "A tool is an island, its own data, its own prompts, no governance, no audit trail. This was one vendor delivering operations + technology + data + software together: the process redesign, the data foundation, the integration, and the governed agent on top, measured against business outcomes.",
       },
     ],
   },

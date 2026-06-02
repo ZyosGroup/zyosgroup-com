@@ -57,7 +57,7 @@ export function Prose({ sections }: { sections: BlogSection[] }) {
                 {s.text}
                 {s.cite ? (
                   <cite className="mt-2 block text-sm not-italic text-subtle">
-                    — {s.cite}
+                    {s.cite}
                   </cite>
                 ) : null}
               </blockquote>

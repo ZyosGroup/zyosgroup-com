@@ -33,23 +33,23 @@ import {
 const DELIVERABLES = [
   {
     id: "process-map",
-    label: "Deliverable 01 — Process map",
+    label: "Deliverable 01, Process map",
     headline:
-      "End-to-end process — every decision point, handoff, exception, and human role visible.",
+      "End-to-end process, every decision point, handoff, exception, and human role visible.",
     body:
-      "Not a Visio diagram. A real-state walk-through of how work happens today — the bottlenecks, the silent handoffs, the steps nobody documented because everyone already 'knew.'",
+      "Not a Visio diagram. A real-state walk-through of how work happens today, the bottlenecks, the silent handoffs, the steps nobody documented because everyone already 'knew.'",
   },
   {
     id: "value-stream",
-    label: "Deliverable 02 — Value stream map",
+    label: "Deliverable 02, Value stream map",
     headline:
       "Where value is created vs consumed. Revenue-touching steps, cost-burning steps, decision-bottleneck steps.",
     body:
-      "The lens that reveals what to prioritize. Most processes have one or two steps generating 70% of the value-impact — and they're rarely the ones leadership thinks.",
+      "The lens that reveals what to prioritize. Most processes have one or two steps generating 70% of the value-impact, and they're rarely the ones leadership thinks.",
   },
   {
     id: "instrumentation",
-    label: "Deliverable 03 — Instrumentation plan",
+    label: "Deliverable 03, Instrumentation plan",
     headline:
       "Which steps need data capture; what tools provide it; what BI signal each step produces.",
     body:
@@ -57,23 +57,23 @@ const DELIVERABLES = [
   },
   {
     id: "value-impact",
-    label: "Deliverable 04 — Value-impact estimates",
+    label: "Deliverable 04, Value-impact estimates",
     headline:
-      "Quantified estimates per detected gap — revenue, cost, risk, time effect of intervention.",
+      "Quantified estimates per detected gap, revenue, cost, risk, time effect of intervention.",
     body:
       "The chart that gets a CFO to sign the next-cycle SOW. Every gap is named, sized, and ranked against effort + readiness fit.",
   },
   {
     id: "readiness",
-    label: "Deliverable 05 — Readiness & Maturity scorecard",
+    label: "Deliverable 05, Readiness & Maturity scorecard",
     headline:
-      "Five dimensions scored 1–5 — Process Maturity, Tech + Integration, Data Quality, Automation + AI Readiness, People + Knowledge Risk.",
+      "Five dimensions scored 1–5, Process Maturity, Tech + Integration, Data Quality, Automation + AI Readiness, People + Knowledge Risk.",
     body:
       "Low-data-discipline customers need instrumentation before agents. Low-process-discipline customers need process mapping before automation. The scorecard tells us which.",
   },
   {
     id: "backlog",
-    label: "Deliverable 06 — Prioritized backlog + agent-suitability",
+    label: "Deliverable 06, Prioritized backlog + agent-suitability",
     headline:
       "Ranked intervention list with operate / scale / stay-human recommendation per item.",
     body:
@@ -110,7 +110,7 @@ const BACKLOG = [
   { item: "Tier-1 Support Triage Agent", value: "$215K opex", effort: "M", readiness: "Engagement recommended", rec: "Scale" },
   { item: "Month-end close reconciliation", value: "$180K opex", effort: "L", readiness: "Conditions to address", rec: "Scale" },
   { item: "Reviews velocity engine", value: "$130K LTV", effort: "S", readiness: "Engagement recommended", rec: "Operate" },
-  { item: "Compensation modeling", value: "Risk · undefined", effort: "L", readiness: "Not yet — revisit", rec: "Stay human" },
+  { item: "Compensation modeling", value: "Risk · undefined", effort: "L", readiness: "Not yet, revisit", rec: "Stay human" },
 ];
 
 function SectionFrame({
@@ -166,7 +166,7 @@ function ProcessMap({ withValueStream = false }: { withValueStream?: boolean }) 
   const annotations = withValueStream
     ? [
         { x: 30, y: 105, text: "Lead-source quality unmeasured", color: "#22D3EE" },
-        { x: 160, y: 105, text: "Manual scoring — bottleneck", color: "#F59E0B" },
+        { x: 160, y: 105, text: "Manual scoring, bottleneck", color: "#F59E0B" },
         { x: 420, y: 105, text: "67% of value-impact lives here", color: "#10B981" },
       ]
     : [
@@ -301,7 +301,7 @@ export function PiDeliverableScrollthrough() {
         </div>
         <p className="mt-4 text-sm text-ink/75">
           Routing applied:{" "}
-          <span className="mono text-primary">RS 2.7 — Conditions to address</span>{" "}
+          <span className="mono text-primary">RS 2.7, Conditions to address</span>{" "}
           (Data Quality + Automation Readiness need a runway before Phase 2 begins).
         </p>
       </SectionFrame>

@@ -14,13 +14,13 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "The diagnostic email arrived in 40 minutes. The proposal next morning. We've never been scoped that fast — or that honestly.",
+      "The diagnostic email arrived in 40 minutes. The proposal next morning. We've never been scoped that fast, or that honestly.",
     name: "Customer #2 · permission pending",
     context: "Growth-stage SMB · GaaS onboarding",
   },
   {
     quote:
-      "Other firms shipped slide decks. Zyos shipped working artifacts each month — and told us what they were choosing not to do.",
+      "Other firms shipped slide decks. Zyos shipped working artifacts each month, and told us what they were choosing not to do.",
     name: "Customer #3 · permission pending",
     context: "Association · Digital Transformation",
   },

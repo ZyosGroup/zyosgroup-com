@@ -5,7 +5,7 @@ import { SAMPLE_WORKFLOWS } from "@/components/showcases/sample-workflows";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "AI Agents for Marketing — Content + SEO + Paid + Reviews | Zyos Group",
+  title: "AI Agents for Marketing: Content + SEO + Paid + Reviews | Zyos Group",
   description:
     "AI agents for marketing: content engine, local SEO + GBP, paid optimization, lifecycle, reviews + reputation. Productized inside Agent as a Service + GaaS.",
   alternates: { canonical: "/by-function/marketing" },
@@ -18,9 +18,9 @@ export default function MarketingFunctionPage() {
     <>
       <PageSchema
         path="/by-function/marketing"
-        name="AI Agents for Marketing — Zyos Group"
-        description="Agentic AI applied to the Marketing function — content engine, SEO + GEO, paid, lifecycle, reviews."
-        service={{ type: "Agent as a Service — Marketing" }}
+        name="AI Agents for Marketing: Zyos Group"
+        description="Agentic AI applied to the Marketing function, content engine, SEO + GEO, paid, lifecycle, reviews."
+        service={{ type: "Agent as a Service, Marketing" }}
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
           { name: "By function", url: `${SITE.url}/by-function/marketing` },
@@ -32,7 +32,7 @@ export default function MarketingFunctionPage() {
         eyebrow="By function · Marketing"
         title="Content that compounds. SEO + GEO that responds weekly, not quarterly."
         quickAnswer="Zyos Group's Marketing-function agents deploy across content engine, local SEO + GBP, paid optimization, lifecycle marketing, and reviews + reputation. Marketing leaders spend time on strategy and creative judgment; agents handle the operational tonnage. Productized inside Agent as a Service for mid-market and inside Growth as a Service for SMB B2B. Both arms start with Process Intelligence Implementation."
-        intro="The marketing tonnage — topic research, draft cadence, paid re-optimization, review responses, citation maintenance — is exactly the work that compounds when agents do it continuously. The content engine, the Reviews Velocity engine, and the analytics integrations layer in Zyos OS are the productized proof."
+        intro="The marketing tonnage, topic research, draft cadence, paid re-optimization, review responses, citation maintenance, is exactly the work that compounds when agents do it continuously. The content engine, the Reviews Velocity engine, and the analytics integrations layer in Zyos OS are the productized proof."
         agentWorkflows={[
           {
             name: "Content Engine Agent",
@@ -68,12 +68,12 @@ export default function MarketingFunctionPage() {
           "Customer success signals (NPS, retention)",
           "Product usage signals (product-led marketing)",
         ]}
-        software="GA4, Google Ads, Facebook Ads, LinkedIn Ads, your GBP, marketing automation, CMS, ad creative tooling, and review platforms — integrated through the analytics-integrations layer in Zyos OS. Capability language only."
+        software="GA4, Google Ads, Facebook Ads, LinkedIn Ads, your GBP, marketing automation, CMS, ad creative tooling, and review platforms, integrated through the analytics-integrations layer in Zyos OS. Capability language only."
         operationsChanges={[
           "Editorial calendar shifts from monthly planning to continuous topic discovery + automated drafting.",
-          "Paid campaign management moves from weekly review to monthly review — the agent re-optimizes in between.",
+          "Paid campaign management moves from weekly review to monthly review, the agent re-optimizes in between.",
           "Review responses move from 'tomorrow' to 'within 4 hours' without burning out a human.",
-          "Cross-channel attribution becomes legible — the agent stitches signals automatically.",
+          "Cross-channel attribution becomes legible, the agent stitches signals automatically.",
         ]}
         outcomes={[
           { metric: "Organic traffic", movement: "+20–40%" },

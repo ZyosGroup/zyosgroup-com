@@ -35,7 +35,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — ${TAGLINE_SHORT}`,
+    default: `${SITE.name}, ${TAGLINE_SHORT}`,
     template: `%s | ${SITE.name}`,
   },
   description: META_DESCRIPTION,
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE.url,
-    title: `${SITE.name} — ${TAGLINE_SHORT}`,
+    title: `${SITE.name}, ${TAGLINE_SHORT}`,
     description: META_DESCRIPTION,
     siteName: SITE.name,
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} — ${TAGLINE_SHORT}`,
+    title: `${SITE.name}, ${TAGLINE_SHORT}`,
     description: META_DESCRIPTION,
   },
   robots: {

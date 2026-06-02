@@ -11,18 +11,18 @@ import { SITE } from "@/lib/site";
 // consulting for small business" niche per ZYOS-KEYWORD-MAP.md A2. SMB is the
 // HIGHLIGHTED ICP among the three.
 export const metadata: Metadata = {
-  title: "AI Automation for Small Business — High-Growth SMBs | Zyos Group",
+  title: "AI Automation for Small Business: High-Growth SMBs | Zyos Group",
   description:
-    "AI automation and consulting for high-growth SMBs (10–200 employees). One vendor across operations, technology, data, and software — productize how you operate, without an enterprise budget.",
+    "AI automation and consulting for high-growth SMBs (10–200 employees). One vendor across operations, technology, data, and software, productize how you operate, without an enterprise budget.",
   alternates: { canonical: "/who-we-serve/high-growth-smbs" },
 };
 
 const PAIN_SHAPES = [
-  "The founder's playbook lives in heads, not docs — and the next hire learns by osmosis.",
+  "The founder's playbook lives in heads, not docs, and the next hire learns by osmosis.",
   "Marketing, sales, and operations talk past each other because nothing's instrumented end-to-end.",
-  "Customer success is &quot;send Paul a Slack&quot; — no cadence, no QBR, no recurring proof.",
+  "Customer success is &quot;send Paul a Slack&quot;, no cadence, no QBR, no recurring proof.",
   "The next 10 customers can't be onboarded with the same effort as the first 10.",
-  "Tech stack is duct-taped together — every new tool adds integration work nobody owns.",
+  "Tech stack is duct-taped together, every new tool adds integration work nobody owns.",
 ];
 
 const SMB_OUTCOMES = SAMPLE_OUTCOMES.filter(
@@ -52,12 +52,12 @@ export default function HighGrowthSmbsPage() {
 
         <div className="mt-10 max-w-3xl">
           <QuickAnswer>
-            AI automation and consulting for high-growth SMBs — 10–200-employee
+            AI automation and consulting for high-growth SMBs, 10–200-employee
             B2B companies on a growth trajectory. We productize how you operate
             so the next hire and the next customer cost less than the last:
             operating-model design, integrated marketing, Growth as a Service,
             Agent as a Service. One vendor across operations, technology, data,
-            and software — enterprise-grade structure, right-sized for an SMB,
+            and software, enterprise-grade structure, right-sized for an SMB,
             without an enterprise budget or a data-science team. Start with the
             Opportunity Engine intake.
           </QuickAnswer>
@@ -106,8 +106,8 @@ export default function HighGrowthSmbsPage() {
               Growth as a Service
             </h3>
             <p className="mt-3 text-[15px] text-ink/80 leading-relaxed flex-1">
-              Continuous growth operations — website, GBP, ads + LSA, SEO
-              content, GEO — operated on Zyos OS, measured against quarterly
+              Continuous growth operations, website, GBP, ads + LSA, SEO
+              content, GEO, operated on Zyos OS, measured against quarterly
               OKRs. McMahons and FSM are live on this motion.
             </p>
             <p className="mt-4 text-sm text-primary hover:underline">
@@ -126,7 +126,7 @@ export default function HighGrowthSmbsPage() {
             </h3>
             <p className="mt-3 text-[15px] text-ink/80 leading-relaxed flex-1">
               For when the operating model itself needs rebuilding.
-              Build-then-run — discovery happens IN the engagement, and you own
+              Build-then-run, discovery happens IN the engagement, and you own
               the solution at exit.
             </p>
             <p className="mt-4 text-sm text-primary hover:underline">
@@ -160,7 +160,7 @@ export default function HighGrowthSmbsPage() {
             </h2>
             <p className="mt-4 text-white/80 max-w-prose">
               You don&apos;t need more hands. You need a system that makes the
-              hands you have go further — and onboards the next hire into
+              hands you have go further, and onboards the next hire into
               something repeatable.
             </p>
           </div>

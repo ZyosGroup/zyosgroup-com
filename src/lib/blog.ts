@@ -47,12 +47,12 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "ai-operating-model-vs-ai-tools",
     title:
-      "An AI Operating Model Beats a Pile of AI Tools — Here's Why",
+      "An AI Operating Model Beats a Pile of AI Tools. Here's Why.",
     seoTitle: "AI Operating Model vs. AI Tools | Zyos Group",
     description:
-      "Most companies aren't behind on AI capability — they're behind on AI structure. Why a governed AI operating model out-compounds scattered tools, and how to build one.",
+      "Most companies aren't behind on AI capability. They're behind on AI structure. Why a governed AI operating model out-compounds scattered tools, and how to build one.",
     quickAnswer:
-      "An AI operating model is a governed, company-wide system — policy, a shared knowledge base, reusable skills, and agents — that every department plugs into. It out-compounds scattered AI tools because skills, data, and governance are shared instead of fragmented. A company running a hundred AI licenses with no operating model is still effectively at zero.",
+      "An AI operating model is a governed, company-wide system (policy, a shared knowledge base, reusable skills, and agents) that every department plugs into. It out-compounds scattered AI tools because skills, data, and governance are shared instead of fragmented. A company running a hundred AI licenses with no operating model is still effectively at zero.",
     primaryKeyword: "ai operating model",
     keywords: [
       "ai operating model",
@@ -77,7 +77,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         kind: "p",
-        text: "Work enters as unstructured email or chat. One person becomes the human queue — no SLA, no priority, no audit trail. Knowledge lives in individuals, not systems. AI gets used privately, without governance. Every team buys its own tool. There's no shared data, no shared skills, and so no scale. Six months in, the budget is gone and nothing scaled.",
+        text: "Work enters as unstructured email or chat. One person becomes the human queue, with no SLA, no priority, and no audit trail. Knowledge lives in individuals, not systems. AI gets used privately, without governance. Every team buys its own tool. There's no shared data, no shared skills, and so no scale. Six months in, the budget is gone and nothing scaled.",
       },
       {
         kind: "callout",
@@ -91,7 +91,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         kind: "p",
-        text: "An AI operating model is the governed structure every workflow plugs into. It has five layers, built bottom-up: governance and policy at the base; shared Projects and Artifacts above that; reusable Skills tied to how the company actually operates; Agents built on those validated Skills; and internal Apps at the top. Skip a layer and the initiative stalls — which is exactly why most do.",
+        text: "An AI operating model is the governed structure every workflow plugs into. It has five layers, built bottom-up: governance and policy at the base; shared Projects and Artifacts above that; reusable Skills tied to how the company actually operates; Agents built on those validated Skills; and internal Apps at the top. Skip a layer and the initiative stalls, which is exactly why most of them do.",
       },
       {
         kind: "p",
@@ -104,7 +104,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         kind: "p",
-        text: "Infusing AI into how a company operates takes four capabilities most firms don't have under one roof: operations, technology, data, and software. An agency gives you marketing. A dev shop gives you software. A management consultant gives you a deck. Putting AI into operations needs all four at once — the process redesign, the integration, the data foundation, and the software to run it. That blend is the unique ability, and it's why a single vendor beats four stitched-together ones.",
+        text: "Infusing AI into how a company operates takes four capabilities most firms don't have under one roof: operations, technology, data, and software. An agency gives you marketing. A dev shop gives you software. A management consultant gives you a deck. Putting AI into operations needs all four at once: the process redesign, the integration, the data foundation, and the software to run it. That blend is the unique ability, and it's why a single vendor beats four stitched-together ones.",
       },
       {
         kind: "h2",
@@ -113,7 +113,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         kind: "p",
-        text: "Within 12–18 months, every employee will be able to build their own personal agent — calendar prep, inbox triage, document drafting. Companies with an operating model already in place won't blink: the rails, the governance, and the data classification are there, so personal agents are safe by default. Companies without it will be starting from scratch with no rails — exposed, not accelerated. The gap won't be capability. It'll be structure, and structure takes time to build.",
+        text: "Within 12 to 18 months, every employee will be able to build their own personal agent: calendar prep, inbox triage, document drafting. Companies with an operating model already in place won't blink. The rails, the governance, and the data classification are there, so personal agents are safe by default. Companies without it will be starting from scratch with no rails, exposed rather than accelerated. The gap won't be capability. It'll be structure, and structure takes time to build.",
       },
       {
         kind: "h2",
@@ -122,17 +122,17 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         kind: "p",
-        text: "Before automating anything, map the organization end-to-end. Interview every department. Build value stream maps. Score every gap on a single index — impact, frequency, effort, readiness, strategic fit — so the roadmap is ranked, not opinionated. Then sequence the fixes: foundation first, automation second, AI augmentation last. That map is the roadmap.",
+        text: "Before automating anything, map the organization end-to-end. Interview every department. Build value stream maps. Score every gap on a single index (impact, frequency, effort, readiness, strategic fit) so the roadmap is ranked, not opinionated. Then sequence the fixes: foundation first, automation second, AI augmentation last. That map is the roadmap.",
       },
     ],
     faqs: [
       {
         q: "What is an AI operating model?",
-        a: "An AI operating model is a governed, company-wide structure — policy, a shared knowledge base, reusable skills, agents, and internal apps — that every department plugs into. It replaces scattered, team-by-team AI tools with one shared system so skills, data, and governance compound instead of fragmenting.",
+        a: "An AI operating model is a governed, company-wide structure (policy, a shared knowledge base, reusable skills, agents, and internal apps) that every department plugs into. It replaces scattered, team-by-team AI tools with one shared system so skills, data, and governance compound instead of fragmenting.",
       },
       {
         q: "Why isn't buying AI tools enough?",
-        a: "AI tools fragment: each has its own data, prompts, and no governance, so nothing compounds and leadership has no visibility into ROI. AI also accelerates whatever already exists — point it at a broken process and you get a faster broken process. An operating model fixes the structure first.",
+        a: "AI tools fragment: each has its own data, prompts, and no governance, so nothing compounds and leadership has no visibility into ROI. AI also accelerates whatever already exists. Point it at a broken process and you get a faster broken process. An operating model fixes the structure first.",
       },
       {
         q: "How long does it take to stand up an AI operating model?",

@@ -13,7 +13,7 @@ const DELIVERY_FAQS = [
   },
   {
     q: "What is the difference between a monthly delivery cycle and a sprint?",
-    a: "We deliberately do not use 'sprint' or 'Sprint 1' in customer-facing language. We use 'monthly delivery cycle' and 'delivery review'. The shape is the same — fixed-length cycles, measurable outcomes — but the framing emphasizes business outcome over agile ceremony. Each cycle ships value-impact, not story points.",
+    a: "We deliberately do not use 'sprint' or 'Sprint 1' in customer-facing language. We use 'monthly delivery cycle' and 'delivery review'. The shape is the same, fixed-length cycles, measurable outcomes, but the framing emphasizes business outcome over agile ceremony. Each cycle ships value-impact, not story points.",
   },
   {
     q: "What happens at a Quarterly Business Review (QBR)?",
@@ -32,30 +32,30 @@ const DELIVERY_FAQS = [
 // Target: "AI engagement model" + "agentic AI delivery framework" — GEO surface
 // per zyosgroup-com-delivery-model-customer-success.md.
 export const metadata: Metadata = {
-  title: "How We Deliver — Engagement Model + Customer Success | Zyos Group",
+  title: "How We Deliver: Engagement Model + Customer Success | Zyos Group",
   description:
-    "Zyos Group's delivery model — Measure, Deliver, Continuously Improve — plus the 11 Customer Success features that prove the results. Trust-signal surface.",
+    "Zyos Group's delivery model, Measure, Deliver, Continuously Improve, plus the 11 Customer Success features that prove the results. Trust-signal surface.",
   alternates: { canonical: "/how-we-deliver" },
 };
 
 const PHASES = [
   {
-    name: "Phase 1 — MEASURE",
+    name: "Phase 1, MEASURE",
     duration: "30 days",
     artifact: "PI Implementation deliverable (six outputs)",
     body: "The first delivery cycle of every Retainer and As-A-Service engagement. ROI gate: every detected gap gets an estimated value-impact + expected payback period before Phase 2 begins.",
   },
   {
-    name: "Phase 2 — DELIVERY",
+    name: "Phase 2, DELIVERY",
     duration: "monthly cycles, indefinitely",
     artifact: "Cycle Delivery Review (30 min + 1-page recap)",
-    body: "Each cycle commits to 2–4 measurable outcomes with target metrics named at cycle start. Each cycle ends with a delivery review and explicit variance vs target. Visible Kanban in Zyos OS — nothing happens off-board.",
+    body: "Each cycle commits to 2–4 measurable outcomes with target metrics named at cycle start. Each cycle ends with a delivery review and explicit variance vs target. Visible Kanban in Zyos OS, nothing happens off-board.",
   },
   {
-    name: "Phase 3 — CONTINUOUS IMPROVEMENT",
+    name: "Phase 3, CONTINUOUS IMPROVEMENT",
     duration: "monthly + quarterly + ongoing",
     artifact: "Monthly Reports, QBRs, OKR tracking, Service Desk",
-    body: "Where the Customer Success function runs. The proof layer that makes the engagement re-hireable — outputs are commodity, continuous value-impact is the moat.",
+    body: "Where the Customer Success function runs. The proof layer that makes the engagement re-hireable, outputs are commodity, continuous value-impact is the moat.",
   },
 ];
 
@@ -102,7 +102,7 @@ const CS_FEATURES = [
   {
     n: "01",
     name: "Engagement Kickoff",
-    result: "100% clarity at Day 1 — next 6 weeks of cadence in your calendar.",
+    result: "100% clarity at Day 1, next 6 weeks of cadence in your calendar.",
     body: "Day-1 ritual setting the engagement charter, scope, ROI hypothesis, first PI cycle plan, communication rhythms, named owners.",
   },
   {
@@ -121,7 +121,7 @@ const CS_FEATURES = [
     n: "04",
     name: "Monthly Reports",
     result: "Customers don't wait 90 days to see how things are going.",
-    body: "Variant per engagement type — Standard Retainer, Build & Operate (build vs operate phase separated), AaaS (agent reliability + throughput), GaaS (growth metrics).",
+    body: "Variant per engagement type, Standard Retainer, Build & Operate (build vs operate phase separated), AaaS (agent reliability + throughput), GaaS (growth metrics).",
   },
   {
     n: "05",
@@ -139,7 +139,7 @@ const CS_FEATURES = [
     n: "07",
     name: "OKRs + Optimization Score",
     result: "Five-dimension agentic-readiness score curve over time.",
-    body: "Value-impact OKRs named at kickoff and tracked continuously. Optimization Score re-measured every QBR. Routing: RS ≥ 3.0 Engagement recommended · 2.0–2.9 Conditions to address · < 2.0 Not yet — revisit.",
+    body: "Value-impact OKRs named at kickoff and tracked continuously. Optimization Score re-measured every QBR. Routing: RS ≥ 3.0 Engagement recommended · 2.0–2.9 Conditions to address · < 2.0 Not yet, revisit.",
   },
   {
     n: "08",
@@ -151,7 +151,7 @@ const CS_FEATURES = [
     n: "09",
     name: "Customer Support / Service Desk",
     result: "Known path when something goes wrong. Not 'send Paul a Slack.'",
-    body: "Productized via the Zyos Service Desk module — Postmark inbound, ticket lifecycle, SLA, status emails, reminder cron, escalation routing.",
+    body: "Productized via the Zyos Service Desk module, Postmark inbound, ticket lifecycle, SLA, status emails, reminder cron, escalation routing.",
   },
   {
     n: "10",
@@ -170,7 +170,7 @@ const CS_FEATURES = [
 const RESULTS_MATRIX = [
   ["Engagement Kickoff", "100% clarity at Day 1 (no 'what are we doing?' by Week 2)"],
   ["Visible Kanban", "Customer login frequency → trust signal"],
-  ["Monthly Cycles", "Cycle hit rate (% meeting outcome targets) — published in QBR"],
+  ["Monthly Cycles", "Cycle hit rate (% meeting outcome targets), published in QBR"],
   ["Monthly Reports", "Engagement health score + value-impact-to-date metric"],
   ["QBRs", "Quarter-over-quarter value-impact captured (headline KPI)"],
   ["GaaS QBR", "SMB customer engagement renewal rate"],
@@ -186,7 +186,7 @@ export default function HowWeDeliverPage() {
     <>
       <PageSchema
         path="/how-we-deliver"
-        name="How We Deliver — Engagement Model + Customer Success"
+        name="How We Deliver: Engagement Model + Customer Success"
         description="Zyos Group's delivery model and the 11 Customer Success features. Measure → Deliver → Continuously Improve."
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
@@ -206,7 +206,7 @@ export default function HowWeDeliverPage() {
             Zyos Group&apos;s delivery model is built around two promises: you
             see measurable value-impact each month, and you see us choosing
             what to defer or kill at every QBR. The model runs in three
-            phases — Measure, Deliver, Continuously Improve — with the
+            phases, Measure, Deliver, Continuously Improve, with the
             Customer Success function (eleven named features) operationalizing
             the Continuous Improvement phase.
           </QuickAnswer>
@@ -216,7 +216,7 @@ export default function HowWeDeliverPage() {
           Most consulting firms scope once and grind. Big-4 ships slide decks
           every six weeks. Zyos ships working artifacts each month with a
           transparent prioritization decision at each QBR. Customers see the
-          firm choosing what <em>not</em> to do — the rarest trust signal in
+          firm choosing what <em>not</em> to do, the rarest trust signal in
           services.
         </p>
       </Section>
@@ -253,7 +253,7 @@ export default function HowWeDeliverPage() {
       <Section>
         <SectionHeading
           eyebrow="The cadence ladder"
-          title="What runs when — from Day 1 onward."
+          title="What runs when, from Day 1 onward."
           description="No 'wait for the next QBR' anywhere. The cadence ladder has a touchpoint at every meaningful interval."
         />
         <div className="mt-10 overflow-hidden rounded-lg border border-border">
@@ -346,7 +346,7 @@ export default function HowWeDeliverPage() {
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="The two non-negotiable trust signals"
-          title="When prospects ask 'how do I know you'll deliver?' — these are the two artifacts that make the case."
+          title="When prospects ask 'how do I know you'll deliver?', these are the two artifacts that make the case."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 max-w-4xl">
           <article className="rounded-lg border border-dashed border-border bg-bg p-6">
@@ -379,7 +379,7 @@ export default function HowWeDeliverPage() {
       </Section>
 
       <Faq
-        eyebrow="Delivery model — FAQ"
+        eyebrow="Delivery model, FAQ"
         title="What buyers ask about how Zyos delivers."
         description="Lifted from prospect calls. Published as FAQPage schema for AI Overview + PAA citation."
         faqs={DELIVERY_FAQS}

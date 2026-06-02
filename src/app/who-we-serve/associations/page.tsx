@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
 // Target: "ai for associations" (40/mo, KD 0, $296 CPC — tiny volume, huge
 // lead value) + member-experience niche per ZYOS-KEYWORD-MAP.md A2.
 export const metadata: Metadata = {
-  title: "AI for Associations — Member Experience & AMS-aware AI | Zyos Group",
+  title: "AI for Associations: Member Experience & AMS-aware AI | Zyos Group",
   description:
     "AI for associations and member organizations. AMS-aware architecture, member content operations, audit-trail discipline. One vendor across operations, technology, data, and software.",
   alternates: { canonical: "/who-we-serve/associations" },
@@ -22,15 +22,15 @@ const ASSOCIATION_REALITIES = [
   },
   {
     t: "Multi-stakeholder governance",
-    b: "Volunteer leadership + staff + members + sponsors all have decision rights. Operating-model rollouts respect this — Visible Kanban exposes the work to volunteer leadership in plain language.",
+    b: "Volunteer leadership + staff + members + sponsors all have decision rights. Operating-model rollouts respect this, Visible Kanban exposes the work to volunteer leadership in plain language.",
   },
   {
     t: "Regulated context",
-    b: "Member privacy, financial controls, FERPA-adjacent education content, healthcare-adjacent CE tracking — architecture is conservative by default. Audit trails on, human-in-loop defaults on.",
+    b: "Member privacy, financial controls, FERPA-adjacent education content, healthcare-adjacent CE tracking, architecture is conservative by default. Audit trails on, human-in-loop defaults on.",
   },
   {
     t: "Content operations at scale",
-    b: "Members want fresh content. Content engine + GEO ensures the association's expertise is the cited source — not displaced by AI-only competitors.",
+    b: "Members want fresh content. Content engine + GEO ensures the association's expertise is the cited source, not displaced by AI-only competitors.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function AssociationsPage() {
             Zyos Group brings AI to associations, non-profits, and member
             organizations. Member experience, content operations, and AMS-aware
             architectures (iMIS, NetForum, Personify in scoping context).
-            Architecture is conservative where regulation demands — audit
+            Architecture is conservative where regulation demands, audit
             trails, human-in-loop defaults, clear ownership matrices. One vendor
             across operations, technology, data, and software. Flexible
             engagement: Build & Operate Retainer (primary), Fixed Price for
@@ -98,7 +98,7 @@ export default function AssociationsPage() {
         <SectionHeading
           eyebrow="Primary offering"
           title="Build & Operate Retainer for tech rebuilds + member engagement."
-          description="Most association engagements are a hybrid — there's a build phase (the new portal, the AMS migration, the CE-tracking rebuild) and an ongoing operate phase (member engagement, content cadence, agent operations)."
+          description="Most association engagements are a hybrid, there's a build phase (the new portal, the AMS migration, the CE-tracking rebuild) and an ongoing operate phase (member engagement, content cadence, agent operations)."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 max-w-4xl">
           <Link
@@ -145,7 +145,7 @@ export default function AssociationsPage() {
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="AMS-aware architecture"
-          title="iMIS · NetForum · Personify — used in scoping context only."
+          title="iMIS · NetForum · Personify, used in scoping context only."
           description="Per CLAUDE.md, vendor names appear in scoping context (so we can talk fluently about your stack) but not in client-facing marketing. The Architecture Brief addresses ownership, portability, and audit trails for the AMS-integrated layer."
         />
       </Section>
@@ -162,7 +162,7 @@ export default function AssociationsPage() {
             <p className="mt-4 text-white/80 max-w-prose">
               Most association tech projects are abandoned the day the contract
               ends. Build & Operate Retainer keeps the partner on the
-              engagement — measured, reported, re-prioritized each quarter.
+              engagement, measured, reported, re-prioritized each quarter.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 lg:justify-end">

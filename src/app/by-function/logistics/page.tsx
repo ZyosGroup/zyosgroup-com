@@ -4,7 +4,7 @@ import { PageSchema } from "@/components/seo/PageSchema";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "AI Agents for Logistics — Inventory + Supplier + Shipping | Zyos Group",
+  title: "AI Agents for Logistics: Inventory + Supplier + Shipping | Zyos Group",
   description:
     "AI agents for logistics: inventory + demand, supplier performance, shipping optimization, returns handling, warehouse productivity. Continuous, not weekly.",
   alternates: { canonical: "/by-function/logistics" },
@@ -15,9 +15,9 @@ export default function LogisticsFunctionPage() {
     <>
       <PageSchema
         path="/by-function/logistics"
-        name="AI Agents for Logistics — Zyos Group"
-        description="Agentic AI applied to the Logistics function — inventory + demand, supplier performance, shipping optimization, returns, warehouse productivity."
-        service={{ type: "Agent as a Service — Logistics" }}
+        name="AI Agents for Logistics: Zyos Group"
+        description="Agentic AI applied to the Logistics function, inventory + demand, supplier performance, shipping optimization, returns, warehouse productivity."
+        service={{ type: "Agent as a Service, Logistics" }}
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
           { name: "By function", url: `${SITE.url}/by-function/logistics` },
@@ -29,7 +29,7 @@ export default function LogisticsFunctionPage() {
         eyebrow="By function · Logistics"
         title="Inventory that auto-corrects. Supplier scorecards that stay current. Shipping decisions per order."
         quickAnswer="Zyos Group's Logistics-function agents deploy across inventory + demand, supplier performance, shipping optimization, returns handling, and warehouse productivity. Logistics focuses on supplier relationships and strategic capacity decisions; agents handle the operational orchestration. Cross-function dependence on Sales (demand) + Finance (cost) is where the integration thesis pays off."
-        intro="Inventory levels that auto-correct against demand. Supplier performance tracked continuously, not annually. Shipping decisions optimized per order. Returns processed without manual triage. Warehouse productivity that responds to bottlenecks before they cascade. That's the agentic logistics shape — and the cross-functional signals make it compound."
+        intro="Inventory levels that auto-correct against demand. Supplier performance tracked continuously, not annually. Shipping decisions optimized per order. Returns processed without manual triage. Warehouse productivity that responds to bottlenecks before they cascade. That's the agentic logistics shape, and the cross-functional signals make it compound."
         agentWorkflows={[
           {
             name: "Inventory + Demand Agent",
@@ -66,7 +66,7 @@ export default function LogisticsFunctionPage() {
           "IT system telemetry from warehouse systems",
           "Customer-success feedback on delivery experience",
         ]}
-        software="WMS, TMS, ERP, supplier portals, carrier APIs, demand-planning platforms — integrated through Zyos OS. Cross-function dependence on Sales (demand) + Finance (cost) + Operations (process changes). Capability language only."
+        software="WMS, TMS, ERP, supplier portals, carrier APIs, demand-planning platforms, integrated through Zyos OS. Cross-function dependence on Sales (demand) + Finance (cost) + Operations (process changes). Capability language only."
         operationsChanges={[
           "Inventory decisions: weekly planning → continuous adjustment.",
           "Supplier reviews: annual → continuous scorecards.",

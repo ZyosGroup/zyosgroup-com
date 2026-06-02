@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
 import { CASE_STUDIES } from "@/lib/case-studies";
 
 export const metadata: Metadata = {
-  title: "Case studies — Outcomes Catalog | Zyos Group",
+  title: "Case studies: Outcomes Catalog | Zyos Group",
   description:
     "Quantified outcomes across Zyos Group engagements. Revenue captured, cost reduced, risk retired, time saved, quality improved. Filterable.",
   alternates: { canonical: "/case-studies" },
@@ -20,7 +20,7 @@ export default function CaseStudiesPage() {
     <>
       <PageSchema
         path="/case-studies"
-        name="Case studies — Zyos Group outcomes catalog"
+        name="Case studies: Zyos Group outcomes catalog"
         description="Quantified outcomes filtered by type, service line, engagement model, and industry."
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
@@ -38,8 +38,8 @@ export default function CaseStudiesPage() {
           <QuickAnswer>
             The Zyos Group outcomes catalog. Every engagement names value-impact
             OKRs at kickoff and a recap at termination. Entries are quantified
-            outcomes — revenue captured, cost reduced, risk retired, time
-            saved, quality improved — filterable by type, service line,
+            outcomes, revenue captured, cost reduced, risk retired, time
+            saved, quality improved, filterable by type, service line,
             engagement model, and industry. Anonymized where customer
             permission is still pending; named when permissioned.
           </QuickAnswer>
@@ -61,7 +61,7 @@ export default function CaseStudiesPage() {
         <SectionHeading
           eyebrow="Full case studies"
           title="Founder-on-camera reflection + situation / work / outcome arc."
-          description="Each customer's full case study is in production. The shape is the operating-model arc — what PI surfaced in Phase 1, the cycles that ran in Phase 2, what each QBR recalibrated in Phase 3. McMahons and Fresh Start Movers are first."
+          description="Each customer's full case study is in production. The shape is the operating-model arc, what PI surfaced in Phase 1, the cycles that ran in Phase 2, what each QBR recalibrated in Phase 3. McMahons and Fresh Start Movers are first."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 max-w-4xl">
           {CASE_STUDIES.map((c) => (

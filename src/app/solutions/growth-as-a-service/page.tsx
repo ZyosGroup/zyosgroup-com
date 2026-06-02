@@ -11,31 +11,31 @@ import { ArrowUpRight } from "lucide-react";
 const GAAS_FAQS = [
   {
     q: "What is Growth as a Service?",
-    a: "Growth as a Service (GaaS) is a continuous service in which Zyos Group operates a small business's entire growth function — website, Google Business Profile, paid ads + Local Services Ads, SEO content, generative engine optimization (GEO), reviews and citations — measured against quarterly OKRs. A productized agentic-AI growth play built for the SMB tier. Powered by Zyos OS.",
+    a: "Growth as a Service (GaaS) is a continuous service in which Zyos Group operates a small business's entire growth function, website, Google Business Profile, paid ads + Local Services Ads, SEO content, generative engine optimization (GEO), reviews and citations, measured against quarterly OKRs. A productized agentic-AI growth play built for the SMB tier. Powered by Zyos OS.",
   },
   {
     q: "Who is GaaS for?",
-    a: "SMB B2B — local trades, home services, professional practices — that are structurally underserved by Big-4 firms (which won't touch SMB-tier engagements) and by enterprise boutiques (which chase larger accounts). McMahon's Jersey Shore Powerwash and Fresh Start Movers are two live GaaS engagements running today.",
+    a: "SMB B2B, local trades, home services, professional practices, that are structurally underserved by Big-4 firms (which won't touch SMB-tier engagements) and by enterprise boutiques (which chase larger accounts). McMahon's Jersey Shore Powerwash and Fresh Start Movers are two live GaaS engagements running today.",
   },
   {
     q: "What are the five GaaS variants?",
-    a: "Website (build + operate the customer-facing site), GBP optimization (Google Business Profile cadence: posts, Q&A monitoring, citation health, review velocity), Ads + LSA (paid optimization including Local Services Ads), SEO content (topic discovery → draft → editorial review → publish → measure), and GEO (generative engine optimization — getting cited by ChatGPT, Perplexity, Claude, and Google AI Overviews).",
+    a: "Website (build + operate the customer-facing site), GBP optimization (Google Business Profile cadence: posts, Q&A monitoring, citation health, review velocity), Ads + LSA (paid optimization including Local Services Ads), SEO content (topic discovery → draft → editorial review → publish → measure), and GEO (generative engine optimization, getting cited by ChatGPT, Perplexity, Claude, and Google AI Overviews).",
   },
   {
     q: "How does a GaaS engagement work?",
-    a: "GaaS is As-A-Service: a continuous engagement scoped by variant. Customers can take one variant, several, or the bundle. Support is part of the service — Zyos Service Desk handles ticketing, SLA, and escalation routing. Every engagement begins with Process Intelligence Implementation as the first delivery cycle.",
+    a: "GaaS is As-A-Service: a continuous engagement scoped by variant. Customers can take one variant, several, or the bundle. Support is part of the service, Zyos Service Desk handles ticketing, SLA, and escalation routing. Every engagement begins with Process Intelligence Implementation as the first delivery cycle.",
   },
   {
     q: "What is GEO (generative engine optimization)?",
-    a: "GEO is the practice of structuring website content and metadata so it gets cited as a source by LLM-mediated answer engines — ChatGPT, Perplexity, Claude, Google AI Overviews, Bing Copilot. Tactics include quick-answer-shaped content, entity stacking via JSON-LD schema, llms.txt publishing, explicit AI-crawler allowlisting, FAQ schema, and citation tracking. GEO sits next to classical SEO; the two rankers are different.",
+    a: "GEO is the practice of structuring website content and metadata so it gets cited as a source by LLM-mediated answer engines, ChatGPT, Perplexity, Claude, Google AI Overviews, Bing Copilot. Tactics include quick-answer-shaped content, entity stacking via JSON-LD schema, llms.txt publishing, explicit AI-crawler allowlisting, FAQ schema, and citation tracking. GEO sits next to classical SEO; the two rankers are different.",
   },
 ];
 
 // Primary KW: "growth as a service" (vol 20, KD 0) — own the category.
 export const metadata: Metadata = {
-  title: "Growth as a Service — Productized for SMB B2B | Zyos Group",
+  title: "Growth as a Service: Productized for SMB B2B | Zyos Group",
   description:
-    "Growth as a Service: monthly continuous growth operations for SMB B2B — website, GBP, ads, SEO content, GEO. Measured against quarterly OKRs. Powered by Zyos OS.",
+    "Growth as a Service: monthly continuous growth operations for SMB B2B, website, GBP, ads, SEO content, GEO. Measured against quarterly OKRs. Powered by Zyos OS.",
   alternates: { canonical: "/solutions/growth-as-a-service" },
 };
 
@@ -58,7 +58,7 @@ const GAAS_VARIANTS = [
   },
   {
     name: "GEO",
-    body: "Generative engine optimization — getting cited by ChatGPT, Perplexity, Claude, and Google AI Overviews. Quick-answer-shaped content, entity stacking, citation tracking.",
+    body: "Generative engine optimization, getting cited by ChatGPT, Perplexity, Claude, and Google AI Overviews. Quick-answer-shaped content, entity stacking, citation tracking.",
   },
 ];
 
@@ -67,8 +67,8 @@ export default function GaaSPage() {
     <>
       <PageSchema
         path="/solutions/growth-as-a-service"
-        name="Growth as a Service (GaaS) — Zyos Group"
-        description="Continuous growth operations for SMB B2B — Website, GBP, Ads + LSA, SEO content, GEO."
+        name="Growth as a Service (GaaS): Zyos Group"
+        description="Continuous growth operations for SMB B2B, Website, GBP, Ads + LSA, SEO content, GEO."
         service={{ type: "Growth as a Service" }}
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
@@ -80,24 +80,24 @@ export default function GaaSPage() {
       <Section>
         <p className="eyebrow mb-4">Solutions · GaaS</p>
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Growth operations on autopilot — measured against your OKRs.
+          Growth operations on autopilot, measured against your OKRs.
         </h1>
 
         <div className="mt-10 max-w-3xl">
           <QuickAnswer>
             Growth as a Service (GaaS) is a continuous service in which
-            Zyos Group operates a small business&apos;s entire growth function
-            — website, Google Business Profile, ads + LSA, SEO content, reviews
-            and citations — measured against quarterly OKRs. Variants:
-            Website, GBP, Ads + LSA, SEO content, GEO. The only productized
-            agentic-AI play visible at SMB-tier monthly pricing.
+            Zyos Group operates a small business&apos;s entire growth function:
+            website, Google Business Profile, ads + LSA, SEO content, reviews
+            and citations, measured against quarterly OKRs. Variants:
+            Website, GBP, Ads + LSA, SEO content, GEO. A productized
+            agentic-AI growth play built for the SMB tier.
           </QuickAnswer>
         </div>
 
         <p className="mt-10 max-w-prose text-[15px] text-ink/85 leading-relaxed">
           Big-4 firms won&apos;t touch SMB-tier engagements. Boutiques chase
-          enterprise pricing. SMB B2B — local trades, home services,
-          professional practices — is structurally underserved. GaaS is the
+          enterprise pricing. SMB B2B, local trades, home services,
+          professional practices, is structurally underserved. GaaS is the
           productized motion that brings agentic operations to the businesses
           that actually need them.
         </p>
@@ -157,7 +157,7 @@ export default function GaaSPage() {
               McMahon&apos;s Jersey Shore Powerwash
             </h3>
             <p className="mt-3 text-[15px] text-ink/80 leading-relaxed">
-              Website, GBP, ads, reviews velocity, SEO content — operated
+              Website, GBP, ads, reviews velocity, SEO content, operated
               continuously. Full case study is in production · permission
               pending for the headline metric.
             </p>
@@ -182,7 +182,7 @@ export default function GaaSPage() {
         <SectionHeading
           eyebrow="The platform underneath"
           title="GaaS is powered by the Zyos Operating System."
-          description="Same OS that powers every customer engagement. The growth motion is productized on top — not bolted-on tooling."
+          description="Same OS that powers every customer engagement. The growth motion is productized on top, not bolted-on tooling."
         />
         <div className="mt-8">
           <a
@@ -208,7 +208,7 @@ export default function GaaSPage() {
       </Section>
 
       <Faq
-        eyebrow="Growth as a Service — FAQ"
+        eyebrow="Growth as a Service, FAQ"
         title="What buyers ask about GaaS."
         description="Lifted from prospect calls. Published as FAQPage schema for AI Overview + PAA citation."
         faqs={GAAS_FAQS}
@@ -226,7 +226,7 @@ export default function GaaSPage() {
             <p className="mt-4 text-white/80 max-w-prose">
               Tell us your industry, your geography, and your current
               bottleneck. The diagnostic tells you whether GaaS is the right
-              variant — and which sub-variants to start with.
+              variant, and which sub-variants to start with.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 lg:justify-end">

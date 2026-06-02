@@ -7,10 +7,10 @@ export function FounderBlock() {
     <Section className="bg-surface border-y border-border">
       <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] items-start">
         <div
-          aria-label="Paul Ruddy — photo placeholder"
+          aria-label="Paul Ruddy, photo placeholder"
           className="aspect-[4/5] rounded-lg border border-border bg-bg overflow-hidden flex items-center justify-center"
         >
-          {/* Photo placeholder — replace with on-camera still per
+          {/* Photo placeholder, replace with on-camera still per
               customer-video-pipeline.md Track A on first quarterly shoot. */}
           <div className="text-center px-6">
             <p className="mono text-[11px] uppercase tracking-[0.16em] text-subtle">
@@ -19,7 +19,7 @@ export function FounderBlock() {
             <p className="mt-3 text-primary text-2xl font-semibold tracking-tightish">
               PR
             </p>
-            <p className="mt-1 text-xs text-subtle">Track A on-camera still — pending</p>
+            <p className="mt-1 text-xs text-subtle">Track A on-camera still, pending</p>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ export function FounderBlock() {
             Two decades building and scaling IT managed services, software, and
             business intelligence practices. Now focused on integrated marketing,
             digital transformation, and foundational agentic-AI solutions for B2B
-            growth — and on the operating system that compounds it.
+            growth, and on the operating system that compounds it.
           </p>
           <p className="mt-4 text-[15px] text-ink/75 leading-relaxed">
             Zyos Group is the services company. Zyos OS is the operating system

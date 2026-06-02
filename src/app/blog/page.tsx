@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 import { BLOG_POSTS } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog — AI Operating Model & Agentic Transformation | Zyos Group",
+  title: "Blog: AI Operating Model & Agentic Transformation | Zyos Group",
   description:
     "Field notes on the AI operating model, agentic transformation, and putting AI into how mid-market companies actually operate. Written by Paul Ruddy.",
   alternates: { canonical: "/blog" },
@@ -23,7 +23,7 @@ export default function BlogIndexPage() {
     <>
       <PageSchema
         path="/blog"
-        name="Zyos Group Blog — AI Operating Model & Agentic Transformation"
+        name="Zyos Group Blog: AI Operating Model & Agentic Transformation"
         description="On-site long-form on the AI operating model, agentic transformation, and operations + technology + data + software under one roof."
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
@@ -39,7 +39,7 @@ export default function BlogIndexPage() {
         <div className="mt-10 max-w-3xl">
           <QuickAnswer>
             Long-form field notes from Zyos Group on building a governed AI
-            operating model — the foundation that makes agentic AI safe,
+            operating model, the foundation that makes agentic AI safe,
             measurable, and worth deploying. Written for operators at
             High-Growth SMBs, PE portfolio companies, and associations who want
             structure, not another pile of tools.
@@ -92,7 +92,7 @@ export default function BlogIndexPage() {
             </h2>
             <p className="mt-4 text-white/80 max-w-prose">
               One vendor across operations, technology, data, and software.
-              Start with a measurement — interview every department, score
+              Start with a measurement, interview every department, score
               every gap, and get a ranked roadmap.
             </p>
           </div>

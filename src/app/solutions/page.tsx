@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Solutions — Agent + Growth as a Service | Zyos Group",
+  title: "Solutions: Agent + Growth as a Service | Zyos Group",
   description:
     "Zyos Group Solutions: productized continuous services. Agent as a Service and Growth as a Service. Continuous, scoped variants, platform-led.",
   alternates: { canonical: "/solutions" },
@@ -16,20 +16,20 @@ export const metadata: Metadata = {
 
 const SOLUTIONS = [
   {
-    title: "Agent as a Service — AaaS",
+    title: "Agent as a Service, AaaS",
     href: "/solutions/agent-as-a-service",
     quick:
-      "We design, deploy, and run AI agents on your behalf — across sales, marketing, support, operations, finance, HR. You don't manage prompts, infrastructure, or agent reliability. We do, as a service.",
+      "We design, deploy, and run AI agents on your behalf, across sales, marketing, support, operations, finance, HR. You don't manage prompts, infrastructure, or agent reliability. We do, as a service.",
     variants: ["Workflows", "Systems", "Middleware", "Lean", "Insights"],
     keyword: "agentic ai consulting · KD 5",
   },
   {
-    title: "Growth as a Service — GaaS",
+    title: "Growth as a Service, GaaS",
     href: "/solutions/growth-as-a-service",
     quick:
-      "Continuous growth operations for SMB B2B — website, GBP, ads + LSA, SEO content, GEO. The only productized agentic-AI play visible at SMB-tier monthly pricing. Powered by Zyos OS.",
+      "Continuous growth operations for SMB B2B, website, GBP, ads + LSA, SEO content, GEO. The only productized agentic-AI play visible at SMB-tier monthly pricing. Powered by Zyos OS.",
     variants: ["Website", "GBP", "Ads + LSA", "SEO content", "GEO"],
-    keyword: "growth as a service · KD 0 — own the category",
+    keyword: "growth as a service · KD 0, own the category",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function SolutionsPage() {
       <PageSchema
         path="/solutions"
         name="Zyos Group Solutions"
-        description="Productized continuous services — Agent as a Service (AaaS) and Growth as a Service (GaaS)."
+        description="Productized continuous services, Agent as a Service (AaaS) and Growth as a Service (GaaS)."
         service={{ type: "Agentic AI consulting" }}
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
@@ -56,9 +56,9 @@ export default function SolutionsPage() {
         <div className="mt-10 max-w-3xl">
           <QuickAnswer>
             Zyos Group Solutions is our productized continuous-service arm. Two
-            parent offerings: Agent as a Service (AaaS — Workflows, Systems,
-            Middleware, Lean, Insights variants) and Growth as a Service (GaaS
-            — Website, GBP, Ads + LSA, SEO content, GEO variants). Always
+            parent offerings: Agent as a Service (AaaS: Workflows, Systems,
+            Middleware, Lean, Insights variants) and Growth as a Service (GaaS:
+            Website, GBP, Ads + LSA, SEO content, GEO variants). Always
             As-A-Service: continuous, defined SLA, support included. Every
             engagement begins with Process Intelligence Implementation as the
             first delivery cycle.
@@ -117,7 +117,7 @@ export default function SolutionsPage() {
           {[
             {
               t: "Engagement model",
-              b: "As-A-Service — continuous, scoped by variant. No project-based work in Solutions.",
+              b: "As-A-Service, continuous, scoped by variant. No project-based work in Solutions.",
             },
             {
               t: "Support",
@@ -125,7 +125,7 @@ export default function SolutionsPage() {
             },
             {
               t: "First delivery cycle",
-              b: "Process Intelligence Implementation — always. Customers who refuse PI are customers we politely decline.",
+              b: "Process Intelligence Implementation, always. Customers who refuse PI are customers we politely decline.",
             },
           ].map((c) => (
             <article

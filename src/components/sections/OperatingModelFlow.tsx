@@ -30,7 +30,7 @@ export function OperatingModelFlow() {
       <SectionHeading
         eyebrow="The operating model"
         title="Measure. Deliver. Continuously improve."
-        description="Every engagement runs through three phases — regardless of arm, practice, or variant. The Customer Success function lives inside Continuous Improvement."
+        description="Every engagement runs through three phases, regardless of arm, practice, or variant. The Customer Success function lives inside Continuous Improvement."
       />
 
       <ol className="mt-12 grid gap-4 md:grid-cols-3">

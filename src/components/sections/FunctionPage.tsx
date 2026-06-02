@@ -65,7 +65,7 @@ export function FunctionPage({
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="Agent workflows we deploy"
-          title="Five concrete workflows — not abstract claims."
+          title="Five concrete workflows, not abstract claims."
           description="Each workflow is a multi-step orchestration with a visible task log and an outcome metric. Productized inside AaaS."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -106,7 +106,7 @@ export function FunctionPage({
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="BI signals"
-          title="What this function generates — and what it consumes from the rest of the business."
+          title="What this function generates, and what it consumes from the rest of the business."
           description="The cross-functional integration is what makes agents compound. A signal generated here often triggers action somewhere else."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 max-w-4xl">

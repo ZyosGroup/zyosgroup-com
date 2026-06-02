@@ -112,7 +112,7 @@ export default function BlogPostPage({
 
       {post.faqs.length > 0 ? (
         <Faq
-          eyebrow={`${post.category} — FAQ`}
+          eyebrow={`${post.category} FAQ`}
           title="Questions operators ask."
           description="Published as FAQPage schema for AI Overview + People Also Ask citation."
           faqs={post.faqs}
@@ -147,7 +147,7 @@ export default function BlogPostPage({
             </h2>
             <p className="mt-4 text-white/80 max-w-prose">
               We interview every department, score every gap, and hand you a
-              ranked roadmap — foundation first, agents second, measured always.
+              ranked roadmap, foundation first, agents second, measured always.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 lg:justify-end">

@@ -21,7 +21,7 @@ export function HomeShowcasePreview() {
       <SectionHeading
         eyebrow="Capability showcases"
         title="Show, don't tell."
-        description="Every capability claim is paired with a visible artifact — a diagram, a screen, a code snippet, or a quantified outcome."
+        description="Every capability claim is paired with a visible artifact, a diagram, a screen, a code snippet, or a quantified outcome."
       />
 
       <div className="mt-12 grid gap-6 lg:grid-cols-2">

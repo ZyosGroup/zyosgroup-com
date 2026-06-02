@@ -107,7 +107,7 @@ export function OutcomeCatalog({
             Empty state
           </p>
           <p className="mt-2 text-ink/80">
-            No outcomes match this combination yet. Clear a filter — or start
+            No outcomes match this combination yet. Clear a filter, or start
             with a measurement and put yours on the list.
           </p>
         </div>

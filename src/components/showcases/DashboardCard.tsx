@@ -224,7 +224,7 @@ export function DashboardCard({
     >
       <div
         className="aspect-[16/10] bg-bg border-b border-border"
-        aria-label={`${entry.title} — anonymized dashboard preview`}
+        aria-label={`${entry.title}, anonymized dashboard preview`}
       >
         <Preview shape={entry.shape} />
       </div>

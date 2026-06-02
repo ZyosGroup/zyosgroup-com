@@ -5,7 +5,7 @@ import { SAMPLE_WORKFLOWS } from "@/components/showcases/sample-workflows";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "AI Agents for Finance — Reconciliation + Forecast + AP/AR | Zyos Group",
+  title: "AI Agents for Finance: Reconciliation + Forecast + AP/AR | Zyos Group",
   description:
     "AI agents for finance: reconciliation, AP/AR automation, forecast adjustment, audit prep, expense + procurement compliance. Close cycle from 10 days to 2–4.",
   alternates: { canonical: "/by-function/finance" },
@@ -18,9 +18,9 @@ export default function FinanceFunctionPage() {
     <>
       <PageSchema
         path="/by-function/finance"
-        name="AI Agents for Finance — Zyos Group"
-        description="Agentic AI applied to the Finance function — reconciliation, AP/AR, forecast adjustment, audit prep, expense compliance."
-        service={{ type: "Agent as a Service — Finance" }}
+        name="AI Agents for Finance: Zyos Group"
+        description="Agentic AI applied to the Finance function, reconciliation, AP/AR, forecast adjustment, audit prep, expense compliance."
+        service={{ type: "Agent as a Service, Finance" }}
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
           { name: "By function", url: `${SITE.url}/by-function/finance` },
@@ -68,7 +68,7 @@ export default function FinanceFunctionPage() {
           "Operations data (cost forecasting)",
           "HR data (compensation modeling)",
         ]}
-        software="ERP, AP platform, expense management, banking, BI/reporting, procurement systems — integrated. Tight cross-function dependence on Sales (revenue forecasting) and Operations (cost forecasting). Capability language only."
+        software="ERP, AP platform, expense management, banking, BI/reporting, procurement systems, integrated. Tight cross-function dependence on Sales (revenue forecasting) and Operations (cost forecasting). Capability language only."
         operationsChanges={[
           "Month-end close cadence: 10 days → 2–4 days.",
           "Forecast updates: quarterly → continuous (with monthly formal updates).",

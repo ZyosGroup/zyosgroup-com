@@ -9,20 +9,20 @@ import { SITE } from "@/lib/site";
 // Target: "ai for private equity" (140/mo, KD 0, $22 CPC) + "portfolio
 // operations" niche per ZYOS-KEYWORD-MAP.md A2.
 export const metadata: Metadata = {
-  title: "AI for Private Equity — Portfolio Value Creation | Zyos Group",
+  title: "AI for Private Equity: Portfolio Value Creation | Zyos Group",
   description:
-    "AI for private equity: maturity assessment per holding, operating-model rollout, and agentic AI across the portfolio. One vendor — operations, technology, data, software — on one OS.",
+    "AI for private equity: maturity assessment per holding, operating-model rollout, and agentic AI across the portfolio. One vendor, operations, technology, data, software, on one OS.",
   alternates: { canonical: "/who-we-serve/private-equity" },
 };
 
 const PE_PATTERNS = [
   {
     t: "Per-holding maturity assessment",
-    b: "The five-dimension scorecard run against each portfolio company gives the PE team a comparable readiness map across the portfolio — and routes investment into the holdings with the biggest unlock.",
+    b: "The five-dimension scorecard run against each portfolio company gives the PE team a comparable readiness map across the portfolio, and routes investment into the holdings with the biggest unlock.",
   },
   {
     t: "Standardized operating model",
-    b: "Same OS, different architectures. The operating model — Measure → Deliver → Continuously Improve — rolls out consistently across holdings while the architecture stays context-specific.",
+    b: "Same OS, different architectures. The operating model, Measure → Deliver → Continuously Improve, rolls out consistently across holdings while the architecture stays context-specific.",
   },
   {
     t: "Cross-portfolio agent deployments",
@@ -30,7 +30,7 @@ const PE_PATTERNS = [
   },
   {
     t: "QBR cadence with the deal team",
-    b: "Per-portco QBR + a roll-up review with the PE team. Value-impact recap + variance vs target + re-prioritization — the artifact the IC can defend.",
+    b: "Per-portco QBR + a roll-up review with the PE team. Value-impact recap + variance vs target + re-prioritization, the artifact the IC can defend.",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function PrivateEquityPage() {
             right solution per context (regulated, complex, or growth-stage),
             and roll out the operating model that compounds value-impact across
             the portfolio. As one vendor across operations, technology, data,
-            and software — on one Zyos OS — engagement-N is faster and
+            and software, on one Zyos OS, engagement-N is faster and
             better-measured than N–1. Flexible engagement: Build & Operate
             Retainer (primary), Standard Retainer, or As-A-Service per motion.
           </QuickAnswer>
@@ -97,7 +97,7 @@ export default function PrivateEquityPage() {
         <SectionHeading
           eyebrow="Primary offering"
           title="Build & Operate Retainer for rapid transformation per portco."
-          description="Productized for build+ops engagements where the spec is intentionally incomplete at signing. The discovery happens IN the engagement — exactly the shape PE value-creation work usually needs."
+          description="Productized for build+ops engagements where the spec is intentionally incomplete at signing. The discovery happens IN the engagement, exactly the shape PE value-creation work usually needs."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 max-w-4xl">
           <Link
@@ -112,7 +112,7 @@ export default function PrivateEquityPage() {
             </h3>
             <p className="mt-3 text-[15px] text-ink/80 leading-relaxed flex-1">
               Build the transformation, then run it. Customer owns the
-              solution at exit. Scoped per portfolio company — discovery
+              solution at exit. Scoped per portfolio company, discovery
               happens in the engagement.
             </p>
             <p className="mt-4 text-sm text-primary hover:underline">
@@ -130,7 +130,7 @@ export default function PrivateEquityPage() {
               Agent as a Service
             </h3>
             <p className="mt-3 text-[15px] text-ink/80 leading-relaxed flex-1">
-              Productized agent workflows for specific portco-level motions —
+              Productized agent workflows for specific portco-level motions , 
               outbound, content, support, finance reconciliation. Same agents
               redeployable across holdings.
             </p>

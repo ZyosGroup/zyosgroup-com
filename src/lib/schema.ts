@@ -123,7 +123,7 @@ export function softwareApplicationSchema(opts: {
     alternateName: "Zyos OS",
     url: SITE.zyosIo,
     description:
-      "The operating system that runs every Zyos Group customer engagement end-to-end — intake, scoring, proposal generation, engagement Kanban, OKR + KPI tracking, Customer Success cadence, and Quarterly Business Reviews — on one connected system.",
+      "The operating system that runs every Zyos Group customer engagement end-to-end, intake, scoring, proposal generation, engagement Kanban, OKR + KPI tracking, Customer Success cadence, and Quarterly Business Reviews, on one connected system.",
     applicationCategory: "BusinessApplication",
     applicationSubCategory: "AI Operating System",
     operatingSystem: "Web",

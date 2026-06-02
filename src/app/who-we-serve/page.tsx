@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Who we serve — SMBs, Private Equity, Associations | Zyos Group",
+  title: "Who we serve: SMBs, Private Equity, Associations | Zyos Group",
   description:
     "Zyos Group targets three ICPs: High-Growth SMBs, Private Equity firms + portfolio companies, and Associations. Same operating model. Context-specific architecture.",
   alternates: { canonical: "/who-we-serve" },
@@ -27,7 +27,7 @@ const ICPS = [
     href: "/who-we-serve/private-equity",
     pain: "Repeatable value-creation across the portfolio.",
     primary: "Primarily Build & Operate Retainer · also AaaS for portco-specific motions.",
-    body: "PE firms + portfolio companies. Same Zyos OS underneath every engagement — so engagement-N is faster, cheaper, and better-measured than N–1.",
+    body: "PE firms + portfolio companies. Same Zyos OS underneath every engagement, so engagement-N is faster, cheaper, and better-measured than N–1.",
   },
   {
     title: "Associations",
@@ -63,9 +63,9 @@ export default function WhoWeServePage() {
             scaling fast), Private Equity (firms plus portfolio companies
             needing repeatable value-creation), and Associations (non-profit
             and member organizations with AMS-aware, multi-stakeholder
-            reality). The operating model — Measure, Deliver, Continuously
-            Improve — is the same across all three. The architecture —
-            regulated, complex, or growth-stage — is context-specific.
+            reality). The operating model, Measure, Deliver, Continuously
+            Improve, is the same across all three. The architecture , 
+            regulated, complex, or growth-stage, is context-specific.
           </QuickAnswer>
         </div>
       </Section>
@@ -112,7 +112,7 @@ export default function WhoWeServePage() {
             </h2>
             <p className="mt-4 text-white/80 max-w-prose">
               The diagnostic identifies your fit and recommends the engagement
-              shape — including whether your shape is one we don&apos;t serve
+              shape, including whether your shape is one we don&apos;t serve
               well (in which case we&apos;ll tell you who would).
             </p>
           </div>

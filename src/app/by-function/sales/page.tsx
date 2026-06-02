@@ -5,7 +5,7 @@ import { SAMPLE_WORKFLOWS } from "@/components/showcases/sample-workflows";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "AI Agents for Sales — Pipeline + Outbound + ABM | Zyos Group",
+  title: "AI Agents for Sales: Pipeline + Outbound + ABM | Zyos Group",
   description:
     "AI agents for sales: outbound + ABM, pipeline hygiene, reply triage, win/loss intelligence. Productized inside Agent as a Service. Measured 90-day outcomes.",
   alternates: { canonical: "/by-function/sales" },
@@ -18,9 +18,9 @@ export default function SalesFunctionPage() {
     <>
       <PageSchema
         path="/by-function/sales"
-        name="AI Agents for Sales — Zyos Group"
-        description="Agentic AI applied to the Sales function — outbound, ABM, pipeline hygiene, win/loss intelligence."
-        service={{ type: "Agent as a Service — Sales" }}
+        name="AI Agents for Sales: Zyos Group"
+        description="Agentic AI applied to the Sales function, outbound, ABM, pipeline hygiene, win/loss intelligence."
+        service={{ type: "Agent as a Service, Sales" }}
         breadcrumbTrail={[
           { name: "Home", url: SITE.url },
           { name: "By function", url: `${SITE.url}/by-function/sales` },
@@ -32,7 +32,7 @@ export default function SalesFunctionPage() {
         eyebrow="By function · Sales"
         title="Pipeline that prioritizes itself. Outreach that personalizes at scale."
         quickAnswer="Zyos Group's Sales-function agents deploy across outbound + ABM, reply triage, pipeline hygiene, and win/loss intelligence. The mechanical work that consumes 60–70% of an SDR or AE's day moves to agents with visible task logs. Sales focuses on relationships and judgment calls. Productized inside Agent as a Service. Engagement starts with Process Intelligence Implementation as the first delivery cycle."
-        intro="Most agentic-AI vendors sell single-task sales agents — a chatbot, a sequencer plug-in. Zyos deploys comprehensive workflows that span discovery → enrichment → outreach → triage → meeting set → CRM update → handoff. The integration is what makes them compound: a pipeline anomaly becomes a marketing budget rebalance becomes a finance forecast update."
+        intro="Most agentic-AI vendors sell single-task sales agents, a chatbot, a sequencer plug-in. Zyos deploys comprehensive workflows that span discovery → enrichment → outreach → triage → meeting set → CRM update → handoff. The integration is what makes them compound: a pipeline anomaly becomes a marketing budget rebalance becomes a finance forecast update."
         agentWorkflows={[
           {
             name: "Outbound Lead Generation Agent",
@@ -70,9 +70,9 @@ export default function SalesFunctionPage() {
           "Customer health data",
           "Marketing-attribution data",
         ]}
-        software="The customer's CRM, sales engagement platform, LinkedIn API where allowed, email infrastructure, lead enrichment APIs, intent data sources, and conversation intelligence — all integrated through the Zyos OS connector layer. Capability language only: 'your CRM,' not vendor names."
+        software="The customer's CRM, sales engagement platform, LinkedIn API where allowed, email infrastructure, lead enrichment APIs, intent data sources, and conversation intelligence, all integrated through the Zyos OS connector layer. Capability language only: 'your CRM,' not vendor names."
         operationsChanges={[
-          "Weekly pipeline reviews become 'review the agent's flagged deals' — 80% shorter.",
+          "Weekly pipeline reviews become 'review the agent's flagged deals', 80% shorter.",
           "SDRs can run 3–5x more accounts with the agent doing the mechanical work.",
           "Managers coach on judgment + relationship work; the agent coaches on mechanical work.",
           "Lead routing becomes dynamic, based on real signals, not static round-robin.",

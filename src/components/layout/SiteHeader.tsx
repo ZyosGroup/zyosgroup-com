@@ -18,7 +18,7 @@ export function SiteHeader() {
         <Link
           href="/"
           className="flex items-center"
-          aria-label="Zyos Group — home"
+          aria-label="Zyos Group, home"
         >
           <Image
             src="/brand/logo-horizontal-color.png"

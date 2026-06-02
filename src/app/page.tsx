@@ -59,8 +59,8 @@ export default function HomePage() {
         <QuickAnswer>
           Zyos Group is an ROI-focused agentic-transformation partner. We assess
           operational maturity, architect the right solution for your context
-          (regulated, complex, or growth-stage), build the integrated foundation —
-          Business Intelligence, Software, Operations, and Agents running across —
+          (regulated, complex, or growth-stage), build the integrated foundation , 
+          Business Intelligence, Software, Operations, and Agents running across , 
           and execute the roadmap in measured monthly cycles. Engagement models:
           Fixed Price, Retainer, or As-A-Service. Every engagement starts with the
           Opportunity Engine intake and Process Intelligence Implementation.
@@ -70,13 +70,13 @@ export default function HomePage() {
       {/* 2. Three integrated service components + Agents-across */}
       <ComponentsBar />
 
-      {/* 3. Operating model — Measure → Delivery → Continuous Improvement */}
+      {/* 3. Operating model, Measure → Delivery → Continuous Improvement */}
       <OperatingModelFlow />
 
-      {/* 4. Who we serve — three ICP blocks */}
+      {/* 4. Who we serve, three ICP blocks */}
       <IcpCards />
 
-      {/* 5. Two arms — Consulting vs Solutions */}
+      {/* 5. Two arms, Consulting vs Solutions */}
       <TwoArmsBlock />
 
       {/* 6. Opportunity Engine intake demo */}
@@ -94,7 +94,7 @@ export default function HomePage() {
       {/* 10. The Zyos Brief signup */}
       <NewsletterSignup />
 
-      {/* 11. Footer — rendered by RootLayout */}
+      {/* 11. Footer, rendered by RootLayout */}
     </>
   );
 }

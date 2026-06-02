@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 
 // Primary KW: "integrated marketing services" (KD 0).
 export const metadata: Metadata = {
-  title: "Integrated Marketing Consulting — SEO, GEO, Content | Zyos Group",
+  title: "Integrated Marketing Consulting: SEO, GEO, Content | Zyos Group",
   description:
     "Integrated marketing: SEO + GEO + content engine + paid + analytics + measurement. The marketing layer that drives growth on top of operational and technical work.",
   alternates: { canonical: "/consulting/integrated-marketing" },
@@ -37,7 +37,7 @@ const LAYERS = [
   },
   {
     t: "Brand + reviews",
-    b: "Review monitoring + response drafting + reputation management — the surface most agentic-AI firms ignore but that compounds local credibility.",
+    b: "Review monitoring + response drafting + reputation management, the surface most agentic-AI firms ignore but that compounds local credibility.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function IntegratedMarketingPage() {
     <>
       <PageSchema
         path="/consulting/integrated-marketing"
-        name="Integrated Marketing — Zyos Group Consulting"
+        name="Integrated Marketing: Zyos Group Consulting"
         description="SEO + GEO + content + paid + analytics. The marketing layer that drives growth on top of operational and technical work."
         service={{ type: "Integrated marketing services" }}
         breadcrumbTrail={[
@@ -79,7 +79,7 @@ export default function IntegratedMarketingPage() {
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="Six layers"
-          title="The integrated marketing stack — every layer measured against business performance."
+          title="The integrated marketing stack, every layer measured against business performance."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {LAYERS.map((l, i) => (
@@ -103,7 +103,7 @@ export default function IntegratedMarketingPage() {
         <SectionHeading
           eyebrow="The content engine"
           title="Cadence is the differentiator."
-          description="One piece a week, every week, across owned properties — zyosgroup.com (this site) + paulruddy.com (founder voice) + zyos.io (product). LinkedIn Newsletter — The Zyos Brief — is the distribution surface."
+          description="One piece a week, every week, across owned properties, zyosgroup.com (this site) + paulruddy.com (founder voice) + zyos.io (product). LinkedIn Newsletter, The Zyos Brief, is the distribution surface."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-3 max-w-4xl">
           {[
@@ -144,7 +144,7 @@ export default function IntegratedMarketingPage() {
       <Section className="bg-surface border-y border-border">
         <SectionHeading
           eyebrow="Productized version"
-          title="When the SMB customer needs the whole motion operated for them — that's GaaS."
+          title="When the SMB customer needs the whole motion operated for them, that's GaaS."
           description="Integrated Marketing in Consulting is Retainer or Fixed Price. The productized as-a-service version for SMB B2B is Growth as a Service."
         />
         <div className="mt-8 flex flex-wrap gap-3">
@@ -169,7 +169,7 @@ export default function IntegratedMarketingPage() {
             <p className="mt-4 text-white/80 max-w-prose">
               Marketing that ignores operations is brittle. Marketing that
               builds on operations + the technical foundation compounds.
-              That&apos;s why this is one practice area among four — not a
+              That&apos;s why this is one practice area among four, not a
               standalone agency.
             </p>
           </div>

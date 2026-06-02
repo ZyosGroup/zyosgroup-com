@@ -12,7 +12,7 @@ type Reel = {
   title: string;
   steps: string[];
   outcome: string;
-  videoSrc?: string; // wired pass 3 — when AI video Track A is produced
+  videoSrc?: string; // wired pass 3, when AI video Track A is produced
   posterSrc?: string;
 };
 
