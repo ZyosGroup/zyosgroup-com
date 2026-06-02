@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Hero } from "@/components/sections/Hero";
+import { Stakes } from "@/components/sections/Stakes";
 import { ComponentsBar } from "@/components/sections/ComponentsBar";
-import { IcpCards } from "@/components/sections/IcpCards";
-import { TwoArmsBlock } from "@/components/sections/TwoArmsBlock";
 import { OpportunityEngineDemo } from "@/components/sections/OpportunityEngineDemo";
+import { FunctionExamples } from "@/components/sections/FunctionExamples";
+import { OperatedServices } from "@/components/sections/OperatedServices";
+import { IcpCards } from "@/components/sections/IcpCards";
+import { HowWeEngage } from "@/components/sections/HowWeEngage";
+import { Disciplines } from "@/components/sections/Disciplines";
 import { TestimonialRail } from "@/components/sections/TestimonialRail";
 import { FounderBlock } from "@/components/sections/FounderBlock";
 import { NewsletterSignup } from "@/components/sections/NewsletterSignup";
@@ -13,12 +17,9 @@ import { Section } from "@/components/ui/Section";
 import { jsonLdScript, webPageSchema } from "@/lib/schema";
 import { SITE, META_DESCRIPTION } from "@/lib/site";
 
-// Below-the-fold, client-heavy sections — code-split so their JS (framer-motion,
-// showcase widgets) is not in the homepage's initial bundle. SSR stays on (default)
-// so server-rendered content + SEO are unaffected; only the hydration cost defers.
-const OperatingModelFlow = dynamic(() =>
-  import("@/components/sections/OperatingModelFlow").then((m) => m.OperatingModelFlow)
-);
+// Below-the-fold, client-heavy section — code-split so its JS (showcase widgets)
+// is not in the homepage's initial bundle. SSR stays on (default) so server-
+// rendered content + SEO are unaffected; only the hydration cost defers.
 const HomeShowcasePreview = dynamic(() =>
   import("@/components/sections/HomeShowcasePreview").then((m) => m.HomeShowcasePreview)
 );
@@ -51,50 +52,58 @@ export default function HomePage() {
         dangerouslySetInnerHTML={jsonLdScript(pageSchema)}
       />
 
-      {/* 1. Hero */}
+      {/* S1. Hero — identity */}
       <Hero />
 
-      {/* Quick Answer near the top of the page, inside the first viewport */}
+      {/* Quick Answer (AEO) tucked under the hero, inside the first viewport */}
       <Section className="!py-10">
         <QuickAnswer>
-          Zyos Group is an ROI-focused agentic-transformation partner. We assess
-          operational maturity, architect the right solution for your context
-          (regulated, complex, or growth-stage), build the integrated foundation , 
-          Business Intelligence, Software, Operations, and Agents running across , 
-          and execute the roadmap in measured monthly cycles. Engagement models:
-          Fixed Price, Retainer, or As-A-Service. Every engagement starts with the
-          Opportunity Engine intake and Process Intelligence Implementation.
+          Zyos Group is a boutique agentic-AI partner built for high-growth SMBs,
+          private equity portfolios, and associations. We put AI agents to work
+          across your operations, on a foundation of business intelligence,
+          technology, and operations that two decades of work taught us how to
+          build. A senior team runs every engagement, with a flexible model to fit
+          (Fixed Price, Retainer, or As-A-Service). Every engagement starts with
+          Process Intelligence: a structured assessment of how your business
+          actually runs that surfaces the gaps and sets the roadmap. From there we
+          build the foundation agents need, stand up agent orchestration, and give
+          you the software to monitor and administer it.
         </QuickAnswer>
       </Section>
 
-      {/* 2. Three integrated service components + Agents-across */}
+      {/* S2. The stakes — fear of waiting + single-vendor close */}
+      <Stakes />
+
+      {/* S3. The Zyos journey — OE survey → roadmap → PI → orchestration → monitoring */}
       <ComponentsBar />
 
-      {/* 3. Operating model, Measure → Delivery → Continuous Improvement */}
-      <OperatingModelFlow />
-
-      {/* 4. Who we serve, three ICP blocks */}
-      <IcpCards />
-
-      {/* 5. Two arms, Consulting vs Solutions */}
-      <TwoArmsBlock />
-
-      {/* 6. Opportunity Engine intake demo */}
+      {/* S3b. The journey's front door, made tangible — the Opportunity Engine survey */}
       <OpportunityEngineDemo />
 
-      {/* 7. Capability showcases (compact) */}
-      <HomeShowcasePreview />
+      {/* S4. Agents are the show — applied across every function */}
+      <FunctionExamples />
 
-      {/* 8. Customer love */}
+      {/* S5. What we operate — Agent as a Service + Growth as a Service */}
+      <OperatedServices />
+
+      {/* S6. Who we serve — three ICPs (SMB highlighted) */}
+      <IcpCards />
+
+      {/* S7. How we engage — boutique / flexible model + operating cadence */}
+      <HowWeEngage />
+
+      {/* S8. The disciplines behind it (minimal) */}
+      <Disciplines />
+
+      {/* S9. Proof — capability showcases + testimonials */}
+      <HomeShowcasePreview />
       <TestimonialRail />
 
-      {/* 9. Founder */}
+      {/* S10. Founder */}
       <FounderBlock />
 
-      {/* 10. The Zyos Brief signup */}
+      {/* S11. The Zyos Brief signup → Footer (RootLayout) */}
       <NewsletterSignup />
-
-      {/* 11. Footer, rendered by RootLayout */}
     </>
   );
 }

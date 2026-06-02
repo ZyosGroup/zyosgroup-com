@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { Faq } from "@/components/seo/Faq";
 import { DashboardGallery } from "@/components/showcases/DashboardCard";
+import { HeroRefinedStack } from "@/components/brand/HeroRefinedStack";
 import { SITE } from "@/lib/site";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import {
   softwareApplicationSchema,
   jsonLdScript,
@@ -95,14 +97,70 @@ export default function PlatformPage() {
         )}
       />
 
-      <Section>
-        <p className="eyebrow mb-4">Platform</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          The marketing site is the product. The product is the operating
-          system.
-        </h1>
+      {/* Dark hero band, featuring the AI Operating Model stack */}
+      <section className="relative overflow-hidden bg-primary-deep text-white">
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+          <div
+            className="aurora-a absolute -top-1/3 right-[-10%] h-[40rem] w-[40rem] rounded-full blur-3xl"
+            style={{ background: "radial-gradient(circle, rgba(72,193,235,0.30), transparent 60%)" }}
+          />
+          <div
+            className="aurora-b absolute bottom-[-30%] left-[-10%] h-[34rem] w-[34rem] rounded-full blur-3xl"
+            style={{ background: "radial-gradient(circle, rgba(21,105,172,0.45), transparent 62%)" }}
+          />
+          <div
+            className="absolute inset-0 opacity-[0.07]"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)",
+              backgroundSize: "56px 56px",
+              maskImage: "radial-gradient(ellipse at 60% 40%, #000 40%, transparent 80%)",
+              WebkitMaskImage: "radial-gradient(ellipse at 60% 40%, #000 40%, transparent 80%)",
+            }}
+          />
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-white" />
+        </div>
 
-        <div className="mt-10 max-w-3xl">
+        <div className="container-content pt-20 pb-24 md:pt-24 md:pb-28">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-6">
+                Platform
+              </p>
+              <h1 className="text-4xl md:text-6xl font-light tracking-tight text-white leading-[1.04] [text-shadow:0_2px_30px_rgba(0,0,0,0.35)]">
+                The marketing site is the product. The product is the operating system.
+              </h1>
+              <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/75 leading-relaxed">
+                Zyos OS is the AI operating system that runs every engagement, from
+                first intake to Quarterly Business Review, on one connected system.
+                The same platform that powers this site powers your engagement.
+              </p>
+              <div className="mt-9 flex flex-wrap items-center gap-4">
+                <Link
+                  href="/start"
+                  className="inline-flex items-center gap-2 rounded-md bg-accent px-5 py-3 text-sm font-semibold text-primary-deep transition-colors hover:bg-accent-vivid"
+                >
+                  Start with a measurement <ArrowRight aria-hidden className="h-4 w-4" />
+                </Link>
+                <a
+                  href={SITE.zyosIo}
+                  rel="noopener"
+                  className="inline-flex items-center gap-2 rounded-md border border-white/25 px-5 py-3 text-sm font-medium text-white transition-colors hover:border-accent hover:text-accent"
+                >
+                  Visit zyos.io
+                </a>
+              </div>
+            </div>
+
+            <div className="hidden lg:block">
+              <HeroRefinedStack className="mx-auto w-full max-w-lg drop-shadow-[0_20px_60px_rgba(0,0,0,0.45)]" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>
             An AI Operating System is the platform that runs an enterprise&apos;s
             agent fleet, data pipelines, and operational measurements

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { NetworkMotif } from "@/components/brand/NetworkMotif";
+import { HeroJourneySpine } from "@/components/brand/HeroJourneySpine";
 import { TAGLINE, HERO_SUBHEAD, FOUNDATIONAL_LINE } from "@/lib/site";
 
 export function Hero() {
@@ -34,9 +34,9 @@ export function Hero() {
           {/* LEFT — copy */}
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-6">
-              Digital transformation &amp; AI consulting · one vendor
+              Boutique agentic AI · for high-growth SMBs, PE &amp; associations
             </p>
-            <h1 className="text-4xl md:text-6xl font-semibold tracking-tightish text-white leading-[1.04]">
+            <h1 className="text-4xl md:text-6xl font-light tracking-tight text-white leading-[1.04] [text-shadow:0_2px_30px_rgba(0,0,0,0.35)]">
               Agentic transformation built for ROI.
             </h1>
             <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/75 leading-relaxed">
@@ -67,9 +67,9 @@ export function Hero() {
             </p>
           </div>
 
-          {/* RIGHT — dimensional AI Operating Model stack */}
+          {/* RIGHT — the Zyos journey spine (engagement arc, survey to production) */}
           <div className="hidden lg:block">
-            <NetworkMotif className="mx-auto w-full max-w-lg drop-shadow-[0_20px_60px_rgba(0,0,0,0.45)]" />
+            <HeroJourneySpine className="mx-auto w-full max-w-lg drop-shadow-[0_20px_60px_rgba(0,0,0,0.45)]" />
           </div>
         </div>
       </div>

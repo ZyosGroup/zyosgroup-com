@@ -3,6 +3,7 @@ import Image from "next/image";
 
 const NAV = [
   { href: "/solutions", label: "Solutions" },
+  { href: "/agents", label: "Agents" },
   { href: "/consulting", label: "Consulting" },
   { href: "/who-we-serve", label: "Who we serve" },
   { href: "/platform", label: "Platform" },
@@ -21,12 +22,13 @@ export function SiteHeader() {
           aria-label="Zyos Group, home"
         >
           <Image
-            src="/brand/logo-horizontal-color.png"
+            src="/brand/logo-horizontal-color.svg"
             alt="Zyos Group"
-            width={193}
-            height={60}
+            width={245}
+            height={49}
             priority
-            className="h-11 w-auto md:h-12"
+            unoptimized
+            className="h-9 w-auto md:h-10"
           />
         </Link>
 

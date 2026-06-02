@@ -92,8 +92,20 @@
     50% { opacity: 0.7; }
   }
 
+  /* Journey-spine pulse: a light dot traveling down the node line. */
+  .spine-flow {
+    transform-box: fill-box;
+    animation: spine-flow 4.5s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  }
+  @keyframes spine-flow {
+    0%   { transform: translateY(0); opacity: 0; }
+    12%  { opacity: 1; }
+    88%  { opacity: 1; }
+    100% { transform: translateY(288px); opacity: 0; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
-    .hero-ring-spin, .hero-orbit, .hero-pulse,
+    .hero-ring-spin, .hero-orbit, .hero-pulse, .spine-flow,
     .aurora-a, .aurora-b, .layer-float, .layer-sheen { animation: none; }
   }
 

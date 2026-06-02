@@ -42,22 +42,23 @@ export const TAGLINE =
 export const TAGLINE_SHORT =
   "Agentic transformation built for ROI.";
 
-// Hero subhead — equal billing: (1) build the foundation agentic AI needs,
-// (2) run the service offerings on top once you're there. (Paul 2026-06-01.)
+// Hero subhead — foundation first (Process Intelligence), then the full breadth
+// of delivery: BI, IT, software, operations, agents across, plus GaaS/marketing.
+// (Paul 2026-06-02 rebalance.)
 export const HERO_SUBHEAD =
-  "Two things, under one roof. First, we lay the foundation agentic AI needs: business intelligence, technology, operations, and data, measured and made ready. Then we serve you on top of it, with the agents, builds, and growth operations that fit where you are. Foundation and service, one vendor.";
+  "A boutique agentic-AI partner for high-growth SMBs, private equity portfolios, and associations. Agents can only orchestrate a foundation that's actually in place, so we go with you the whole way: documenting how you work, building the systems, data, and workflows agents need, then orchestrating and administering them. Senior people on every engagement, with a flexible model that meets you where you are.";
 
 // Brand line for foundational-builders positioning.
 export const FOUNDATIONAL_LINE =
-  "Foundational builders. Process Intelligence first. Agents second. Value-impact always.";
+  "Boutique agentic AI for high-growth SMBs, PE, and associations. Senior team on every engagement. Value-impact always.";
 
 // Canonical Org description (short, for meta)
 export const META_DESCRIPTION =
-  "Digital transformation & AI consulting for SMBs, PE portfolios, and associations. One vendor across operations, technology, data, and software, agentic transformation built for ROI.";
+  "Digital transformation & AI consulting for SMBs, PE portfolios, and associations. One vendor: business intelligence, IT, software, operations, AI agents, and growth marketing. Agentic transformation built for ROI.";
 
 // Canonical Org description (long, for /about hero + footer schema)
 export const ORG_LONG_DESCRIPTION =
-  "Zyos Group is an ROI-focused agentic-transformation partner. We assess operational maturity, architect the right solution for your context (regulated, complex, or growth-stage), build the integrated foundation, Business Intelligence + Software + Operations + Agents running across, and execute the roadmap that infuses AI into how you operate. Every architecture addresses security, ownership, maintenance, and evolution as first-class concerns. Our operating model (Measure → Deliver → Continuously Improve) governs every engagement; Customer Success (QBRs, OKRs, monthly reports, customer support) runs through Continuous Improvement. We target High-Growth SMBs, Private Equity, and Associations. Founded by Paul Ruddy.";
+  "Zyos Group is an ROI-focused agentic-transformation partner. Every engagement starts with Process Intelligence: a structured assessment of how the business actually operates that surfaces the technology, data, and process gaps and generates the artifacts and roadmap to close them. From that foundation Zyos delivers across the full stack: business intelligence, information technology, custom software and data, operations, and AI agents running across every function, plus Growth as a Service for marketing. Every architecture addresses security, ownership, maintenance, and evolution as first-class concerns. The operating model (Measure, Deliver, Continuously Improve) governs every engagement; Customer Success (QBRs, OKRs, monthly reports, customer support) runs through Continuous Improvement. Zyos targets High-Growth SMBs, Private Equity, and Associations. Founded by Paul Ruddy.";
 
 // Topical authority — the entity-anchor claims Zyos makes for LLM + Google
 // E-E-A-T and entity recognition. Every term must appear somewhere in the

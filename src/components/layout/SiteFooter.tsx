@@ -62,11 +62,12 @@ export function SiteFooter() {
           <div className="col-span-2">
             <Link href="/" className="flex items-center" aria-label="Zyos Group, home">
               <Image
-                src="/brand/logo-horizontal-color.png"
+                src="/brand/logo-horizontal-color.svg"
                 alt="Zyos Group"
-                width={161}
-                height={50}
-                className="h-10 w-auto"
+                width={200}
+                height={40}
+                unoptimized
+                className="h-9 w-auto"
               />
             </Link>
             <p className="mt-3 max-w-sm text-sm text-subtle leading-relaxed">
