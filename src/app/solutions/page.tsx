@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Solutions: Agent + Growth as a Service | Zyos Group",
+  title: "Solutions: Agent + Growth as a Service",
   description:
     "Zyos Group Solutions: productized continuous services. Agent as a Service and Growth as a Service. Continuous, scoped variants, platform-led.",
   alternates: { canonical: "/solutions" },

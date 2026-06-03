@@ -9,9 +9,9 @@ import { SITE } from "@/lib/site";
 // Target: "ai for private equity" (140/mo, KD 0, $22 CPC) + "portfolio
 // operations" niche per ZYOS-KEYWORD-MAP.md A2.
 export const metadata: Metadata = {
-  title: "AI for Private Equity: Portfolio Value Creation | Zyos Group",
+  title: "AI for Private Equity: Portfolio Value Creation",
   description:
-    "AI for private equity: maturity assessment per holding, operating-model rollout, and agentic AI across the portfolio. One vendor, operations, technology, data, software, on one OS.",
+    "AI for private equity: maturity assessment per holding, operating-model rollout, and agentic AI across the portfolio. One vendor, on one operating system.",
   alternates: { canonical: "/who-we-serve/private-equity" },
 };
 

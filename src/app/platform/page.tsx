@@ -39,9 +39,9 @@ const PLATFORM_FAQS = [
 
 // Primary KW: "ai operating system" (vol 1,000, KD 26) + "agentic ai platform" (vol 880).
 export const metadata: Metadata = {
-  title: "Platform: The Zyos Operating System | Zyos Group",
+  title: "Platform: The Zyos Operating System",
   description:
-    "Zyos OS is the operating system that runs every Zyos Group engagement. Intake → scoring → proposal → Kanban → Customer Success → QBR. One connected system.",
+    "Zyos OS runs every Zyos Group engagement end to end: intake, scoring, proposal, Kanban, Customer Success, and QBR on one connected system.",
   alternates: { canonical: "/platform" },
 };
 

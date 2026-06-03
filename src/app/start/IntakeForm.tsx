@@ -1,8 +1,10 @@
 "use client";
 
+import { useEffect } from "react";
 import { useFormState, useFormStatus } from "react-dom";
 import { submitIntakeAction, type IntakeState } from "./actions";
 import { INDUSTRIES, COMPANY_SIZES } from "./intake-schema";
+import { trackEvent } from "@/lib/analytics";
 import { CheckCircle2, Loader2 } from "lucide-react";
 
 const initial: IntakeState = { status: "idle" };
@@ -22,6 +24,17 @@ function field(label: string, error?: string) {
 
 export function IntakeForm() {
   const [state, formAction] = useFormState(submitIntakeAction, initial);
+
+  // Conversion: fire once when the intake succeeds. Pushes to the GTM
+  // dataLayer; GTM forwards to GA4 as the `generate_lead` key event.
+  useEffect(() => {
+    if (state.status === "ok") {
+      trackEvent("generate_lead", {
+        form: "opportunity_engine",
+        source: "zyosgroup.com-intake",
+      });
+    }
+  }, [state.status]);
 
   if (state.status === "ok") {
     return (

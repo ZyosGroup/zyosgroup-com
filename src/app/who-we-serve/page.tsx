@@ -8,9 +8,9 @@ import { SITE } from "@/lib/site";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Who we serve: SMBs, Private Equity, Associations | Zyos Group",
+  title: "Who we serve: SMBs, Private Equity, Associations",
   description:
-    "Zyos Group targets three ICPs: High-Growth SMBs, Private Equity firms + portfolio companies, and Associations. Same operating model. Context-specific architecture.",
+    "Zyos Group serves three ICPs: high-growth SMBs, private equity and portfolio companies, and associations. One operating model, context-specific architecture.",
   alternates: { canonical: "/who-we-serve" },
 };
 

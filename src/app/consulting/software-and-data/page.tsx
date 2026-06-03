@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
 
 // Primary KW: "software development services" (vol 2,900) + "ai agent development" (vol 590).
 export const metadata: Metadata = {
-  title: "Software & Data Consulting: Custom Builds + BI | Zyos Group",
+  title: "Software & Data Consulting: Custom Builds + BI",
   description:
     "Custom software development, AI agent development, data platforms, integrations, BI dashboards. Built when off-the-shelf can't.",
   alternates: { canonical: "/consulting/software-and-data" },

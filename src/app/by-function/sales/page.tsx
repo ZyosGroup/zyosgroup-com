@@ -5,7 +5,7 @@ import { SAMPLE_WORKFLOWS } from "@/components/showcases/sample-workflows";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "AI Agents for Sales: Pipeline + Outbound + ABM | Zyos Group",
+  title: "AI Agents for Sales: Pipeline + Outbound + ABM",
   description:
     "AI agents for sales: outbound + ABM, pipeline hygiene, reply triage, win/loss intelligence. Productized inside Agent as a Service. Measured 90-day outcomes.",
   alternates: { canonical: "/by-function/sales" },

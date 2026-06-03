@@ -9,9 +9,9 @@ import { SITE } from "@/lib/site";
 
 // Primary KW: "digital transformation consulting" (vol 1,900, KD 1) — winnable head term.
 export const metadata: Metadata = {
-  title: "Digital Transformation Consulting | Zyos Group",
+  title: "Digital Transformation Consulting",
   description:
-    "End-to-end digital transformation programs. Readiness + maturity assessment, CRM/ERP modernization, process redesign, AI-native operating model. Build & Operate Retainer.",
+    "Digital transformation consulting, end to end: readiness and maturity assessment, CRM/ERP modernization, process redesign, and an AI-native operating model.",
   alternates: { canonical: "/consulting/digital-transformation" },
 };
 

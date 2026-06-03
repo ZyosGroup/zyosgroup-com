@@ -54,7 +54,7 @@ export const FOUNDATIONAL_LINE =
 
 // Canonical Org description (short, for meta)
 export const META_DESCRIPTION =
-  "Digital transformation & AI consulting for SMBs, PE portfolios, and associations. One vendor: business intelligence, IT, software, operations, AI agents, and growth marketing. Agentic transformation built for ROI.";
+  "Digital transformation & AI consulting for SMBs, PE portfolios, and associations. One vendor for BI, software, operations, and AI agents. Built for ROI.";
 
 // Canonical Org description (long, for /about hero + footer schema)
 export const ORG_LONG_DESCRIPTION =

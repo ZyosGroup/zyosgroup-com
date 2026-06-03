@@ -10,7 +10,7 @@ import { PageSchema } from "@/components/seo/PageSchema";
 import { SITE, FOUNDATIONAL_LINE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Foundation: PI Implementation + Solution Architecture | Zyos Group",
+  title: "Foundation: PI Implementation + Solution Architecture",
   description:
     "Process Intelligence Implementation, the six deliverables, and the Solution Architecture brief addressing security, ownership, maintenance, and evolution.",
   alternates: { canonical: "/foundation" },

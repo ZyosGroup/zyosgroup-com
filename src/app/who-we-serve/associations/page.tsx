@@ -9,9 +9,9 @@ import { SITE } from "@/lib/site";
 // Target: "ai for associations" (40/mo, KD 0, $296 CPC — tiny volume, huge
 // lead value) + member-experience niche per ZYOS-KEYWORD-MAP.md A2.
 export const metadata: Metadata = {
-  title: "AI for Associations: Member Experience & AMS-aware AI | Zyos Group",
+  title: "AI for Associations: Member Experience & AMS-aware AI",
   description:
-    "AI for associations and member organizations. AMS-aware architecture, member content operations, audit-trail discipline. One vendor across operations, technology, data, and software.",
+    "AI for associations and member organizations: AMS-aware architecture, member content operations, and audit-trail discipline. One vendor, one operating model.",
   alternates: { canonical: "/who-we-serve/associations" },
 };
 

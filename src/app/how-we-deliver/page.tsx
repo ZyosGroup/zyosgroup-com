@@ -32,7 +32,7 @@ const DELIVERY_FAQS = [
 // Target: "AI engagement model" + "agentic AI delivery framework" — GEO surface
 // per zyosgroup-com-delivery-model-customer-success.md.
 export const metadata: Metadata = {
-  title: "How We Deliver: Engagement Model + Customer Success | Zyos Group",
+  title: "How We Deliver: Engagement Model + Customer Success",
   description:
     "Zyos Group's delivery model, Measure, Deliver, Continuously Improve, plus the 11 Customer Success features that prove the results. Trust-signal surface.",
   alternates: { canonical: "/how-we-deliver" },

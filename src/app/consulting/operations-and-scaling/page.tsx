@@ -11,9 +11,9 @@ import { SITE } from "@/lib/site";
 // Primary KW: "operations consulting" + "fractional operations" (1,600/mo, KD 1)
 // per ZYOS-KEYWORD-MAP.md A1.
 export const metadata: Metadata = {
-  title: "Operations Consulting & Fractional Operations | Zyos Group",
+  title: "Operations Consulting & Fractional Operations",
   description:
-    "Operations consulting and fractional operations: OKR + KPI systems, Customer Success cadence, service-desk discipline, operating-model design. Productize your founder's playbook.",
+    "Operations consulting and fractional operations: OKR and KPI systems, Customer Success cadence, and operating-model design. Productize your founder's playbook.",
   alternates: { canonical: "/consulting/operations-and-scaling" },
 };
 

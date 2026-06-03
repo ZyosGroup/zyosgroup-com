@@ -5,9 +5,9 @@ import { SAMPLE_WORKFLOWS } from "@/components/showcases/sample-workflows";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "AI Agents for HR: Onboarding + Help Desk + Talent | Zyos Group",
+  title: "AI Agents for HR: Onboarding + Help Desk + Talent",
   description:
-    "AI agents for HR: onboarding orchestration, employee help desk, talent screening, performance review prep, compliance training. People work to humans; policy + process to agents.",
+    "AI agents for HR: onboarding, employee help desk, talent screening, review prep, and compliance training. People work to humans, process to agents.",
   alternates: { canonical: "/by-function/hr" },
 };
 

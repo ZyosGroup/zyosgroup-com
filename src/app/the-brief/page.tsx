@@ -6,7 +6,7 @@ import { SITE } from "@/lib/site";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "The Zyos Brief: LinkedIn Newsletter | Zyos Group",
+  title: "The Zyos Brief: LinkedIn Newsletter",
   description:
     "The Zyos Brief is Paul Ruddy's monthly read on agentic AI, operating systems for services firms, and what Zyos Group shipped this month. Subscribe on LinkedIn.",
   alternates: { canonical: "/the-brief" },

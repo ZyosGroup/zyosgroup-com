@@ -5,9 +5,9 @@ import { SAMPLE_WORKFLOWS } from "@/components/showcases/sample-workflows";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "AI Agents for IT: Service Desk + Anomaly + Provisioning | Zyos Group",
+  title: "AI Agents for IT: Service Desk + Anomaly + Provisioning",
   description:
-    "AI agents for IT: service desk triage, anomaly + root-cause, knowledge base maintenance, provisioning + access, security event triage. Built on the Zyos Service Desk.",
+    "AI agents for IT: service desk triage, anomaly and root-cause analysis, provisioning and access, and security event triage. Built on the Zyos Service Desk.",
   alternates: { canonical: "/by-function/information-technology" },
 };
 

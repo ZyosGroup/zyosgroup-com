@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 import { BLOG_POSTS } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog: AI Operating Model & Agentic Transformation | Zyos Group",
+  title: "Blog: AI Operating Model & Agentic Transformation",
   description:
     "Field notes on the AI operating model, agentic transformation, and putting AI into how mid-market companies actually operate. Written by Paul Ruddy.",
   alternates: { canonical: "/blog" },

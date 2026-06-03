@@ -5,7 +5,7 @@ import { SAMPLE_WORKFLOWS } from "@/components/showcases/sample-workflows";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "AI Agents for Finance: Reconciliation + Forecast + AP/AR | Zyos Group",
+  title: "AI Agents for Finance: Reconciliation + Forecast + AP/AR",
   description:
     "AI agents for finance: reconciliation, AP/AR automation, forecast adjustment, audit prep, expense + procurement compliance. Close cycle from 10 days to 2–4.",
   alternates: { canonical: "/by-function/finance" },

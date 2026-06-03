@@ -11,9 +11,9 @@ import { SITE } from "@/lib/site";
 // consulting for small business" niche per ZYOS-KEYWORD-MAP.md A2. SMB is the
 // HIGHLIGHTED ICP among the three.
 export const metadata: Metadata = {
-  title: "AI Automation for Small Business: High-Growth SMBs | Zyos Group",
+  title: "AI Automation for Small Business: High-Growth SMBs",
   description:
-    "AI automation and consulting for high-growth SMBs (10–200 employees). One vendor across operations, technology, data, and software, productize how you operate, without an enterprise budget.",
+    "AI automation for high-growth SMBs: one vendor across operations, technology, data, and software. Productize how you operate, without an enterprise budget.",
   alternates: { canonical: "/who-we-serve/high-growth-smbs" },
 };
 

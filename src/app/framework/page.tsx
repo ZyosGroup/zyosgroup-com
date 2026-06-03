@@ -32,9 +32,9 @@ const FRAMEWORK_FAQS = [
 
 // Primary KW: "ai readiness assessment" (vol 590, KD 15) per research §6.2.
 export const metadata: Metadata = {
-  title: "Framework: AI Readiness + Maturity Assessment | Zyos Group",
+  title: "Framework: AI Readiness + Maturity Assessment",
   description:
-    "The Zyos Readiness + Maturity Scorecard. Five dimensions scored before any SOW. Routing decision: Engagement recommended, Conditions to address, Not yet, revisit.",
+    "The Zyos Readiness and Maturity Scorecard: five dimensions scored before any SOW, producing a clear routing decision. AI readiness, quantified.",
   alternates: { canonical: "/framework" },
 };
 

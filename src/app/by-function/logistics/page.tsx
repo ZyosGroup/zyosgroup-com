@@ -4,7 +4,7 @@ import { PageSchema } from "@/components/seo/PageSchema";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "AI Agents for Logistics: Inventory + Supplier + Shipping | Zyos Group",
+  title: "AI Agents for Logistics: Inventory + Supplier + Shipping",
   description:
     "AI agents for logistics: inventory + demand, supplier performance, shipping optimization, returns handling, warehouse productivity. Continuous, not weekly.",
   alternates: { canonical: "/by-function/logistics" },

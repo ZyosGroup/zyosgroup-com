@@ -32,6 +32,11 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+// Only the real production deploy is indexable. Preview/branch deploys on
+// *.vercel.app are noindexed so they can't be crawled or cannibalize the
+// production domain. (VERCEL_ENV is "production" only for the prod deploy.)
+const isProduction = process.env.VERCEL_ENV === "production";
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
@@ -57,11 +62,15 @@ export const metadata: Metadata = {
     title: `${SITE.name}, ${TAGLINE_SHORT}`,
     description: META_DESCRIPTION,
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true },
-  },
+  robots: isProduction
+    ? { index: true, follow: true, googleBot: { index: true, follow: true } }
+    : { index: false, follow: false, googleBot: { index: false, follow: false } },
+  // Google Search Console verification — set GOOGLE_SITE_VERIFICATION in the
+  // Vercel project env to emit the meta tag. (DNS or GTM-based verification
+  // also work and need no code.)
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
 };
 
 export default function RootLayout({

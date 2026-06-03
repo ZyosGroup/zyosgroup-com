@@ -33,7 +33,7 @@ const GAAS_FAQS = [
 
 // Primary KW: "growth as a service" (vol 20, KD 0) — own the category.
 export const metadata: Metadata = {
-  title: "Growth as a Service: Productized for SMB B2B | Zyos Group",
+  title: "Growth as a Service: Productized for SMB B2B",
   description:
     "Growth as a Service: monthly continuous growth operations for SMB B2B, website, GBP, ads, SEO content, GEO. Measured against quarterly OKRs. Powered by Zyos OS.",
   alternates: { canonical: "/solutions/growth-as-a-service" },

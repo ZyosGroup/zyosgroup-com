@@ -26,7 +26,7 @@ export function generateMetadata({
   const c = getCaseStudy(params.slug);
   if (!c) return {};
   return {
-    title: c.seoTitle ?? `${c.title} | Zyos Group`,
+    title: c.seoTitle ?? c.title,
     description: c.description,
     alternates: { canonical: `/case-studies/${c.slug}` },
     openGraph: {

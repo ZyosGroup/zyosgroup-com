@@ -10,7 +10,7 @@ import { ArrowUpRight } from "lucide-react";
 // Primary KW: "ai consulting services" (vol 2,900, KD 20) — secondary: digital
 // transformation consulting (vol 1,900, KD 1), operations consulting (vol 1,900, KD 0).
 export const metadata: Metadata = {
-  title: "Consulting: AI Consulting Services | Zyos Group",
+  title: "Consulting: AI Consulting Services",
   description:
     "Zyos Group Consulting: Software & Data, Digital Transformation, Operations & Scaling, Integrated Marketing. Fixed Price or Retainer. Delivered on Zyos OS.",
   alternates: { canonical: "/consulting" },

@@ -10,7 +10,7 @@ import { ArrowUpRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "About Zyos Group, Founded by Paul Ruddy",
   description:
-    "Zyos Group is an ROI-focused agentic-transformation partner, assess maturity, architect the right solution, build the foundation, infuse AI into operations. Founded by Paul Ruddy.",
+    "ROI-focused agentic-transformation partner: assess maturity, architect the right solution, and infuse AI into operations. Founded by Paul Ruddy.",
   alternates: { canonical: "/about" },
 };
 

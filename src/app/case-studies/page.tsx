@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
 import { CASE_STUDIES } from "@/lib/case-studies";
 
 export const metadata: Metadata = {
-  title: "Case studies: Outcomes Catalog | Zyos Group",
+  title: "Case studies: Outcomes Catalog",
   description:
     "Quantified outcomes across Zyos Group engagements. Revenue captured, cost reduced, risk retired, time saved, quality improved. Filterable.",
   alternates: { canonical: "/case-studies" },

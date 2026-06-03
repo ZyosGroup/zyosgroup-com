@@ -8,9 +8,9 @@ import { SITE } from "@/lib/site";
 
 // Primary KW: "integrated marketing services" (KD 0).
 export const metadata: Metadata = {
-  title: "Integrated Marketing Consulting: SEO, GEO, Content | Zyos Group",
+  title: "Integrated Marketing Consulting: SEO, GEO, Content",
   description:
-    "Integrated marketing: SEO + GEO + content engine + paid + analytics + measurement. The marketing layer that drives growth on top of operational and technical work.",
+    "Integrated marketing consulting: SEO, GEO, content engine, paid, and analytics. The marketing layer that drives growth on your operational foundation.",
   alternates: { canonical: "/consulting/integrated-marketing" },
 };
 

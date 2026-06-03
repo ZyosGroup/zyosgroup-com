@@ -34,9 +34,9 @@ const AAAS_FAQS = [
 
 // Primary KW: "agentic ai consulting" (vol 90, KD 5, $39 CPC) per research §6.2.
 export const metadata: Metadata = {
-  title: "Agent as a Service: Agentic AI Consulting | Zyos Group",
+  title: "AI Agent Development & Agent as a Service",
   description:
-    "Agent as a Service: we design, deploy, and run AI agents on your behalf. Workflows, Systems, Middleware, Lean, Insights variants. Continuous engagement, support included.",
+    "AI agent development and Agent as a Service: we design, deploy, and run AI agents on your behalf. Continuous engagement, support included.",
   alternates: { canonical: "/solutions/agent-as-a-service" },
 };
 

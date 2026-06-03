@@ -15,9 +15,9 @@ import { SITE } from "@/lib/site";
 // and the foundation as the thing that makes them work. Links to the
 // productized service (/solutions/agent-as-a-service) and per-function examples.
 export const metadata: Metadata = {
-  title: "AI Agents Across Your Business | Zyos Group",
+  title: "AI Agents Across Your Business",
   description:
-    "AI agents running across every function: sales, operations, finance, support, marketing. Orchestrated on a readied foundation of documentation, data, systems, and workflows. Operated by a senior team.",
+    "AI agents running across every function: sales, operations, finance, support, and marketing. Orchestrated on a readied foundation, operated by a senior team.",
   alternates: { canonical: "/agents" },
 };
 
