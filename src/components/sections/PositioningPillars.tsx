@@ -180,10 +180,10 @@ export function PositioningPillars() {
         <a href={SITE.zyosIo} rel="noopener" className="text-primary underline-offset-2 hover:underline">
           the Zyos Operating System
         </a>
-        , and it's the compounding of two decades in IT, software, and business
-        intelligence,{" "}
+        , and it&apos;s the compounding of two decades in IT, software, and
+        business intelligence,{" "}
         <a href={SITE.paulruddy} rel="noopener" className="text-primary underline-offset-2 hover:underline">
-          the founder's origin story
+          the founder&apos;s origin story
         </a>
         .
       </p>
