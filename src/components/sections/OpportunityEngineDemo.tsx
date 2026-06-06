@@ -86,7 +86,7 @@ export function OpportunityEngineDemo() {
                   <div className="h-2 flex-1 overflow-hidden rounded-full bg-white/10">
                     <div
                       className={`h-full rounded-full ${b.bar}`}
-                      style={{ width: `${(d.score / 5) * 100}%` }}
+                      style={{ width: `${((d.score - 1) / 4) * 100}%` }}
                     />
                   </div>
                   <dd className="w-12 shrink-0 text-right tabular-nums">
