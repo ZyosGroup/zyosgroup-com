@@ -10,7 +10,7 @@ const STEPS = [
   {
     n: "02",
     label: "Diagnostic",
-    body: "Scored snapshot in your inbox within 60 minutes, Process Maturity, Tech + Integration, Data Quality, AI Readiness, People + Knowledge Risk.",
+    body: "Scored snapshot in your inbox within 60 minutes, across Process maturity, Technology and integration, Data quality and visibility, Process Automation and AI foundation, and People and knowledge risk.",
   },
   {
     n: "03",
@@ -22,12 +22,14 @@ const STEPS = [
 // Sample diagnostic dimensions. Band thresholds mirror the routing language:
 // >= 3.0 Engagement recommended (green), 2.0-2.9 Conditions to address (amber),
 // < 2.0 Not yet, revisit (red).
+// Canonical scored dimensions from the Opportunity Engine (zyos-s1a survey +
+// zyos-optimization-score). Use these labels verbatim.
 const DIMENSIONS = [
-  { label: "Process Maturity", score: 3.6 },
-  { label: "Tech + Integration", score: 2.8 },
-  { label: "Data Quality", score: 2.9 },
-  { label: "Automation + AI Readiness", score: 3.3 },
-  { label: "People + Knowledge Risk", score: 3.5 },
+  { label: "Process maturity", score: 3.6 },
+  { label: "Technology and integration", score: 2.8 },
+  { label: "Data quality and visibility", score: 2.9 },
+  { label: "Process Automation and AI foundation", score: 3.3 },
+  { label: "People and knowledge risk", score: 3.5 },
 ];
 // Composite RS ~3.2 (>= 3.0) -> "Engagement recommended", consistent with the
 // routing band shown below. Two amber + three green keep the legend honest.
@@ -82,7 +84,7 @@ export function OpportunityEngineDemo() {
               const b = band(d.score);
               return (
                 <div key={d.label} className="flex items-center gap-3">
-                  <dt className="w-40 shrink-0 text-[13px] text-white/85">
+                  <dt className="w-44 shrink-0 text-[13px] leading-snug text-white/85">
                     {d.label}
                   </dt>
                   <div className="h-2 flex-1 overflow-hidden rounded-full bg-white/10">

@@ -10,7 +10,7 @@ import { SITE } from "@/lib/site";
 const FRAMEWORK_FAQS = [
   {
     q: "What is an AI readiness assessment?",
-    a: "An AI readiness assessment scores a company across the dimensions that determine whether AI investment will yield value. The Zyos Readiness + Maturity Scorecard scores five dimensions, Process Maturity, Tech + Integration, Data Quality, Automation + AI Readiness, and People + Knowledge Risk, each rated 1 to 5. The composite Readiness Score (RS) drives the routing decision before any SOW is written.",
+    a: "An AI readiness assessment scores a company across the dimensions that determine whether AI investment will yield value. The Zyos Readiness + Maturity Scorecard scores five dimensions, Process maturity, Technology and integration, Data quality and visibility, Process Automation and AI foundation, and People and knowledge risk, each rated 1 to 5. The composite Readiness Score (RS) drives the routing decision before any SOW is written.",
   },
   {
     q: "What does the Zyos Readiness Score mean?",
@@ -22,7 +22,7 @@ const FRAMEWORK_FAQS = [
   },
   {
     q: "What are the five dimensions Zyos scores?",
-    a: "Process Maturity (how documented, repeatable, measured your processes are). Tech + Integration (what's integrated vs siloed, modern vs legacy). Data Quality (trustworthy, current, addressable data). Automation + AI Readiness (prior wins, current pilots, internal literacy, change-tolerance). People + Knowledge Risk (how concentrated critical knowledge is, change-tolerance).",
+    a: "Process maturity (how documented, repeatable, measured your processes are). Technology and integration (what's integrated vs siloed, modern vs legacy). Data quality and visibility (trustworthy, current, addressable data). Process Automation and AI foundation (prior wins, current pilots, internal literacy, change-tolerance). People and knowledge risk (how concentrated critical knowledge is, change-tolerance).",
   },
   {
     q: "Why does Zyos disqualify engagements?",
@@ -40,23 +40,23 @@ export const metadata: Metadata = {
 
 const DIMENSIONS = [
   {
-    name: "Process Maturity",
+    name: "Process maturity",
     body: "How documented, repeatable, and measured your operating processes are today. Low scores need process mapping before automation; high scores are ready for agent intervention.",
   },
   {
-    name: "Tech + Integration",
+    name: "Technology and integration",
     body: "The shape of your stack, what's integrated vs siloed, what's modern vs legacy, what's documented vs tribal. Drives whether agents have systems to pull signals from + act on.",
   },
   {
-    name: "Data Quality",
+    name: "Data quality and visibility",
     body: "Is your data trustworthy, current, and addressable? Agents amplify data discipline; they don't substitute for it. Low scores need instrumentation before agents.",
   },
   {
-    name: "Automation + AI Readiness",
+    name: "Process Automation and AI foundation",
     body: "Where you are on the automation-and-AI adoption curve. Includes prior wins, current pilots, internal AI literacy, and the change-tolerance for AI-driven workflows.",
   },
   {
-    name: "People + Knowledge Risk",
+    name: "People and knowledge risk",
     body: "How concentrated critical knowledge is in individuals, how much process lives in heads vs documents, and how change-tolerant the org culture is.",
   },
 ];
