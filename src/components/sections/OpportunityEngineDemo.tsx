@@ -23,12 +23,14 @@ const STEPS = [
 // >= 3.0 Engagement recommended (green), 2.0-2.9 Conditions to address (amber),
 // < 2.0 Not yet, revisit (red).
 const DIMENSIONS = [
-  { label: "Process Maturity", score: 3.2 },
-  { label: "Tech + Integration", score: 2.6 },
-  { label: "Data Quality", score: 2.1 },
-  { label: "Automation + AI Readiness", score: 2.8 },
-  { label: "People + Knowledge Risk", score: 3.4 },
+  { label: "Process Maturity", score: 3.6 },
+  { label: "Tech + Integration", score: 2.8 },
+  { label: "Data Quality", score: 2.9 },
+  { label: "Automation + AI Readiness", score: 3.3 },
+  { label: "People + Knowledge Risk", score: 3.5 },
 ];
+// Composite RS ~3.2 (>= 3.0) -> "Engagement recommended", consistent with the
+// routing band shown below. Two amber + three green keep the legend honest.
 
 function band(score: number) {
   if (score >= 3.0) return { text: "text-emerald-400", bar: "bg-emerald-400" };
