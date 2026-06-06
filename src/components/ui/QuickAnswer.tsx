@@ -1,6 +1,7 @@
-// Quick Answer block — research §7.2.
-// 40–80 words, plain text, near the top of every page.
-// LLMs lift this as the citation snippet. Do not decorate.
+// Quick Answer block — the concise, lead-with-the-answer paragraph LLMs lift
+// as the citation snippet (AEO). The "Quick answer" tag stays as an aria-label
+// for semantics, but it is NOT shown: visually this reads as a confident lead
+// statement, not a labeled box. (Paul 2026-06-03: the visible label looked bad.)
 
 export function QuickAnswer({
   children,
@@ -12,10 +13,11 @@ export function QuickAnswer({
   return (
     <aside
       aria-label={label}
-      className="rounded-md border border-border bg-surface px-5 py-4 md:px-6 md:py-5"
+      className="border-l-2 border-accent pl-5 md:pl-6"
     >
-      <p className="eyebrow mb-2">{label}</p>
-      <p className="text-ink/90 text-[15px] leading-relaxed">{children}</p>
+      <p className="text-[17px] md:text-lg text-ink/90 leading-relaxed">
+        {children}
+      </p>
     </aside>
   );
 }
