@@ -19,6 +19,23 @@ const STEPS = [
   },
 ];
 
+// Sample diagnostic dimensions. Band thresholds mirror the routing language:
+// >= 3.0 Engagement recommended (green), 2.0-2.9 Conditions to address (amber),
+// < 2.0 Not yet, revisit (red).
+const DIMENSIONS = [
+  { label: "Process Maturity", score: 3.2 },
+  { label: "Tech + Integration", score: 2.6 },
+  { label: "Data Quality", score: 2.1 },
+  { label: "Automation + AI Readiness", score: 2.8 },
+  { label: "People + Knowledge Risk", score: 3.4 },
+];
+
+function band(score: number) {
+  if (score >= 3.0) return { text: "text-emerald-400", bar: "bg-emerald-400" };
+  if (score >= 2.0) return { text: "text-amber-400", bar: "bg-amber-400" };
+  return { text: "text-red-400", bar: "bg-red-400" };
+}
+
 export function OpportunityEngineDemo() {
   return (
     <Section>
@@ -58,31 +75,40 @@ export function OpportunityEngineDemo() {
           <p className="mt-3 text-sm text-white/80">
             What you receive in 60 minutes:
           </p>
-          <dl className="mt-4 grid gap-3 mono text-[13px]">
-            <div className="flex justify-between gap-4">
-              <dt>Process Maturity</dt>
-              <dd className="text-accent">3.2 / 5</dd>
-            </div>
-            <div className="flex justify-between gap-4">
-              <dt>Tech + Integration</dt>
-              <dd className="text-accent">2.6 / 5</dd>
-            </div>
-            <div className="flex justify-between gap-4">
-              <dt>Data Quality</dt>
-              <dd className="text-accent">2.1 / 5</dd>
-            </div>
-            <div className="flex justify-between gap-4">
-              <dt>Automation + AI Readiness</dt>
-              <dd className="text-accent">2.8 / 5</dd>
-            </div>
-            <div className="flex justify-between gap-4">
-              <dt>People + Knowledge Risk</dt>
-              <dd className="text-accent">3.4 / 5</dd>
-            </div>
+          <dl className="mt-5 grid gap-3.5">
+            {DIMENSIONS.map((d) => {
+              const b = band(d.score);
+              return (
+                <div key={d.label} className="flex items-center gap-3">
+                  <dt className="w-40 shrink-0 text-[13px] text-white/85">
+                    {d.label}
+                  </dt>
+                  <div className="h-2 flex-1 overflow-hidden rounded-full bg-white/10">
+                    <div
+                      className={`h-full rounded-full ${b.bar}`}
+                      style={{ width: `${(d.score / 5) * 100}%` }}
+                    />
+                  </div>
+                  <dd className="w-12 shrink-0 text-right tabular-nums">
+                    <span className={`text-[17px] font-bold ${b.text}`}>
+                      {d.score.toFixed(1)}
+                    </span>
+                    <span className="text-[11px] text-white/45">/5</span>
+                  </dd>
+                </div>
+              );
+            })}
           </dl>
+
+          <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1.5 text-[11px] text-white/60">
+            <span className="inline-flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-emerald-400" />3.0+ recommended</span>
+            <span className="inline-flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-amber-400" />2.0–2.9 conditions</span>
+            <span className="inline-flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-red-400" />below 2.0 not yet</span>
+          </div>
+
           <div className="hairline mt-6 border-white/15" />
           <p className="mt-6 text-sm text-white/85">
-            Routing decision · <span className="font-semibold text-accent">Engagement recommended</span>
+            Routing decision · <span className="font-semibold text-emerald-400">Engagement recommended</span>
           </p>
           <p className="mt-2 text-xs text-white/60">
             Sample numbers. Your diagnostic is scored against your actual intake.
