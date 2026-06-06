@@ -97,7 +97,7 @@ export function personSchema() {
     givenName: "Paul",
     familyName: "Ruddy",
     url: SITE.paulruddy,
-    image: `${SITE.paulruddy}/paul.jpg`,
+    image: `${SITE.paulruddy}/assets/headshot.jpg`,
     jobTitle: "Founder & CEO",
     description: PAUL_BIO_SHORT,
     worksFor: { "@id": SITE.orgId },

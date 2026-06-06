@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
@@ -95,21 +96,14 @@ export default function AboutPage() {
           description="Two decades in IT managed services, software, and business intelligence, now compounding into one operating system."
         />
         <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_1.6fr]">
-          <div
-            aria-label="Paul Ruddy, photo placeholder"
-            className="aspect-[4/5] rounded-lg border border-border bg-bg flex items-center justify-center"
-          >
-            <div className="text-center px-6">
-              <p className="mono text-[11px] uppercase tracking-[0.16em] text-subtle">
-                Founder · Paul Ruddy
-              </p>
-              <p className="mt-3 text-primary text-2xl font-semibold tracking-tightish">
-                PR
-              </p>
-              <p className="mt-1 text-xs text-subtle">
-                Track A on-camera still, pending
-              </p>
-            </div>
+          <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-border bg-bg">
+            <Image
+              src="/img/paul-ruddy.jpg"
+              alt="Paul Ruddy, founder and CEO of Zyos Group"
+              fill
+              sizes="(min-width: 1024px) 24rem, 100vw"
+              className="object-cover object-top"
+            />
           </div>
           <div className="text-ink/85 leading-relaxed space-y-4 text-lg">
             <p>

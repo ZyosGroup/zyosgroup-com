@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Section } from "@/components/ui/Section";
 import { SITE } from "@/lib/site";
 import { ArrowUpRight } from "lucide-react";
@@ -6,21 +7,14 @@ export function FounderBlock() {
   return (
     <Section className="bg-surface border-y border-border">
       <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] items-start">
-        <div
-          aria-label="Paul Ruddy, photo placeholder"
-          className="aspect-[4/5] rounded-lg border border-border bg-bg overflow-hidden flex items-center justify-center"
-        >
-          {/* Photo placeholder, replace with on-camera still per
-              customer-video-pipeline.md Track A on first quarterly shoot. */}
-          <div className="text-center px-6">
-            <p className="mono text-[11px] uppercase tracking-[0.16em] text-subtle">
-              Founder · Paul Ruddy
-            </p>
-            <p className="mt-3 text-primary text-2xl font-semibold tracking-tightish">
-              PR
-            </p>
-            <p className="mt-1 text-xs text-subtle">Track A on-camera still, pending</p>
-          </div>
+        <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-border bg-bg">
+          <Image
+            src="/img/paul-ruddy.jpg"
+            alt="Paul Ruddy, founder and CEO of Zyos Group"
+            fill
+            sizes="(min-width: 1024px) 28rem, 100vw"
+            className="object-cover object-top"
+          />
         </div>
 
         <div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Hero } from "@/components/sections/Hero";
 import { Stakes } from "@/components/sections/Stakes";
+import { PositioningPillars } from "@/components/sections/PositioningPillars";
 import { ComponentsBar } from "@/components/sections/ComponentsBar";
 import { OpportunityEngineDemo } from "@/components/sections/OpportunityEngineDemo";
 import { FunctionExamples } from "@/components/sections/FunctionExamples";
@@ -97,6 +98,9 @@ export default function HomePage() {
 
       {/* S2. The stakes — fear of waiting + single-vendor close */}
       <Stakes />
+
+      {/* S2b. The positioning spine — the six differentiators, each illustrated */}
+      <PositioningPillars />
 
       {/* S3. The Zyos journey — OE survey → roadmap → PI → orchestration → monitoring */}
       <ComponentsBar />

@@ -59,9 +59,9 @@ export function HeroAgentsMesh({ className = "" }: { className?: string }) {
           <g key={a.label} style={{ opacity: 0.95 - Math.abs(i - 2) * 0.06 }}>
             <circle cx={a.x} cy={AGENT_Y} r="15" fill="url(#mesh-agent)" stroke="#9be3fb" strokeWidth="1.25" filter={i === 2 ? "url(#mesh-glow)" : undefined} />
             <text
-              x={a.x} y={AGENT_Y - 24} textAnchor="middle"
+              x={a.x} y={AGENT_Y - 26} textAnchor="middle"
               fontFamily="var(--font-jetbrains-mono), monospace"
-              fontSize="9.5" fontWeight="700" letterSpacing="1" fill="#cfeefb"
+              fontSize="13" fontWeight="700" letterSpacing="0.5" fill="#cfeefb"
             >
               {a.label}
             </text>
@@ -72,16 +72,16 @@ export function HeroAgentsMesh({ className = "" }: { className?: string }) {
       {/* foundation slab */}
       <rect x="40" y={FOUND_Y} width="400" height="64" rx="10" fill="url(#mesh-slab)" stroke="#48c1eb" strokeWidth="1.25" strokeOpacity="0.55" />
       <text
-        x="240" y={FOUND_Y + 28} textAnchor="middle"
+        x="240" y={FOUND_Y + 26} textAnchor="middle"
         fontFamily="var(--font-jetbrains-mono), monospace"
-        fontSize="11" fontWeight="700" letterSpacing="2" fill="#eaf8ff"
+        fontSize="15" fontWeight="700" letterSpacing="1.5" fill="#eaf8ff"
       >
         THE FOUNDATION
       </text>
       <text
         x="240" y={FOUND_Y + 46} textAnchor="middle"
         fontFamily="var(--font-inter-tight), sans-serif"
-        fontSize="10.5" fill="#86adcd"
+        fontSize="12.5" fill="#9cc4dd"
       >
         documentation · data · systems · workflows
       </text>

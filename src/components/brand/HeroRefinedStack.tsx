@@ -68,16 +68,16 @@ export function HeroRefinedStack({ className = "" }: { className?: string }) {
               <path d={top(l.y)} fill="url(#rs-top)" stroke="url(#rs-edge)" strokeWidth="1.5" />
               {/* labels */}
               <text
-                x="40" y={l.y + H + 2}
+                x="26" y={l.y + H + 1}
                 fontFamily="var(--font-jetbrains-mono), monospace"
-                fontSize="11" fontWeight="700" letterSpacing="2" fill="#eaf8ff"
+                fontSize="16" fontWeight="700" letterSpacing="1.5" fill="#eaf8ff"
               >
                 {l.label}
               </text>
               <text
-                x="40" y={l.y + H + 16}
+                x="26" y={l.y + H + 19}
                 fontFamily="var(--font-inter-tight), sans-serif"
-                fontSize="9.5" fill="#86adcd"
+                fontSize="12.5" fill="#9cc4dd"
               >
                 {l.sub}
               </text>
