@@ -4,9 +4,31 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { Faq } from "@/components/seo/Faq";
+import { PageHero } from "@/components/sections/PageHero";
+import { HeroOperationsScaling } from "@/components/brand/HeroOperationsScaling";
 import { DashboardGallery } from "@/components/showcases/DashboardCard";
 import { AutomationReel } from "@/components/showcases/AutomationReel";
 import { SITE } from "@/lib/site";
+
+const OPS_FAQS = [
+  {
+    q: "What is fractional operations?",
+    a: "An experienced operations function delivered on a retainer instead of a full-time hire: operating-model design, OKR/KPI systems, Customer Success cadence, and service-desk discipline, run on Zyos OS. You get the senior operator and the system without carrying the headcount.",
+  },
+  {
+    q: "What does operations consulting include at Zyos?",
+    a: "Operating-model design (process, org shape, RACI, decision rights), OKR + KPI systems measured continuously, Customer Success cadence (QBRs, monthly reports, value-impact recap), Service Desk discipline, Process Intelligence, and operating-model productization, turning a founder's playbook into a repeatable system.",
+  },
+  {
+    q: "What is the Zyos operating model?",
+    a: "Measure, Deliver, Continuously Improve. Every engagement baselines first (Process Intelligence, readiness and maturity scoring, value-impact OKRs), delivers in monthly cycles against measurable targets, and re-prioritizes at quarterly business reviews on what the data says. The same loop governs every engagement.",
+  },
+  {
+    q: "How do you measure operations work?",
+    a: "Against value-impact OKRs named at kickoff and tracked continuously in Zyos OS, with the Optimization Score, across process maturity, technology and integration, data quality and visibility, process automation and AI foundation, and people and knowledge risk, re-measured every quarterly business review.",
+  },
+];
 
 // Primary KW: "operations consulting" + "fractional operations" (1,600/mo, KD 1)
 // per ZYOS-KEYWORD-MAP.md A1.
@@ -24,7 +46,7 @@ const CAPABILITIES = [
   },
   {
     t: "OKR + KPI systems",
-    b: "Named at engagement kickoff, measured continuously in Zyos OS. The Optimization Score (Process Maturity, Tech + Integration, Data Quality, Automation + AI Readiness, People + Knowledge Risk) re-measured every QBR.",
+    b: "Named at engagement kickoff, measured continuously in Zyos OS. The Optimization Score (Process maturity, Technology and integration, Data quality and visibility, Process Automation and AI foundation, People and knowledge risk) re-measured every QBR.",
   },
   {
     t: "Customer Success cadence",
@@ -59,13 +81,17 @@ export default function OperationsScalingPage() {
         ]}
       />
 
-      <Section>
-        <p className="eyebrow mb-4">Consulting · Operations & Scaling</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Scale headcount, throughput, and revenue, without proportional cost.
-        </h1>
+      <PageHero
+        eyebrow="Consulting · Operations & Scaling"
+        title="Scale throughput and revenue, without proportional cost."
+        subhead="Fractional operations that productize how you run: operating-model design, OKR/KPI systems, Customer Success cadence, and service-desk discipline, on the Measure, Deliver, Continuously Improve loop."
+        primary={{ href: "/start", label: "Start with a measurement" }}
+        secondary={{ href: "/how-we-deliver", label: "How we deliver" }}
+        graphic={<HeroOperationsScaling className="mx-auto w-full max-w-lg drop-shadow-[0_20px_60px_rgba(0,0,0,0.45)]" />}
+      />
 
-        <div className="mt-10 max-w-3xl">
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>
             Zyos Group&apos;s Operations & Scaling practice productizes how
             you operate. Operational design, OKR + KPI systems, Customer
@@ -136,6 +162,13 @@ export default function OperationsScalingPage() {
           </Link>
         </div>
       </Section>
+
+      <Faq
+        eyebrow="Operations & scaling, FAQ"
+        title="What buyers ask about operations and fractional operations."
+        description="Lifted from prospect calls. Published as FAQ schema for AI Overviews and answer engines."
+        faqs={OPS_FAQS}
+      />
 
       <Section className="bg-primary text-white">
         <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr] items-end">

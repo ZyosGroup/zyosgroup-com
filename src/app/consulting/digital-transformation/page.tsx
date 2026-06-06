@@ -4,8 +4,30 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { Faq } from "@/components/seo/Faq";
+import { PageHero } from "@/components/sections/PageHero";
+import { HeroDigitalTransformation } from "@/components/brand/HeroDigitalTransformation";
 import { SystemBuildGrid } from "@/components/showcases/SystemBuildCard";
 import { SITE } from "@/lib/site";
+
+const DT_FAQS = [
+  {
+    q: "What is digital transformation consulting?",
+    a: "Digital transformation consulting moves a company from legacy, disconnected operations to modern, AI-augmented workflows: CRM/ERP modernization, process redesign, cloud and security modernization, and an AI-native operating model. Zyos runs it assessment-first and architecture-first, every program starts with a Readiness & Maturity scorecard and Process Intelligence, so the work is sequenced to value, not bought as a generic package.",
+  },
+  {
+    q: "How long does a digital transformation take?",
+    a: "Real transformation is the operating-model shift, typically 12 to 36 months, run in measured cycles with quarterly re-prioritization. A six-week proof of concept is a deck, not a transformation. We sequence crawl-walk-run so high-leverage wins land early while the larger shift compounds.",
+  },
+  {
+    q: "What is the Build & Operate Retainer?",
+    a: "A productized Retainer for transformation work where the spec is intentionally incomplete at signing, discovery happens inside the engagement. Build and operate phases are separated in reporting, the Solution Architecture brief at the end of week two sets the construction contract, and the customer owns the solution at exit.",
+  },
+  {
+    q: "Do you take one-off projects?",
+    a: "Bounded builds, yes (Fixed Price). But transformation itself we don't sell as a one-off, it's measured cycles, not a single deliverable. Partners who want a deck shouldn't hire us; partners who want measured outcomes and quarterly re-prioritization should.",
+  },
+];
 
 // Primary KW: "digital transformation consulting" (vol 1,900, KD 1) — winnable head term.
 export const metadata: Metadata = {
@@ -57,14 +79,17 @@ export default function DigitalTransformationPage() {
         ]}
       />
 
-      <Section>
-        <p className="eyebrow mb-4">Consulting · Digital Transformation</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          From legacy operations to AI-augmented workflows, measured every
-          cycle.
-        </h1>
+      <PageHero
+        eyebrow="Consulting · Digital Transformation"
+        title="From legacy operations to AI-augmented workflows."
+        subhead="End-to-end programs, assessment-first and architecture-first: CRM/ERP modernization, process redesign, cloud and security, and an AI-native operating model. Measured every cycle."
+        primary={{ href: "/start", label: "Start with a measurement" }}
+        secondary={{ href: "/framework", label: "See the framework" }}
+        graphic={<HeroDigitalTransformation className="mx-auto w-full max-w-lg drop-shadow-[0_20px_60px_rgba(0,0,0,0.45)]" />}
+      />
 
-        <div className="mt-10 max-w-3xl">
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>
             Zyos Group&apos;s Digital Transformation practice runs end-to-end
             programs that move a company from legacy operations to modern,
@@ -162,6 +187,13 @@ export default function DigitalTransformationPage() {
           </article>
         </div>
       </Section>
+
+      <Faq
+        eyebrow="Digital transformation, FAQ"
+        title="What buyers ask about digital transformation."
+        description="Lifted from prospect calls. Published as FAQ schema for AI Overviews and answer engines."
+        faqs={DT_FAQS}
+      />
 
       <Section className="bg-primary text-white">
         <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr] items-end">
