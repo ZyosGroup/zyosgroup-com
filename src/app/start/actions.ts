@@ -1,6 +1,56 @@
 "use server";
 
+import { cookies } from "next/headers";
 import { intakeSchema, type IntakeInput } from "./intake-schema";
+import { SITE, ANALYTICS } from "@/lib/site";
+
+// Deliver the lead to HubSpot via the Forms Submission API. Creates/updates the
+// contact (portal 6624575) and, via the hubspotutk cookie, ties the contact to
+// their page-view history. Requires HUBSPOT_FORM_GUID (a HubSpot form's GUID) in
+// the env; if unset, the lead is logged but not delivered.
+async function submitToHubSpot(data: IntakeInput, hutk?: string): Promise<boolean> {
+  const formGuid = process.env.HUBSPOT_FORM_GUID;
+  const portalId = ANALYTICS.hubspotPortalId;
+  if (!formGuid) {
+    // eslint-disable-next-line no-console
+    console.warn("[zyosgroup-intake] HUBSPOT_FORM_GUID not set — lead NOT delivered to HubSpot");
+    return false;
+  }
+  const parts = data.name.trim().split(/\s+/);
+  const firstname = parts[0] ?? data.name;
+  const lastname = parts.slice(1).join(" ") || firstname;
+  const message = `Industry: ${data.industry}\nCompany size: ${data.companySize}\n\nCurrent bottleneck:\n${data.bottleneck}`;
+  const body = {
+    fields: [
+      { name: "email", value: data.email },
+      { name: "firstname", value: firstname },
+      { name: "lastname", value: lastname },
+      { name: "company", value: data.company },
+      { name: "message", value: message },
+    ],
+    context: {
+      ...(hutk ? { hutk } : {}),
+      pageUri: `${SITE.url}/start`,
+      pageName: "Opportunity Engine intake",
+    },
+  };
+  try {
+    const res = await fetch(
+      `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`,
+      { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) }
+    );
+    if (!res.ok) {
+      // eslint-disable-next-line no-console
+      console.error("[zyosgroup-intake] HubSpot submit failed", res.status, await res.text());
+      return false;
+    }
+    return true;
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.error("[zyosgroup-intake] HubSpot submit error", e);
+    return false;
+  }
+}
 
 export type IntakeState =
   | { status: "idle" }
@@ -47,19 +97,18 @@ export async function submitIntakeAction(
     return { status: "ok", submittedAt: new Date().toISOString() };
   }
 
-  // TODO: wire to ZyosApp /api/intake per showcase-brief §3 + §7.
-  // For first ship we log the intake. ZyosApp work — one new Resend
-  // template + one new prospect source tag — is queued separately.
+  // Deliver the lead to HubSpot (creates the contact + ties page-view history
+  // via the hubspotutk cookie). Logged either way so nothing is silently lost.
+  const hutk = cookies().get("hubspotutk")?.value;
+  const delivered = await submitToHubSpot(parsed.data, hutk);
+
   // eslint-disable-next-line no-console
   console.log("[zyosgroup-intake]", {
     receivedAt: new Date().toISOString(),
     source: "zyosgroup.com-intake",
-    industry: parsed.data.industry,
-    companySize: parsed.data.companySize,
-    bottleneck: parsed.data.bottleneck.slice(0, 200) + (parsed.data.bottleneck.length > 200 ? "…" : ""),
-    name: parsed.data.name,
-    email: parsed.data.email,
+    deliveredToHubSpot: delivered,
     company: parsed.data.company,
+    email: parsed.data.email,
   });
 
   return { status: "ok", submittedAt: new Date().toISOString() };

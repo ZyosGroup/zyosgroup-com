@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { SITE } from "@/lib/site";
 
 const NAV = [
   { href: "/solutions", label: "Solutions" },
@@ -47,12 +48,22 @@ export function SiteHeader() {
           </ul>
         </nav>
 
-        <Link
-          href="/start"
-          className="inline-flex items-center rounded-md bg-primary px-3.5 py-2 text-sm font-medium text-white hover:bg-ink transition-colors"
-        >
-          Start
-        </Link>
+        <div className="flex items-center gap-2">
+          <a
+            href={SITE.bookingUrl}
+            target="_blank"
+            rel="noopener"
+            className="hidden sm:inline-flex items-center rounded-md border border-border px-3.5 py-2 text-sm font-medium text-ink/80 hover:border-primary/40 hover:text-primary transition-colors"
+          >
+            Book a meeting
+          </a>
+          <Link
+            href="/start"
+            className="inline-flex items-center rounded-md bg-primary px-3.5 py-2 text-sm font-medium text-white hover:bg-ink transition-colors"
+          >
+            Start
+          </Link>
+        </div>
       </div>
     </header>
   );

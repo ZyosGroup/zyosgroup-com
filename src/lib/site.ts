@@ -25,6 +25,9 @@ export const SITE = {
   addressLocality: "Sea Bright",
   addressCountry: "US",
   contactEmail: "hello@zyosgroup.com",
+  // Outlook booking page — the canonical "Book a meeting" link (both sites).
+  bookingUrl:
+    "https://outlook.office.com/book/ZyosGroupCustomerKickoff@zyosgroup.com/?ismsaljsauthenabled",
 } as const;
 
 // Analytics IDs ported from the legacy Gatsby zyosgroup.com so the

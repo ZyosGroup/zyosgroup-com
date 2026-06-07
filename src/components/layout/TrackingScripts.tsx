@@ -19,9 +19,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <Script
         id="hs-script-loader"
         src={`https://js.hs-scripts.com/${hubspotPortalId}.js`}
-        strategy="afterInteractive"
-        async
-        defer
+        strategy="lazyOnload"
       />
     </>
   );
