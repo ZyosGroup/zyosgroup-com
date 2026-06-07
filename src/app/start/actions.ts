@@ -52,6 +52,58 @@ async function submitToHubSpot(data: IntakeInput, hutk?: string): Promise<boolea
   }
 }
 
+// Email the lead via Resend (REST API, no SDK dependency). Sends to RESEND_TO
+// (or the site contact email), reply-to the prospect so you can reply directly.
+// Env-gated on RESEND_API_KEY.
+async function emailLead(data: IntakeInput): Promise<boolean> {
+  const key = process.env.RESEND_API_KEY;
+  if (!key) {
+    // eslint-disable-next-line no-console
+    console.warn("[zyosgroup-intake] RESEND_API_KEY not set — lead NOT emailed");
+    return false;
+  }
+  const from = process.env.RESEND_FROM || "Zyos Group <noreply@zyosgroup.com>";
+  const to = (process.env.RESEND_TO || SITE.contactEmail)
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  const text = [
+    "New Opportunity Engine intake — zyosgroup.com",
+    "",
+    `Name:         ${data.name}`,
+    `Email:        ${data.email}`,
+    `Company:      ${data.company}`,
+    `Industry:     ${data.industry}`,
+    `Company size: ${data.companySize}`,
+    "",
+    "Current bottleneck:",
+    data.bottleneck,
+  ].join("\n");
+  try {
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        from,
+        to,
+        reply_to: data.email,
+        subject: `New intake: ${data.company} · ${data.industry}`,
+        text,
+      }),
+    });
+    if (!res.ok) {
+      // eslint-disable-next-line no-console
+      console.error("[zyosgroup-intake] Resend failed", res.status, await res.text());
+      return false;
+    }
+    return true;
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.error("[zyosgroup-intake] Resend error", e);
+    return false;
+  }
+}
+
 export type IntakeState =
   | { status: "idle" }
   | { status: "ok"; submittedAt: string }
@@ -97,16 +149,20 @@ export async function submitIntakeAction(
     return { status: "ok", submittedAt: new Date().toISOString() };
   }
 
-  // Deliver the lead to HubSpot (creates the contact + ties page-view history
-  // via the hubspotutk cookie). Logged either way so nothing is silently lost.
+  // Deliver the lead: email via Resend (primary) + HubSpot if configured.
+  // Both are env-gated and run in parallel; logged either way so nothing is lost.
   const hutk = cookies().get("hubspotutk")?.value;
-  const delivered = await submitToHubSpot(parsed.data, hutk);
+  const [emailed, deliveredToHubSpot] = await Promise.all([
+    emailLead(parsed.data),
+    submitToHubSpot(parsed.data, hutk),
+  ]);
 
   // eslint-disable-next-line no-console
   console.log("[zyosgroup-intake]", {
     receivedAt: new Date().toISOString(),
     source: "zyosgroup.com-intake",
-    deliveredToHubSpot: delivered,
+    emailed,
+    deliveredToHubSpot,
     company: parsed.data.company,
     email: parsed.data.email,
   });
