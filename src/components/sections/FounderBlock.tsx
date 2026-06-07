@@ -30,7 +30,7 @@ export function FounderBlock() {
           </p>
           <p className="mt-4 text-[15px] text-ink/75 leading-relaxed">
             Zyos Group is the services company. Zyos OS is the operating system
-            it builds on. The marketing site is the product demo.
+            it builds on.
           </p>
           <a
             href={SITE.paulruddy}
