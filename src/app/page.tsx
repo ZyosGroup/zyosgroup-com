@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import { Hero } from "@/components/sections/Hero";
 import { Stakes } from "@/components/sections/Stakes";
 import { PositioningPillars } from "@/components/sections/PositioningPillars";
@@ -10,7 +9,8 @@ import { OperatedServices } from "@/components/sections/OperatedServices";
 import { IcpCards } from "@/components/sections/IcpCards";
 import { HowWeEngage } from "@/components/sections/HowWeEngage";
 import { Disciplines } from "@/components/sections/Disciplines";
-import { TestimonialRail } from "@/components/sections/TestimonialRail";
+import { OwnerProblems } from "@/components/sections/OwnerProblems";
+import { WorkingArtifacts } from "@/components/sections/WorkingArtifacts";
 import { FounderBlock } from "@/components/sections/FounderBlock";
 import { NewsletterSignup } from "@/components/sections/NewsletterSignup";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
@@ -18,13 +18,6 @@ import { Faq } from "@/components/seo/Faq";
 import { Section } from "@/components/ui/Section";
 import { jsonLdScript, webPageSchema } from "@/lib/schema";
 import { SITE, META_DESCRIPTION } from "@/lib/site";
-
-// Below-the-fold, client-heavy section — code-split so its JS (showcase widgets)
-// is not in the homepage's initial bundle. SSR stays on (default) so server-
-// rendered content + SEO are unaffected; only the hydration cost defers.
-const HomeShowcasePreview = dynamic(() =>
-  import("@/components/sections/HomeShowcasePreview").then((m) => m.HomeShowcasePreview)
-);
 
 // Keyword targets (ZYOS-KEYWORD-MAP.md): "digital transformation consulting"
 // (1,900/mo, KD 0–1) + "ai consulting services" (2,400/mo). Single-vendor blend
@@ -123,9 +116,9 @@ export default function HomePage() {
       {/* S8. The disciplines behind it (minimal) */}
       <Disciplines />
 
-      {/* S9. Proof — capability showcases + testimonials */}
-      <HomeShowcasePreview />
-      <TestimonialRail />
+      {/* S9. Proof — owner-facing problems we solve + the real deliverables */}
+      <OwnerProblems />
+      <WorkingArtifacts />
 
       {/* S10. Founder */}
       <FounderBlock />
