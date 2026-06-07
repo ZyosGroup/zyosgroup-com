@@ -81,17 +81,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${interTight.variable} ${jetBrainsMono.variable}`}>
       <head>
-        {/* Warm the third-party analytics origins so connection setup (DNS +
-            TLS) overlaps with first paint instead of delaying the GTM/GA4/
-            HubSpot chain. Pure perf win — the hero LCP element is server-
-            rendered, so this only helps the measurement stack get out of the
-            main thread's way sooner. */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://js.hs-scripts.com" />
-        <link rel="dns-prefetch" href="https://js.hs-analytics.net" />
-        <link rel="dns-prefetch" href="https://track.hubspot.com" />
-        <link rel="dns-prefetch" href="https://js.hsforms.net" />
-        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <TrackingScripts />
       </head>
       <body>

@@ -28,15 +28,20 @@ export default async function Image() {
           fontFamily: "system-ui, -apple-system, Segoe UI, sans-serif",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center" }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={`${SITE.url}/brand/logo-horizontal-white.png`}
-            alt={SITE.name}
-            width={320}
-            height={80}
-            style={{ display: "block", objectFit: "contain" }}
+        <div
+          style={{ display: "flex", alignItems: "center", gap: 16, fontSize: 32 }}
+        >
+          <div
+            style={{
+              width: 18,
+              height: 18,
+              borderRadius: 9999,
+              backgroundColor: "#7CD7DC",
+            }}
           />
+          <div style={{ fontWeight: 600, letterSpacing: -0.5 }}>
+            {SITE.name}
+          </div>
         </div>
 
         <div
