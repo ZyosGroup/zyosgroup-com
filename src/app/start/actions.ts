@@ -19,7 +19,7 @@ async function submitToHubSpot(data: IntakeInput, hutk?: string): Promise<boolea
   const parts = data.name.trim().split(/\s+/);
   const firstname = parts[0] ?? data.name;
   const lastname = parts.slice(1).join(" ") || firstname;
-  const message = `Industry: ${data.industry}\nCompany size: ${data.companySize}\n\nCurrent bottleneck:\n${data.bottleneck}`;
+  const message = `Segment: ${data.segment}\nIndustry: ${data.industry}\nCompany size: ${data.companySize}\n\nCurrent bottleneck:\n${data.bottleneck}`;
   const body = {
     fields: [
       { name: "email", value: data.email },
@@ -73,6 +73,7 @@ async function emailLead(data: IntakeInput): Promise<boolean> {
     `Name:         ${data.name}`,
     `Email:        ${data.email}`,
     `Company:      ${data.company}`,
+    `Segment:      ${data.segment}`,
     `Industry:     ${data.industry}`,
     `Company size: ${data.companySize}`,
     "",
@@ -106,14 +107,16 @@ async function emailLead(data: IntakeInput): Promise<boolean> {
 
 export type IntakeState =
   | { status: "idle" }
-  | { status: "ok"; submittedAt: string }
+  | { status: "ok"; submittedAt: string; segment: IntakeInput["segment"]; optIn: boolean }
   | { status: "error"; errors: Partial<Record<keyof IntakeInput, string>>; values?: Partial<IntakeInput> };
 
 export async function submitIntakeAction(
   _prev: IntakeState,
   formData: FormData
 ): Promise<IntakeState> {
+  const optIn = formData.get("optIn") === "on";
   const raw = {
+    segment: formData.get("segment"),
     industry: formData.get("industry"),
     companySize: formData.get("companySize"),
     bottleneck: formData.get("bottleneck"),
@@ -134,6 +137,7 @@ export async function submitIntakeAction(
       status: "error",
       errors,
       values: {
+        segment: raw.segment as IntakeInput["segment"],
         industry: raw.industry as IntakeInput["industry"],
         companySize: raw.companySize as IntakeInput["companySize"],
         bottleneck: typeof raw.bottleneck === "string" ? raw.bottleneck : "",
@@ -146,7 +150,7 @@ export async function submitIntakeAction(
 
   // Honeypot — pretend success without doing anything if filled.
   if (parsed.data.website) {
-    return { status: "ok", submittedAt: new Date().toISOString() };
+    return { status: "ok", submittedAt: new Date().toISOString(), segment: parsed.data.segment, optIn };
   }
 
   // Deliver the lead: email via Resend (primary) + HubSpot if configured.
@@ -165,7 +169,9 @@ export async function submitIntakeAction(
     deliveredToHubSpot,
     company: parsed.data.company,
     email: parsed.data.email,
+    segment: parsed.data.segment,
+    optIn,
   });
 
-  return { status: "ok", submittedAt: new Date().toISOString() };
+  return { status: "ok", submittedAt: new Date().toISOString(), segment: parsed.data.segment, optIn };
 }

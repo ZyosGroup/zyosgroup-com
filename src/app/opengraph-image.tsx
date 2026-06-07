@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { TAGLINE_SHORT, SITE } from "@/lib/site";
+import { OG_LOGO_DATA_URL } from "@/lib/og-logo";
 
 // Edge-rendered dynamic OG image — fixes the inherited "no og:image" gap.
 // Single brand card used as the default for every route that doesn't
@@ -28,20 +29,9 @@ export default async function Image() {
           fontFamily: "system-ui, -apple-system, Segoe UI, sans-serif",
         }}
       >
-        <div
-          style={{ display: "flex", alignItems: "center", gap: 16, fontSize: 32 }}
-        >
-          <div
-            style={{
-              width: 18,
-              height: 18,
-              borderRadius: 9999,
-              backgroundColor: "#7CD7DC",
-            }}
-          />
-          <div style={{ fontWeight: 600, letterSpacing: -0.5 }}>
-            {SITE.name}
-          </div>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={OG_LOGO_DATA_URL} width={360} height={72} alt="Zyos Group" />
         </div>
 
         <div

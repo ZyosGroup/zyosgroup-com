@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { SITE } from "@/lib/site";
+import { MobileNav } from "@/components/layout/MobileNav";
 
 const NAV = [
   { href: "/solutions", label: "Solutions" },
@@ -63,6 +64,7 @@ export function SiteHeader() {
           >
             Start
           </Link>
+          <MobileNav nav={NAV} />
         </div>
       </div>
     </header>

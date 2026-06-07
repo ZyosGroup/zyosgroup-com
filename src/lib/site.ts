@@ -30,6 +30,17 @@ export const SITE = {
     "https://outlook.office.com/book/ZyosGroupCustomerKickoff@zyosgroup.com/?ismsaljsauthenabled",
 } as const;
 
+// Niche-specific Opportunity Engine surveys. On /start opt-in, the form routes
+// to the survey matching the selected segment. TODO(paul): replace these with
+// the real per-niche survey URLs (placeholders use the base OE survey + a
+// segment query param so the flow works end-to-end until the real URLs land).
+export const OE_SURVEYS: Record<string, string> = {
+  associations: "https://survey.zyos.io/oe?segment=associations",
+  "pe-backed": "https://survey.zyos.io/oe?segment=pe-backed",
+  "growth-smb": "https://survey.zyos.io/oe?segment=growth-smb",
+};
+export const OE_SURVEY_DEFAULT = "https://survey.zyos.io/oe";
+
 // Analytics IDs ported from the legacy Gatsby zyosgroup.com so the
 // historical measurement stream continues uninterrupted across the
 // cutover. See benchmarks/2026-05-19-pre-cutover-baseline.md.

@@ -37,8 +37,17 @@ export const viewport: Viewport = {
 // production domain. (VERCEL_ENV is "production" only for the prod deploy.)
 const isProduction = process.env.VERCEL_ENV === "production";
 
+// In production, absolute URLs (OG image, canonical) resolve to the real
+// domain. On preview/branch deploys, point them at the deployment's own URL
+// so shared preview links render a working OG card instead of fetching the
+// not-yet-live production domain.
+const metadataBaseUrl =
+  isProduction || !process.env.VERCEL_URL
+    ? SITE.url
+    : `https://${process.env.VERCEL_URL}`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE.url),
+  metadataBase: new URL(metadataBaseUrl),
   title: {
     default: `${SITE.name}, ${TAGLINE_SHORT}`,
     template: `%s | ${SITE.name}`,

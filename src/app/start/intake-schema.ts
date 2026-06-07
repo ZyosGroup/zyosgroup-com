@@ -23,7 +23,20 @@ export const COMPANY_SIZES = [
   "1000+ employees",
 ] as const;
 
+// The three markets we serve. Drives which niche-specific Opportunity Engine
+// survey the opt-in routes to (see OE_SURVEYS in lib/site.ts).
+export const SEGMENTS = [
+  { value: "associations", label: "Association or nonprofit" },
+  { value: "pe-backed", label: "PE-backed company" },
+  { value: "growth-smb", label: "Growth-stage SMB" },
+] as const;
+export const SEGMENT_VALUES = ["associations", "pe-backed", "growth-smb"] as const;
+export type Segment = (typeof SEGMENT_VALUES)[number];
+
 export const intakeSchema = z.object({
+  segment: z.enum(SEGMENT_VALUES, {
+    errorMap: () => ({ message: "Pick the closest fit." }),
+  }),
   industry: z.enum(INDUSTRIES, {
     errorMap: () => ({ message: "Pick the closest industry." }),
   }),

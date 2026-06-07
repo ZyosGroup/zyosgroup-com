@@ -45,6 +45,148 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "digital-transformation-consulting-agentic-era",
+    title:
+      "Digital Transformation Consulting Just Changed Meaning. Here's What It Is Now.",
+    seoTitle: "Digital Transformation Consulting in the Agentic Era",
+    description:
+      "Agentic AI is arriving faster than the internet did, and digital transformation consulting no longer means a cloud migration or a new platform. Here's what it means now, and why most programs still fail for the same structural reason.",
+    quickAnswer:
+      "Digital transformation consulting is the work of redesigning how a business operates so modern technology, data, and AI can run inside it. In the agentic era the deliverable has changed: it is no longer a platform purchase but a business that AI agents can actually operate safely. That requires documenting how the company works, building the data and process foundation, and measuring everything against business performance, not against how much AI was bought.",
+    primaryKeyword: "digital transformation consulting",
+    keywords: [
+      "digital transformation consulting",
+      "digital transformation consulting firm",
+      "digital transformation consulting services",
+      "agentic ai consulting",
+      "ai transformation consulting",
+    ],
+    category: "Digital Transformation",
+    author: "Paul Ruddy",
+    datePublished: "2026-06-07",
+    readingMinutes: 8,
+    pillars: [
+      "Foundation for Agentic",
+      "ROI over tokens",
+      "The blend",
+      "Single Vendor",
+      "Readiness-gated",
+    ],
+    body: [
+      {
+        kind: "p",
+        text: "Agentic AI is arriving faster than the internet did. The internet took a decade to reorganize how companies worked. Agents are doing it in quarters. And somewhere in that compression, the phrase digital transformation consulting quietly changed meaning, while most of the market kept selling the old version of it.",
+      },
+      {
+        kind: "p",
+        text: "The old version was a technology project: migrate to the cloud, buy a platform, roll out a new system, declare victory. That work still has to happen, but it is no longer the point. The point now is whether your business is something an AI agent can actually operate. Almost nobody is funding the work that makes that true, which is exactly why most transformation programs will fail again, for the same structural reason they always have.",
+      },
+      {
+        kind: "h2",
+        text: "The deliverable changed from a platform to an operable business",
+        id: "the-deliverable-changed",
+      },
+      {
+        kind: "p",
+        text: "An agent cannot run a process that lives only in someone's head. It cannot follow a workflow nobody ever wrote down, query data nobody ever structured, or respect a policy nobody ever set. The real deliverable of transformation today is the foundation underneath the agents: documented processes, governed data, clear policy, and reusable building blocks. The software is the easy part. The foundation is the work.",
+      },
+      {
+        kind: "callout",
+        label: "The core idea",
+        text: "You cannot automate a process you have never written down. Agents need a foundation. Digital transformation is the work of building that foundation, not the work of buying the agents.",
+      },
+      {
+        kind: "h2",
+        text: "The contrarian part: it is not about how much AI you buy",
+        id: "not-about-how-much-ai",
+      },
+      {
+        kind: "p",
+        text: "Walk the market today and transformation gets measured in the wrong currency: how many licenses, how many pilots, how many tokens burned, how many tools adopted. That scoreboard produces three reliable outcomes: chaos, because every team runs its own ungoverned experiment; no governance, because nobody owns the data, the access, or the risk; and no ROI, because none of it was ever tied to a business result. More AI on a broken foundation is just a faster way to lose the thread.",
+      },
+      {
+        kind: "p",
+        text: "A real transformation program measures itself in the only currency that matters: business performance. Did automation increase. Did revenue grow. Did risk go down. Did the process actually get better. Did the company scale without adding headcount in proportion. If a consulting engagement cannot draw a line from the work to one of those, it is selling activity, not transformation.",
+      },
+      {
+        kind: "h2",
+        text: "What good digital transformation consulting actually does",
+        id: "what-good-consulting-does",
+      },
+      {
+        kind: "p",
+        text: "Stripped of the jargon, the job is four moves in a fixed order. Skip the order and the program stalls, which is why so many of them do.",
+      },
+      {
+        kind: "ol",
+        items: [
+          "Assess the maturity. Find out how the business actually operates and how ready it is, before recommending anything. No two companies start from the same place, so no honest engagement starts with a fixed answer.",
+          "Architect for the context. Design the right solution for this business, with security, ownership, maintenance, and evolution addressed in writing before anyone builds. Architecture-first, not tool-first.",
+          "Sequence foundation-first. Build the governance, data, and process layer before the automation, and the automation before the AI augmentation. Crawl, walk, run, in that order.",
+          "Measure against business performance. Tie every initiative to a business outcome and review it on a cadence, so the program stays honest after the kickoff energy fades.",
+        ],
+      },
+      {
+        kind: "p",
+        text: "Notice that none of those four moves is buy a product. The product comes last, and only once the foundation can hold it. That is what readiness-gated means: nothing automated gets switched on until the structure underneath it can carry the weight.",
+      },
+      {
+        kind: "h2",
+        text: "Why one vendor across operations, technology, data, and software",
+        id: "why-one-vendor",
+      },
+      {
+        kind: "p",
+        text: "Putting AI into how a company operates takes four capabilities most firms do not have under one roof: operations redesign, technology, data engineering, and software. An agency gives you marketing. A dev shop gives you software. A management consultancy gives you a deck and leaves before anything is built. Stitch four vendors together and the work falls into the seams between them, which is precisely where transformation programs die.",
+      },
+      {
+        kind: "quote",
+        text: "The differentiator is not any single specialty. It is the blend of all of them under one accountable owner, applied to your operations.",
+      },
+      {
+        kind: "p",
+        text: "That blend is also what lets a program move fast without breaking governance. The same team that maps the process designs the data model, builds the integration, and stands up the agent. There is no handoff to lose context across, and one owner is accountable for the business result instead of for a slice of the work.",
+      },
+      {
+        kind: "h2",
+        text: "The cost of treating it as a purchase",
+        id: "cost-of-a-purchase",
+      },
+      {
+        kind: "p",
+        text: "Within twelve to eighteen months, every employee will expect to build their own agent: inbox triage, document drafting, meeting prep. Companies that did the foundational work will absorb that safely, because the rails, the governance, and the data classification already exist. Companies that treated transformation as a shopping trip will be exposed instead of accelerated, with sensitive data flowing through ungoverned tools and no way to see it. The gap between the two will not be capability. It will be structure, and structure takes time to build, which is why the time to start is before you feel behind.",
+      },
+      {
+        kind: "h2",
+        text: "Where a real program starts: map before you automate",
+        id: "where-it-starts",
+      },
+      {
+        kind: "p",
+        text: "Every serious engagement starts the same way: a structured measurement of how the business actually runs. Interview every department. Build the value stream maps. Score every gap on one index of impact, frequency, effort, readiness, and strategic fit, so the roadmap is ranked by evidence instead of by opinion. Then sequence the fixes foundation-first. That map is the roadmap, and the roadmap is the first real artifact of transformation, long before a single agent goes live.",
+      },
+    ],
+    faqs: [
+      {
+        q: "What is digital transformation consulting?",
+        a: "Digital transformation consulting is the work of redesigning how a business operates so modern technology, data, and AI can run inside it and produce measurable results. In the agentic era the deliverable is a business that AI agents can safely operate: documented processes, governed data, clear policy, and a foundation built before any automation is switched on.",
+      },
+      {
+        q: "How is digital transformation different now that AI agents exist?",
+        a: "It has shifted from a technology purchase to an operability problem. An agent cannot run a process that was never written down or query data nobody structured, so the real work is building the process, data, and governance foundation underneath the agents. The software is the easy part. The foundation is the work, and it is what most programs skip.",
+      },
+      {
+        q: "How do you measure ROI on digital transformation?",
+        a: "Against business performance, not against how much AI was bought. The honest metrics are whether automation increased, revenue grew, risk went down, processes improved, and the company scaled without adding proportional headcount. If an engagement cannot draw a line from the work to one of those outcomes, it is measuring activity, not transformation.",
+      },
+    ],
+    related: [
+      { label: "Digital Transformation Consulting", href: "/consulting/digital-transformation" },
+      { label: "How we deliver", href: "/how-we-deliver" },
+      { label: "The Foundational AI Layer", href: "/foundation" },
+    ],
+  },
+  {
     slug: "ai-operating-model-vs-ai-tools",
     title:
       "An AI Operating Model Beats a Pile of AI Tools. Here's Why.",
