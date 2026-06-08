@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Section, SectionHeading } from "@/components/ui/Section";
+import { PageHero } from "@/components/sections/PageHero";
+import { HeroHowWeDeliver } from "@/components/brand/HeroHowWeDeliver";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
@@ -194,14 +196,17 @@ export default function HowWeDeliverPage() {
         ]}
       />
 
-      <Section>
-        <p className="eyebrow mb-4">How we deliver</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Measurable value-impact each month. Re-prioritization every
-          quarter.
-        </h1>
+      <PageHero
+        eyebrow="How we deliver"
+        title="Measurable value-impact monthly. Re-prioritization every quarter."
+        subhead="Two promises: you see measurable value-impact each month, and you see us choose what to defer or kill at every QBR. The model runs in three phases, Measure, Deliver, Continuously Improve."
+        primary={{ href: "/start", label: "Take the assessment" }}
+        secondary={{ href: "/framework", label: "See the framework" }}
+        graphic={<HeroHowWeDeliver className="w-full h-auto" />}
+      />
 
-        <div className="mt-10 max-w-3xl">
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>
             Zyos Group&apos;s delivery model is built around two promises: you
             see measurable value-impact each month, and you see us choosing

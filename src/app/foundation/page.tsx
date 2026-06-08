@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionHeading } from "@/components/ui/Section";
+import { PageHero } from "@/components/sections/PageHero";
+import { HeroFoundation } from "@/components/brand/HeroFoundation";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { PiDeliverableScrollthrough } from "@/components/showcases/PiDeliverableScrollthrough";
 import { DashboardGallery } from "@/components/showcases/DashboardCard";
@@ -87,14 +89,17 @@ export default function FoundationPage() {
         ]}
       />
 
-      <Section>
-        <p className="eyebrow mb-4">Foundation · Stage 2, Build</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Foundational builders. Process Intelligence first. Agents second.
-          Value-impact always.
-        </h1>
+      <PageHero
+        eyebrow="Foundation · Stage 2, Build"
+        title="Process Intelligence first. Agents second. Value-impact always."
+        subhead="Process Intelligence maps your processes and value stream, surfaces where you need automation, insights, and new technology, and architects the plan. Then agents operate and scale the most important work."
+        primary={{ href: "/start", label: "Take the assessment" }}
+        secondary={{ href: "/framework", label: "See the framework" }}
+        graphic={<HeroFoundation className="w-full h-auto" />}
+      />
 
-        <div className="mt-10 max-w-3xl">
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>
             Process Intelligence maps your processes and your value stream. We
             discover where you need automation, where you need insights, where

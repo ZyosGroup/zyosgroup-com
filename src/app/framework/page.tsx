@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionHeading } from "@/components/ui/Section";
+import { PageHero } from "@/components/sections/PageHero";
+import { HeroFramework } from "@/components/brand/HeroFramework";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
@@ -129,13 +131,17 @@ export default function FrameworkPage() {
         ]}
       />
 
-      <Section>
-        <p className="eyebrow mb-4">Framework · Stage 1, Assess</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Measure the opportunity before we promise the outcome.
-        </h1>
+      <PageHero
+        eyebrow="Framework · Stage 1, Assess"
+        title="Measure the opportunity before we promise the outcome."
+        subhead="The Readiness + Maturity Scorecard rates you across five dimensions before any SOW, then routes you honestly: engagement recommended, conditions to address, or not yet, revisit."
+        primary={{ href: "/start", label: "Take the assessment" }}
+        secondary={{ href: "/how-we-deliver", label: "How we deliver" }}
+        graphic={<HeroFramework className="w-full h-auto" />}
+      />
 
-        <div className="mt-10 max-w-3xl">
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>
             The Zyos Readiness + Maturity Scorecard rates a company across five
             dimensions before any SOW: Process Maturity, Tech + Integration,
