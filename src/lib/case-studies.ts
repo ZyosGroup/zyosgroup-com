@@ -211,7 +211,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       "How Zyos Group is moving home-services businesses off a rigid all-in-one tool onto an owned, agentic stack, replacing components one at a time with zero rip-and-replace risk.",
     quickAnswer:
       "Home-services companies were trapped in a rigid all-in-one tool they could not extend and could not orchestrate AI agents across, and did not own. Instead of a risky rip-and-replace, Zyos started with a high-performance new site, then began replacing the incumbent's components one at a time, starting with a custom quote builder, moving the business onto an owned agentic stack with no downtime.",
-    client: "McMahons and Fresh Start (home services)",
+    client: "Jersey Shore Powerwash and Fresh Start (home services)",
     anonymized: false,
     industry: "Home services",
     engagementModel: "Growth as a Service",
@@ -224,7 +224,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       "agentic operations stack",
     ],
     datePublished: "2026-06-07",
-    relatedProject: "mcmahons-power-washing",
+    relatedProject: "jersey-shore-power-washing",
     pillars: ["Single Vendor", "Foundation for Agentic", "Differentiators"],
     metrics: [
       { value: "94/95", label: "Lighthouse desktop / mobile on the new site", type: "quality" },
