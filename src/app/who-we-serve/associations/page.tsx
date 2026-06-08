@@ -4,6 +4,8 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { PageHero } from "@/components/sections/PageHero";
+import { HeroAssociations } from "@/components/brand/HeroAssociations";
 import { SITE } from "@/lib/site";
 
 // Target: "ai for associations" (40/mo, KD 0, $296 CPC — tiny volume, huge
@@ -48,14 +50,17 @@ export default function AssociationsPage() {
         ]}
       />
 
-      <Section>
-        <p className="eyebrow mb-4">Who we serve · AI for Associations</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Built for the multi-stakeholder, regulated reality associations live
-          in.
-        </h1>
+      <PageHero
+        eyebrow="Who we serve · AI for Associations"
+        title="Built for the multi-stakeholder, regulated reality associations live in."
+        subhead="AI for associations and member organizations: member experience, content operations, and AMS-aware architecture, governed with audit trails and human-in-the-loop defaults."
+        primary={{ href: "/start", label: "Take the assessment" }}
+        secondary={{ href: "/case-studies", label: "See case studies" }}
+        graphic={<HeroAssociations className="w-full h-auto" />}
+      />
 
-        <div className="mt-10 max-w-3xl">
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>
             Zyos Group brings AI to associations, non-profits, and member
             organizations. Member experience, content operations, and AMS-aware

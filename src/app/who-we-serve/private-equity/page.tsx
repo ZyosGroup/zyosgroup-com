@@ -4,6 +4,8 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { PageHero } from "@/components/sections/PageHero";
+import { HeroPrivateEquity } from "@/components/brand/HeroPrivateEquity";
 import { SITE } from "@/lib/site";
 
 // Target: "ai for private equity" (140/mo, KD 0, $22 CPC) + "portfolio
@@ -48,13 +50,17 @@ export default function PrivateEquityPage() {
         ]}
       />
 
-      <Section>
-        <p className="eyebrow mb-4">Who we serve · AI for Private Equity</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          AI for private equity: repeatable value creation across the portfolio.
-        </h1>
+      <PageHero
+        eyebrow="Who we serve · AI for Private Equity"
+        title="AI for private equity: repeatable value creation across the portfolio."
+        subhead="One operating model rolled across portfolio companies, so each engagement compounds value-impact and runs faster and better-measured than the last."
+        primary={{ href: "/start", label: "Take the assessment" }}
+        secondary={{ href: "/how-we-deliver", label: "How we deliver" }}
+        graphic={<HeroPrivateEquity className="w-full h-auto" />}
+      />
 
-        <div className="mt-10 max-w-3xl">
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>
             Zyos Group brings AI to private equity firms and their portfolio
             companies. We assess operational maturity per holding, architect the

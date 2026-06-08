@@ -4,6 +4,8 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { PageHero } from "@/components/sections/PageHero";
+import { HeroWhoWeServe } from "@/components/brand/HeroWhoWeServe";
 import { SITE } from "@/lib/site";
 import { ArrowUpRight } from "lucide-react";
 
@@ -51,13 +53,17 @@ export default function WhoWeServePage() {
         ]}
       />
 
-      <Section>
-        <p className="eyebrow mb-4">Who we serve</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Three ICPs. Same operating model. Architecture tuned to context.
-        </h1>
+      <PageHero
+        eyebrow="Who we serve"
+        title="Three ICPs. Same operating model. Architecture tuned to context."
+        subhead="High-Growth SMBs, Private Equity portfolios, and Associations. One operating model across all three, with architecture tuned to your context."
+        primary={{ href: "/start", label: "Take the assessment" }}
+        secondary={{ href: "/solutions", label: "See solutions" }}
+        graphic={<HeroWhoWeServe className="w-full h-auto" />}
+      />
 
-        <div className="mt-10 max-w-3xl">
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>
             Zyos Group targets three ICPs: High-Growth SMBs (10–200 employees,
             scaling fast), Private Equity (firms plus portfolio companies

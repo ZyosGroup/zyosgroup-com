@@ -4,6 +4,8 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { PageHero } from "@/components/sections/PageHero";
+import { HeroHighGrowthSmbs } from "@/components/brand/HeroHighGrowthSmbs";
 import { OutcomeCard, SAMPLE_OUTCOMES } from "@/components/showcases/OutcomeCard";
 import { SITE } from "@/lib/site";
 
@@ -43,14 +45,17 @@ export default function HighGrowthSmbsPage() {
         ]}
       />
 
-      <Section>
-        <p className="eyebrow mb-4">Who we serve · AI for High-Growth SMBs</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          You&apos;re scaling. The founder&apos;s playbook isn&apos;t keeping
-          up.
-        </h1>
+      <PageHero
+        eyebrow="Who we serve · AI for High-Growth SMBs"
+        title="You're scaling. The founder's playbook isn't keeping up."
+        subhead="AI automation and consulting for 10 to 200-employee B2B companies on a growth trajectory. We productize how you operate so the next hire and customer cost less than the last."
+        primary={{ href: "/start", label: "Take the assessment" }}
+        secondary={{ href: "/solutions/growth-as-a-service", label: "Growth as a Service" }}
+        graphic={<HeroHighGrowthSmbs className="w-full h-auto" />}
+      />
 
-        <div className="mt-10 max-w-3xl">
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>
             AI automation and consulting for high-growth SMBs, 10–200-employee
             B2B companies on a growth trajectory. We productize how you operate

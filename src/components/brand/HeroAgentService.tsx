@@ -32,11 +32,11 @@ export function HeroAgentService({ className = "" }: { className?: string }) {
       </defs>
 
       {/* operated agent hub */}
-      <rect x="150" y="40" width="180" height="64" rx="12" fill="url(#aas-hub)" stroke="#48c1eb" strokeWidth="1.5" />
+      <rect x="106" y="40" width="268" height="64" rx="12" fill="url(#aas-hub)" stroke="#48c1eb" strokeWidth="1.5" />
       <text x="240" y="68" textAnchor="middle" fontFamily="var(--font-inter-tight), sans-serif" fontSize="19" fontWeight="700" fill="#eaf8ff">
         AI Agents
       </text>
-      <text x="240" y="89" textAnchor="middle" fontFamily="var(--font-jetbrains-mono), monospace" fontSize="11" letterSpacing="1" fill="#86adcd">
+      <text x="240" y="89" textAnchor="middle" fontFamily="var(--font-jetbrains-mono), monospace" fontSize="10.5" letterSpacing="0.5" fill="#86adcd">
         DESIGNED · DEPLOYED · OPERATED
       </text>
 
