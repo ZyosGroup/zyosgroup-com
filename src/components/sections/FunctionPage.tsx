@@ -1,6 +1,8 @@
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
+import { PageHero } from "@/components/sections/PageHero";
+import { HeroByFunction } from "@/components/brand/HeroByFunction";
 import { AgentWorkflowCard, type AgentWorkflowCardProps } from "@/components/showcases/AgentWorkflowCard";
 
 // Shared shape for the /by-function/* pages — lifts directly from
@@ -45,21 +47,22 @@ export function FunctionPage({
   customerSuccess,
   embedWorkflows,
 }: FunctionPageProps) {
+  const func = eyebrow.split("·").pop()?.trim() || "This function";
   return (
     <>
-      <Section>
-        <p className="eyebrow mb-4">{eyebrow}</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          {title}
-        </h1>
+      <PageHero
+        eyebrow={eyebrow}
+        title={title}
+        subhead={intro}
+        primary={{ href: "/start", label: "Take the assessment" }}
+        secondary={{ href: "/solutions/agent-as-a-service", label: "Agent as a Service" }}
+        graphic={<HeroByFunction func={func} agents={agentWorkflows.map((w) => w.name)} className="w-full h-auto" />}
+      />
 
-        <div className="mt-10 max-w-3xl">
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>{quickAnswer}</QuickAnswer>
         </div>
-
-        <p className="mt-10 max-w-prose text-[15px] text-ink/85 leading-relaxed">
-          {intro}
-        </p>
       </Section>
 
       <Section className="bg-surface border-y border-border">
