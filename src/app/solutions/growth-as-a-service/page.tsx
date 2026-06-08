@@ -3,6 +3,8 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { PageHero } from "@/components/sections/PageHero";
+import { HeroGrowthService } from "@/components/brand/HeroGrowthService";
 import { Faq } from "@/components/seo/Faq";
 import { DashboardGallery } from "@/components/showcases/DashboardCard";
 import { SITE } from "@/lib/site";
@@ -77,13 +79,17 @@ export default function GaaSPage() {
         ]}
       />
 
-      <Section>
-        <p className="eyebrow mb-4">Solutions · GaaS</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Growth operations on autopilot, measured against your OKRs.
-        </h1>
+      <PageHero
+        eyebrow="Solutions · GaaS"
+        title="Growth operations, run as one service."
+        subhead="We operate your whole growth engine, website, Google Business Profile, ads and LSA, SEO, content, reviews, as a single service measured against your OKRs."
+        primary={{ href: "/start", label: "Take the assessment" }}
+        secondary={{ href: "/projects", label: "See the work" }}
+        graphic={<HeroGrowthService className="w-full h-auto" />}
+      />
 
-        <div className="mt-10 max-w-3xl">
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>
             Growth as a Service (GaaS) is a continuous service in which
             Zyos Group operates a small business&apos;s entire growth function:

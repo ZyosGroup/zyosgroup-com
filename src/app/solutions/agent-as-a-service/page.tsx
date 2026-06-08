@@ -4,6 +4,8 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { CtaButton } from "@/components/ui/Button";
 import { PageSchema } from "@/components/seo/PageSchema";
+import { PageHero } from "@/components/sections/PageHero";
+import { HeroAgentService } from "@/components/brand/HeroAgentService";
 import { Faq } from "@/components/seo/Faq";
 import { AgentWorkflowCard } from "@/components/showcases/AgentWorkflowCard";
 import { SAMPLE_WORKFLOWS } from "@/components/showcases/sample-workflows";
@@ -78,14 +80,17 @@ export default function AaaSPage() {
         ]}
       />
 
-      <Section>
-        <p className="eyebrow mb-4">Solutions · AaaS</p>
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tightish text-primary leading-[1.05] max-w-4xl">
-          Agent as a Service. We design, deploy, and run AI agents on your
-          behalf.
-        </h1>
+      <PageHero
+        eyebrow="Solutions · AaaS"
+        title="Agent as a Service. We run AI agents on your behalf."
+        subhead="A continuous service: Zyos designs, deploys, and operates AI agents across Workflows, Systems, Middleware, Lean, and Insights, so you never manage prompts, reliability, or drift."
+        primary={{ href: "/start", label: "Take the assessment" }}
+        secondary={{ href: "/platform", label: "See the platform" }}
+        graphic={<HeroAgentService className="w-full h-auto" />}
+      />
 
-        <div className="mt-10 max-w-3xl">
+      <Section>
+        <div className="max-w-3xl">
           <QuickAnswer>
             Agent as a Service (AaaS) is a continuous service in which
             Zyos Group designs, deploys, and operates AI agents on the
