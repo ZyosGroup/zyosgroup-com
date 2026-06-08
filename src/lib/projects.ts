@@ -173,6 +173,7 @@ export const PROJECTS: Project[] = [
     blurb:
       "We built a secure, multi-tenant analytics platform so the association could deliver decision-support to its members, benchmark and measure member performance, and monetize benchmarking insights, with strict per-member data isolation. Zyos served as the solution provider behind the performance benchmarks for blood-bank production planning and execution: an executive and operational decision-support engagement.",
     image: "/projects/bca-analytics.svg",
+    liveUrl: "https://bca.coop",
     status: "Illustrative dashboard",
     featured: true,
     confirm: true,
@@ -195,10 +196,10 @@ export const PROJECTS: Project[] = [
     blurb:
       "ASTA's systems could not talk to each other. We rebuilt their primary website on a modern commerce core and orchestrated a modular, best-in-class stack around it, membership and e-commerce, access and entitlement, CRM lifecycle, and event registration, connected by a middleware layer with clean one-directional data flow. Designed for ownership, not vendor lock-in: ASTA owns the data and can swap any single component without rebuilding the whole business.",
     image: "/projects/asta.jpg",
-    liveUrl: "https://asta.org",
+    liveUrl: "https://astausa.org",
     featured: true,
     components: [
-      { block: "website", label: "Rebuilt asta.org on a commerce core" },
+      { block: "website", label: "Rebuilt astausa.org on a commerce core" },
       { block: "app", label: "Modular best-in-class platform stack" },
       { block: "skill", label: "Middleware orchestration, one-way data flow" },
       { block: "skill", label: "Membership entitlement + access control" },
