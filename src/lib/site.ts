@@ -38,6 +38,8 @@ export const OE_SURVEYS: Record<string, string> = {
   associations: "https://survey.zyos.io/oe?segment=associations",
   "pe-backed": "https://survey.zyos.io/oe?segment=pe-backed",
   "growth-smb": "https://survey.zyos.io/oe?segment=growth-smb",
+  // GaaS-tailored variant for prospects here for growth / marketing services.
+  gaas: "https://survey.zyos.io/oe?segment=gaas",
 };
 export const OE_SURVEY_DEFAULT = "https://survey.zyos.io/oe";
 

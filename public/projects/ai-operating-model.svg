@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" role="img" aria-label="The AI operating model stack, built bottom-up: Governance and Policy, Projects and Artifacts, Skills, Agents, Apps.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c2c47"/>
+      <stop offset="1" stop-color="#08203a"/>
+    </linearGradient>
+    <style>
+      .ff { font-family: 'Inter Tight', 'Inter', system-ui, -apple-system, sans-serif; }
+      .lbl { font-weight: 700; }
+      .desc { font-weight: 400; opacity: .82; }
+      .eyebrow { font-family: 'JetBrains Mono', ui-monospace, monospace; letter-spacing: .18em; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="800" fill="url(#bg)"/>
+
+  <!-- header -->
+  <text x="80" y="78" class="ff eyebrow" font-size="20" fill="#48c1eb">AI OPERATING MODEL</text>
+  <text x="80" y="120" class="ff lbl" font-size="40" fill="#ffffff">Built bottom-up.</text>
+  <text x="372" y="120" class="ff desc" font-size="40" fill="#ffffff">Skip a layer and AI stalls.</text>
+
+  <!-- upward build arrow -->
+  <g stroke="#48c1eb" stroke-width="3" fill="none" opacity="0.9">
+    <line x1="100" y1="690" x2="100" y2="196"/>
+    <polyline points="86,224 100,196 114,224"/>
+  </g>
+  <text x="100" y="720" class="ff eyebrow" font-size="14" fill="#7fb4d8" text-anchor="middle">BUILD ORDER</text>
+
+  <!-- bands: bottom (governance) to top (apps) -->
+  <!-- Layer 1 Governance -->
+  <g>
+    <rect x="150" y="606" width="1050" height="92" rx="10" fill="#143a5c"/>
+    <text x="184" y="652" class="ff lbl" font-size="26" fill="#ffffff">Governance &amp; Policy</text>
+    <text x="184" y="680" class="ff desc" font-size="17" fill="#cfe2f1">The base. AI usage policy, roles, access, and sign-off.</text>
+    <text x="1166" y="660" class="ff eyebrow" font-size="16" fill="#5e8fb5" text-anchor="end">01</text>
+  </g>
+  <!-- Layer 2 Artifacts -->
+  <g>
+    <rect x="150" y="490" width="1050" height="92" rx="10" fill="#1b557f"/>
+    <text x="184" y="536" class="ff lbl" font-size="26" fill="#ffffff">Projects &amp; Artifacts</text>
+    <text x="184" y="564" class="ff desc" font-size="17" fill="#dbeaf6">Value stream maps, SOPs, scored opportunity register, roadmap.</text>
+    <text x="1166" y="544" class="ff eyebrow" font-size="16" fill="#84acca" text-anchor="end">02</text>
+  </g>
+  <!-- Layer 3 Skills -->
+  <g>
+    <rect x="150" y="374" width="1050" height="92" rx="10" fill="#1f6fa8"/>
+    <text x="184" y="420" class="ff lbl" font-size="26" fill="#ffffff">Skills</text>
+    <text x="184" y="448" class="ff desc" font-size="17" fill="#e7f2fa">Reusable, validated capabilities tied to how the business runs.</text>
+    <text x="1166" y="428" class="ff eyebrow" font-size="16" fill="#a9cae2" text-anchor="end">03</text>
+  </g>
+  <!-- Layer 4 Agents -->
+  <g>
+    <rect x="150" y="258" width="1050" height="92" rx="10" fill="#2a8fd0"/>
+    <text x="184" y="304" class="ff lbl" font-size="26" fill="#ffffff">Agents</text>
+    <text x="184" y="332" class="ff desc" font-size="17" fill="#eaf5fc">Skills put to work: orchestrating tasks across systems on a schedule.</text>
+    <text x="1166" y="312" class="ff eyebrow" font-size="16" fill="#cbe6f6" text-anchor="end">04</text>
+  </g>
+  <!-- Layer 5 Apps (top, bright) -->
+  <g>
+    <rect x="150" y="142" width="1050" height="92" rx="10" fill="#48c1eb"/>
+    <text x="184" y="188" class="ff lbl" font-size="26" fill="#0c2c47">Apps</text>
+    <text x="184" y="216" class="ff desc" font-size="17" fill="#0c2c47">One role-based company app where it all surfaces and gets used.</text>
+    <text x="1166" y="196" class="ff eyebrow" font-size="16" fill="#0c2c47" text-anchor="end" opacity="0.7">05</text>
+  </g>
+
+  <!-- footer caption -->
+  <text x="150" y="756" class="ff desc" font-size="17" fill="#9cc0dc">Discover &#8594; Design &#8594; Deploy. One governed flow, built layer by layer.</text>
+</svg>

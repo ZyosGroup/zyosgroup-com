@@ -31,8 +31,8 @@ export function IntakeForm() {
   useEffect(() => {
     if (state.status === "ok") {
       trackEvent("generate_lead", {
-        form: "opportunity_engine",
-        source: "zyosgroup.com-intake",
+        form: "contact",
+        source: "zyosgroup.com-contact",
         segment: state.segment,
         opted_in: state.optIn,
       });
@@ -44,74 +44,35 @@ export function IntakeForm() {
     return (
       <div className="rounded-lg border border-accent/30 bg-white p-8">
         <CheckCircle2 className="h-7 w-7 text-accent" aria-hidden />
-        {state.optIn ? (
-          <>
-            <h2 className="mt-4 text-2xl font-semibold text-primary tracking-tightish">
-              Intake received. Your Opportunity Engine survey is ready.
-            </h2>
-            <p className="mt-3 text-[15px] text-ink/80 leading-relaxed">
-              We built a focused diagnostic for your niche. It takes about ten
-              minutes and goes deeper than the questions you just answered, so the
-              report we send back is specific to how you actually operate.
-            </p>
-            <a
-              href={surveyUrl}
-              target="_blank"
-              rel="noopener"
-              className="mt-6 inline-flex items-center gap-2 rounded-md bg-accent px-5 py-3 text-sm font-semibold text-primary-deep transition-colors hover:bg-accent-vivid"
-            >
-              Take your Opportunity Engine survey <ArrowRight aria-hidden className="h-4 w-4" />
-            </a>
-            <ol className="mt-7 space-y-3 text-[15px] text-ink/80">
-              <li>
-                <span className="mono text-xs text-accent mr-2">01</span>
-                Complete the niche survey above.
-              </li>
-              <li>
-                <span className="mono text-xs text-accent mr-2">02</span>
-                Within one business day, a customized report lands in your inbox.
-              </li>
-              <li>
-                <span className="mono text-xs text-accent mr-2">03</span>
-                We meet to review it together and map the next step.
-              </li>
-            </ol>
-            <a
-              href={SITE.bookingUrl}
-              target="_blank"
-              rel="noopener"
-              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-ink transition-colors"
-            >
-              Grab a time for the review now <ArrowRight aria-hidden className="h-4 w-4" />
-            </a>
-          </>
-        ) : (
-          <>
-            <h2 className="mt-4 text-2xl font-semibold text-primary tracking-tightish">
-              Intake received. The diagnostic is in motion.
-            </h2>
-            <ol className="mt-5 space-y-3 text-[15px] text-ink/80">
-              <li>
-                <span className="mono text-xs text-accent mr-2">01</span>
-                We&apos;re scoring your intake against the five-dimension readiness
-                model right now.
-              </li>
-              <li>
-                <span className="mono text-xs text-accent mr-2">02</span>
-                You&apos;ll receive your diagnostic snapshot in your inbox within 60
-                minutes.
-              </li>
-              <li>
-                <span className="mono text-xs text-accent mr-2">03</span>
-                A real-human-reviewed scoped proposal lands by next business day.
-              </li>
-            </ol>
-            <p className="mt-6 text-sm text-subtle">
-              The diagnostic could route you to an engagement, to conditions to
-              address first, or to &ldquo;not yet, revisit&rdquo;. We disqualify when we should.
-            </p>
-          </>
-        )}
+        <h2 className="mt-4 text-2xl font-semibold text-primary tracking-tightish">
+          Thanks, your note is in.
+        </h2>
+        <p className="mt-3 text-[15px] text-ink/80 leading-relaxed">
+          We read every one of these and reply within one business day. If it is
+          time-sensitive, grab a slot and we will talk sooner.
+        </p>
+        <a
+          href={SITE.bookingUrl}
+          target="_blank"
+          rel="noopener"
+          className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink"
+        >
+          Book a time now <ArrowRight aria-hidden className="h-4 w-4" />
+        </a>
+        <div className="mt-7 border-t border-border pt-5">
+          <p className="text-[14px] text-ink/80 leading-relaxed">
+            Want to skip ahead? Take the Opportunity Engine assessment and we will
+            have your scored diagnostic ready when we talk.
+          </p>
+          <a
+            href={surveyUrl}
+            target="_blank"
+            rel="noopener"
+            className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-ink transition-colors"
+          >
+            Take the assessment <ArrowRight aria-hidden className="h-4 w-4" />
+          </a>
+        </div>
       </div>
     );
   }
@@ -245,16 +206,15 @@ export function IntakeForm() {
           className="mt-0.5 h-4 w-4 rounded border-border text-primary focus:ring-primary"
         />
         <span className="text-[14px] text-ink/85 leading-relaxed">
-          Send me the in-depth Opportunity Engine survey for my niche. Complete it
-          and you&apos;ll get a customized report within one business day, plus a
-          working session to review it together.
+          Also send me a link to the Opportunity Engine assessment for my segment,
+          so I can get a scored diagnostic ahead of our conversation.
         </span>
       </label>
 
       <SubmitButton />
       <p className="text-xs text-subtle">
-        We&apos;ll only use this to deliver your diagnostic + proposal. No newsletter
-        sign-up, no shared lists.
+        We&apos;ll only use this to reply to you. No newsletter sign-up, no shared
+        lists.
       </p>
     </form>
   );
@@ -271,10 +231,10 @@ function SubmitButton() {
       {pending ? (
         <>
           <Loader2 className="h-4 w-4 animate-spin" aria-hidden />
-          Sending intake…
+          Sending…
         </>
       ) : (
-        <>Send my intake</>
+        <>Send message</>
       )}
     </button>
   );

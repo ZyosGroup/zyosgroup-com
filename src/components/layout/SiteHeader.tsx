@@ -9,9 +9,9 @@ const NAV = [
   { href: "/consulting", label: "Consulting" },
   { href: "/who-we-serve", label: "Who we serve" },
   { href: "/platform", label: "Platform" },
+  { href: "/projects", label: "Projects" },
   { href: "/case-studies", label: "Case studies" },
   { href: "/about", label: "About" },
-  { href: "/the-brief", label: "The Brief" },
 ];
 
 export function SiteHeader() {

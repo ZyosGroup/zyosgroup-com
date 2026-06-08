@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" role="img" aria-label="Illustrative member-benchmarking analytics dashboard: KPI tiles, production versus cohort median, and a monthly output trend.">
+  <defs>
+    <style>
+      .ff { font-family: 'Inter Tight','Inter', system-ui, -apple-system, sans-serif; }
+      .b { font-weight: 700; } .sb { font-weight: 600; }
+      .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; letter-spacing:.1em; }
+    </style>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#48c1eb" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#48c1eb" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="800" fill="#eef3f8"/>
+
+  <!-- top bar -->
+  <rect width="1280" height="66" fill="#0c2c47"/>
+  <circle cx="38" cy="33" r="11" fill="none" stroke="#48c1eb" stroke-width="2"/>
+  <text x="60" y="41" class="ff b" font-size="22" fill="#ffffff">Member Benchmarking</text>
+  <rect x="940" y="18" width="312" height="32" rx="16" fill="#143a5c"/>
+  <text x="960" y="39" class="ff mono" font-size="13" fill="#9ccde8">VIEWING: CENTER 0428 - ROW-LEVEL SECURED</text>
+
+  <!-- KPI tiles -->
+  <g class="ff">
+    <!-- tile template -->
+    <g>
+      <rect x="40" y="92" width="280" height="100" rx="10" fill="#ffffff" stroke="#dbe5ee"/>
+      <text x="60" y="122" font-size="13" fill="#5b7790">Units produced (MTD)</text>
+      <text x="60" y="158" class="b" font-size="32" fill="#0c2c47">12,480</text>
+      <text x="60" y="180" class="sb" font-size="13" fill="#1f9d57">+6.2% vs cohort</text>
+    </g>
+    <g>
+      <rect x="334" y="92" width="280" height="100" rx="10" fill="#ffffff" stroke="#dbe5ee"/>
+      <text x="354" y="122" font-size="13" fill="#5b7790">Production plan attainment</text>
+      <text x="354" y="158" class="b" font-size="32" fill="#0c2c47">96.4%</text>
+      <text x="354" y="180" class="sb" font-size="13" fill="#1f9d57">+2.1 pts vs cohort</text>
+    </g>
+    <g>
+      <rect x="628" y="92" width="280" height="100" rx="10" fill="#ffffff" stroke="#dbe5ee"/>
+      <text x="648" y="122" font-size="13" fill="#5b7790">Platelet yield</text>
+      <text x="648" y="158" class="b" font-size="32" fill="#0c2c47">92.8%</text>
+      <text x="648" y="180" class="sb" font-size="13" fill="#5b7790">cohort median 90.1%</text>
+    </g>
+    <g>
+      <rect x="922" y="92" width="318" height="100" rx="10" fill="#ffffff" stroke="#dbe5ee"/>
+      <text x="942" y="122" font-size="13" fill="#5b7790">Cohort percentile</text>
+      <text x="942" y="158" class="b" font-size="32" fill="#0c2c47">78th</text>
+      <text x="942" y="180" class="sb" font-size="13" fill="#5b7790">top quartile on attainment</text>
+    </g>
+  </g>
+
+  <!-- bar chart card -->
+  <rect x="40" y="212" width="640" height="356" rx="10" fill="#ffffff" stroke="#dbe5ee"/>
+  <text x="60" y="246" class="ff b" font-size="17" fill="#0c2c47">Production plan attainment vs cohort median</text>
+  <!-- legend -->
+  <rect x="60" y="262" width="12" height="12" rx="2" fill="#48c1eb"/><text x="78" y="272" class="ff" font-size="12" fill="#5b7790">This center</text>
+  <rect x="158" y="262" width="12" height="12" rx="2" fill="#1f6fa8"/><text x="176" y="272" class="ff" font-size="12" fill="#5b7790">Cohort median</text>
+  <!-- baseline -->
+  <line x1="90" y1="520" x2="660" y2="520" stroke="#cdd9e4"/>
+  <!-- bars: scale 2.6, baseline 520 -->
+  <g>
+    <!-- Whole Blood c144 -->
+    <rect x="110" y="270" width="30" height="250" fill="#48c1eb"/>
+    <rect x="148" y="286" width="30" height="234" fill="#1f6fa8"/>
+    <text x="144" y="540" class="ff" font-size="12" fill="#5b7790" text-anchor="middle">Whole Bld</text>
+    <!-- Red Cells c252 -->
+    <rect x="218" y="276" width="30" height="244" fill="#48c1eb"/>
+    <rect x="256" y="289" width="30" height="231" fill="#1f6fa8"/>
+    <text x="252" y="540" class="ff" font-size="12" fill="#5b7790" text-anchor="middle">Red Cells</text>
+    <!-- Platelets c360 -->
+    <rect x="326" y="278" width="30" height="242" fill="#48c1eb"/>
+    <rect x="364" y="286" width="30" height="234" fill="#1f6fa8"/>
+    <text x="360" y="540" class="ff" font-size="12" fill="#5b7790" text-anchor="middle">Platelets</text>
+    <!-- Plasma c468 -->
+    <rect x="434" y="291" width="30" height="229" fill="#48c1eb"/>
+    <rect x="472" y="299" width="30" height="221" fill="#1f6fa8"/>
+    <text x="468" y="540" class="ff" font-size="12" fill="#5b7790" text-anchor="middle">Plasma</text>
+    <!-- Cryo c576 -->
+    <rect x="542" y="283" width="30" height="237" fill="#48c1eb"/>
+    <rect x="580" y="294" width="30" height="226" fill="#1f6fa8"/>
+    <text x="576" y="540" class="ff" font-size="12" fill="#5b7790" text-anchor="middle">Cryo</text>
+  </g>
+
+  <!-- line chart card -->
+  <rect x="700" y="212" width="540" height="356" rx="10" fill="#ffffff" stroke="#dbe5ee"/>
+  <text x="720" y="246" class="ff b" font-size="17" fill="#0c2c47">Monthly output, last 8 months</text>
+  <line x1="730" y1="520" x2="1190" y2="520" stroke="#cdd9e4"/>
+  <polygon points="730,364 794,353 858,359 922,338 986,327 1050,333 1114,312 1178,296 1178,520 730,520" fill="url(#area)"/>
+  <polyline points="730,364 794,353 858,359 922,338 986,327 1050,333 1114,312 1178,296" fill="none" stroke="#1569ac" stroke-width="3"/>
+  <g fill="#1569ac">
+    <circle cx="730" cy="364" r="4"/><circle cx="794" cy="353" r="4"/><circle cx="858" cy="359" r="4"/><circle cx="922" cy="338" r="4"/><circle cx="986" cy="327" r="4"/><circle cx="1050" cy="333" r="4"/><circle cx="1114" cy="312" r="4"/><circle cx="1178" cy="296" r="4"/>
+  </g>
+  <text x="720" y="556" class="ff" font-size="12" fill="#5b7790">Trending up. 8 of 8 months at or above plan since the benchmark program launched.</text>
+
+  <!-- footer note -->
+  <text x="40" y="600" class="ff" font-size="13" fill="#7892a8">Illustrative data for demonstration. Each member sees only their own figures, benchmarked against the de-identified cohort.</text>
+</svg>

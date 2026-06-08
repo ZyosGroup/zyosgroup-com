@@ -105,6 +105,15 @@ export default function CaseStudyPage({
           <p className="mono mt-4 text-[12px] text-accent">{c.client}</p>
         )}
 
+        {c.relatedProject ? (
+          <Link
+            href="/projects"
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-white/80 hover:text-white transition-colors"
+          >
+            See the full project <ArrowLeft className="h-4 w-4 rotate-180" aria-hidden />
+          </Link>
+        ) : null}
+
         {/* KPI band */}
         <div className="mt-10 grid gap-4 sm:grid-cols-3 max-w-4xl">
           {c.metrics.map((m) => (
@@ -226,7 +235,7 @@ export default function CaseStudyPage({
             </p>
           </div>
           <div className="flex flex-wrap gap-3 lg:justify-end">
-            <CtaButton href="/start">Start your intake</CtaButton>
+            <CtaButton href="/start">Take the assessment</CtaButton>
           </div>
         </div>
       </Section>
