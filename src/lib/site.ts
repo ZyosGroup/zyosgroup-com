@@ -49,6 +49,7 @@ export const OE_SURVEY_DEFAULT = "https://survey.zyos.io/oe";
 export const ANALYTICS = {
   gtmId: "GTM-5KJRM3S",
   hubspotPortalId: "6624575",
+  metaPixelId: "209666692876490",
 } as const;
 
 // Locked tagline — verbatim from canonical-entity-descriptions §Entity 2.
