@@ -98,6 +98,8 @@ export function SiteFooter() {
             © {year} {SITE.name}. All rights reserved.
             <span className="mx-2 text-border">·</span>
             <a href={SITE.url} className="hover:text-primary">{SITE.domain}</a>
+            <span className="mx-2 text-border">·</span>
+            <Link href="/privacy" className="hover:text-primary">Privacy</Link>
           </div>
           <div className="flex items-center gap-4">
             <a href={SITE.linkedinCompany} rel="noopener" className="hover:text-primary">LinkedIn</a>
