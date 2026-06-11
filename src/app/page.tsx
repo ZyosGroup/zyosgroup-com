@@ -127,7 +127,7 @@ export default function HomePage() {
       <Faq
         eyebrow="Frequently asked"
         title="What buyers ask about Zyos Group."
-        description="Straight answers on what we do, who we serve, and how an engagement starts. Published as FAQ schema for AI Overviews and answer engines."
+        description="Straight answers on what we do, who we serve, and how an engagement starts."
         faqs={HOMEPAGE_FAQS}
       />
 

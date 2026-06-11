@@ -282,7 +282,7 @@ export default function FrameworkPage() {
       <Faq
         eyebrow="AI readiness assessment, FAQ"
         title="What buyers ask about the Zyos Framework."
-        description="Direct from prospect calls. Each answer is published as FAQPage schema so AI Overviews and answer engines can lift it cleanly."
+        description="Straight answers to what buyers ask about the readiness framework."
         faqs={FRAMEWORK_FAQS}
       />
 

@@ -57,7 +57,7 @@ export default function StartPage() {
           <QuickAnswer label="What this is">
             The Opportunity Engine is a focused assessment that scores how ready
             your business is to put AI to work, then returns a real diagnostic and
-            a roadmap. It takes about ten minutes. Pick your situation below and
+            a roadmap. It takes about 12 to 18 minutes. Pick your situation below and
             we will route you to the right version, full transformation or growth
             and marketing.
           </QuickAnswer>

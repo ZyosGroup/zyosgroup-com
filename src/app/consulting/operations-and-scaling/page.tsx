@@ -166,7 +166,7 @@ export default function OperationsScalingPage() {
       <Faq
         eyebrow="Operations & scaling, FAQ"
         title="What buyers ask about operations and fractional operations."
-        description="Lifted from prospect calls. Published as FAQ schema for AI Overviews and answer engines."
+        description="Straight answers to what buyers ask about operations and fractional operations."
         faqs={OPS_FAQS}
       />
 

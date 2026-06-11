@@ -30,18 +30,18 @@ export const SITE = {
     "https://outlook.office.com/book/ZyosGroupCustomerKickoff@zyosgroup.com/?ismsaljsauthenabled",
 } as const;
 
-// Niche-specific Opportunity Engine surveys. On /start opt-in, the form routes
-// to the survey matching the selected segment. TODO(paul): replace these with
-// the real per-niche survey URLs (placeholders use the base OE survey + a
-// segment query param so the flow works end-to-end until the real URLs land).
+// Niche-specific Opportunity Engine surveys. On /start opt-in, the form deep-links
+// straight into the survey questions (/oe/start) with the prospect's vertical
+// pre-selected, so they never see the re-pick landing again (they already chose
+// their segment here). Vertical values match the survey app: association | pe_smb | general.
 export const OE_SURVEYS: Record<string, string> = {
-  associations: "https://survey.zyos.io/oe?segment=associations",
-  "pe-backed": "https://survey.zyos.io/oe?segment=pe-backed",
-  "growth-smb": "https://survey.zyos.io/oe?segment=growth-smb",
-  // GaaS-tailored variant for prospects here for growth / marketing services.
-  gaas: "https://survey.zyos.io/oe?segment=gaas",
+  associations: "https://survey.zyos.io/oe/start?v=association",
+  "pe-backed": "https://survey.zyos.io/oe/start?v=pe_smb",
+  "growth-smb": "https://survey.zyos.io/oe/start?v=general",
+  // GaaS-tailored prospects (growth / marketing) route into the general vertical survey.
+  gaas: "https://survey.zyos.io/oe/start?v=general",
 };
-export const OE_SURVEY_DEFAULT = "https://survey.zyos.io/oe";
+export const OE_SURVEY_DEFAULT = "https://survey.zyos.io/oe/start";
 
 // Analytics IDs ported from the legacy Gatsby zyosgroup.com so the
 // historical measurement stream continues uninterrupted across the

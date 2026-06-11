@@ -216,7 +216,7 @@ export default function GaaSPage() {
       <Faq
         eyebrow="Growth as a Service, FAQ"
         title="What buyers ask about GaaS."
-        description="Lifted from prospect calls. Published as FAQPage schema for AI Overview + PAA citation."
+        description="Straight answers to what buyers ask about Growth as a Service."
         faqs={GAAS_FAQS}
       />
 

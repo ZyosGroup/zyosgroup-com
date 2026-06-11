@@ -278,7 +278,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         q: "How long does it take to stand up an AI operating model?",
-        a: "A typical rollout runs roughly 20 weeks: foundation (governance, policy, AI Champion, core skills) in weeks 1–4, discovery (interview and map every department, score the opportunity register) through week 12, and execution (deploy top-ranked fixes, first agents) through week 20. It compresses or extends with company size, but the order never changes.",
+        a: "A typical rollout runs roughly 20 weeks: foundation (governance, policy, AI Champion, core skills) in weeks 1 to 4, discovery (interview and map every department, score the opportunity register) through week 12, and execution (deploy top-ranked fixes, first agents) through week 20. It compresses or extends with company size, but the order never changes.",
       },
     ],
     related: [

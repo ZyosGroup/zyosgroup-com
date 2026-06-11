@@ -245,7 +245,7 @@ export default function AaaSPage() {
       <Faq
         eyebrow="Agentic AI consulting, FAQ"
         title="What buyers ask about Agent as a Service."
-        description="Lifted from prospect calls. Published as FAQPage schema for AI Overview + PAA citation."
+        description="Straight answers to what buyers ask about Agent as a Service."
         faqs={AAAS_FAQS}
       />
 

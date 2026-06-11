@@ -182,7 +182,7 @@ export default function SoftwareDataPage() {
       <Faq
         eyebrow="Software & Data, FAQ"
         title="What buyers ask about custom builds + AI agent development."
-        description="Lifted from prospect calls. Published as FAQ schema for AI Overviews and answer engines."
+        description="Straight answers to what buyers ask about custom builds and AI agent development."
         faqs={SD_FAQS}
       />
 

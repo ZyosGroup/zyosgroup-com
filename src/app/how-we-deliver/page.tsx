@@ -350,34 +350,34 @@ export default function HowWeDeliverPage() {
 
       <Section className="bg-surface border-y border-border">
         <SectionHeading
-          eyebrow="The two non-negotiable trust signals"
-          title="When prospects ask 'how do I know you'll deliver?', these are the two artifacts that make the case."
+          eyebrow="How you know we will deliver"
+          title="Two things every engagement gives you that a slide deck never can."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2 max-w-4xl">
-          <article className="rounded-lg border border-dashed border-border bg-bg p-6">
+          <article className="rounded-lg border border-border bg-bg p-6">
             <p className="mono text-[11px] uppercase tracking-[0.16em] text-accent">
               Visible Kanban
             </p>
             <h3 className="mt-1 text-lg font-semibold text-primary tracking-tightish">
-              Screenshot of an actual customer-facing board.
+              A live board you can log into any time.
             </h3>
             <p className="mt-2 text-sm text-ink/75">
-              Anonymized but real. The fact that this exists is the trust
-              signal; competitors selling slide decks have nothing comparable.
-              Screenshot placeholder for permission-pending capture.
+              You see the work in flight, what is done, and what is next, the
+              same view we run the engagement from. No black box, no
+              report-only relationship.
             </p>
           </article>
-          <article className="rounded-lg border border-dashed border-border bg-bg p-6">
+          <article className="rounded-lg border border-border bg-bg p-6">
             <p className="mono text-[11px] uppercase tracking-[0.16em] text-accent">
-              QBR output
+              Quarterly Business Review
             </p>
             <h3 className="mt-1 text-lg font-semibold text-primary tracking-tightish">
-              Sample QBR slide.
+              A structured QBR every quarter.
             </h3>
             <p className="mt-2 text-sm text-ink/75">
-              Anonymized. The fact that we have a structured, recurring
-              quarterly artifact with value-impact + re-prioritization is the
-              trust signal. Sample placeholder pending capture.
+              What moved, the value delivered, and a re-prioritized plan for the
+              next quarter. Your roadmap stays tied to measurable outcomes, not
+              activity.
             </p>
           </article>
         </div>
@@ -386,7 +386,7 @@ export default function HowWeDeliverPage() {
       <Faq
         eyebrow="Delivery model, FAQ"
         title="What buyers ask about how Zyos delivers."
-        description="Lifted from prospect calls. Published as FAQPage schema for AI Overview + PAA citation."
+        description="Straight answers to the questions prospects ask most about how we run an engagement."
         faqs={DELIVERY_FAQS}
       />
 

@@ -304,7 +304,7 @@ export default function SolutionsPage() {
       <Faq
         eyebrow="Solutions, FAQ"
         title="What buyers ask about Agent + Growth as a Service."
-        description="Lifted from prospect calls. Published as FAQ schema for AI Overviews and answer engines."
+        description="Straight answers to what buyers ask about Agent and Growth as a Service."
         faqs={SOLUTIONS_FAQS}
       />
 

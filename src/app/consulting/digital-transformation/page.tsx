@@ -191,7 +191,7 @@ export default function DigitalTransformationPage() {
       <Faq
         eyebrow="Digital transformation, FAQ"
         title="What buyers ask about digital transformation."
-        description="Lifted from prospect calls. Published as FAQ schema for AI Overviews and answer engines."
+        description="Straight answers to what buyers ask about digital transformation engagements."
         faqs={DT_FAQS}
       />
 

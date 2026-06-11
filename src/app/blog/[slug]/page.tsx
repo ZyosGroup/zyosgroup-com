@@ -114,7 +114,7 @@ export default function BlogPostPage({
         <Faq
           eyebrow={`${post.category} FAQ`}
           title="Questions operators ask."
-          description="Published as FAQPage schema for AI Overview + People Also Ask citation."
+          description="Answers to common questions on this topic."
           faqs={post.faqs}
         />
       ) : null}

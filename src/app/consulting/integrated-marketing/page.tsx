@@ -237,7 +237,7 @@ export default function IntegratedMarketingPage() {
       <Faq
         eyebrow="Integrated marketing, FAQ"
         title="What buyers ask about marketing, SEO, and GEO."
-        description="Lifted from prospect calls. Published as FAQ schema for AI Overviews and answer engines."
+        description="Straight answers to what buyers ask about marketing, SEO, and GEO."
         faqs={MARKETING_FAQS}
       />
 

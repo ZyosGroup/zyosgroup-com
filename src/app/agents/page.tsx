@@ -217,7 +217,7 @@ export default function AgentsPage() {
       <Faq
         eyebrow="Agents across the business, FAQ"
         title="What buyers ask about running agents."
-        description="Lifted from prospect calls. Published as FAQPage schema for AI Overview and answer-engine citation."
+        description="Straight answers to what buyers ask about agentic AI and how we build it."
         faqs={AGENT_FAQS}
       />
 

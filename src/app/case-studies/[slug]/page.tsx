@@ -214,7 +214,7 @@ export default function CaseStudyPage({
         <Faq
           eyebrow="Case study, FAQ"
           title="Questions about this engagement."
-          description="Published as FAQPage schema for AI Overview + People Also Ask citation."
+          description="Straight answers to common questions about this engagement."
           faqs={c.faqs}
         />
       ) : null}

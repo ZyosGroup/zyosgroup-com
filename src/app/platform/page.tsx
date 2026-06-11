@@ -204,7 +204,7 @@ export default function PlatformPage() {
         <SectionHeading
           eyebrow="The dashboards"
           title="Eight standard surfaces, the same ones live in every customer's Zyos OS."
-          description="Real product capabilities. Anonymized previews; demo-data screenshots replace these as ZyosApp captures are pulled."
+          description="Real product capabilities, shown with anonymized preview data."
         />
         <div className="mt-10">
           <DashboardGallery />
@@ -282,7 +282,7 @@ export default function PlatformPage() {
       <Faq
         eyebrow="Frequently asked"
         title="What buyers ask about Zyos OS."
-        description="Lifted directly from prospect calls. Each answer is also published as FAQPage schema for citation in AI Overviews and answer engines."
+        description="Straight answers to what buyers ask about Zyos OS."
         faqs={PLATFORM_FAQS}
       />
 

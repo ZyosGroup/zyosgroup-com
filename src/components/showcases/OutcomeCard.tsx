@@ -12,7 +12,7 @@ import { cn } from "@/lib/cn";
 export type Outcome = {
   hero: string; // "+$340K ARR"
   context: string; // "GaaS customer · 6 months"
-  customer: string; // "[Anonymized · permission pending]"
+  customer: string; // "[Anonymized]"
   type: "revenue" | "cost" | "risk" | "time" | "quality";
   serviceLine?: ServiceLine;
   engagementModel?: EngagementModel;
@@ -79,12 +79,12 @@ export function OutcomeCard({
   );
 }
 
-// Seed catalog. Anonymized "permission pending" tags per CLAUDE.md.
+// Seed catalog. Anonymized customer labels.
 export const SAMPLE_OUTCOMES: Outcome[] = [
   {
     hero: "+$340K ARR",
     context: "GaaS customer · 6 months",
-    customer: "[Anonymized · permission pending]",
+    customer: "[Anonymized]",
     type: "revenue",
     serviceLine: "Growth as a Service",
     engagementModel: "GaaS",
@@ -129,7 +129,7 @@ export const SAMPLE_OUTCOMES: Outcome[] = [
   {
     hero: "+3.4x reply rate",
     context: "Outbound + ABM agents · 90 days",
-    customer: "[Anonymized · permission pending]",
+    customer: "[Anonymized]",
     type: "revenue",
     serviceLine: "Agent as a Service",
     engagementModel: "AaaS",
@@ -138,7 +138,7 @@ export const SAMPLE_OUTCOMES: Outcome[] = [
   {
     hero: "+150% review velocity",
     context: "Reviews engine · ongoing GaaS",
-    customer: "[Anonymized · permission pending]",
+    customer: "[Anonymized]",
     type: "quality",
     serviceLine: "Growth as a Service",
     engagementModel: "GaaS",

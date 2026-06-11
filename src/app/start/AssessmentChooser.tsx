@@ -120,8 +120,9 @@ export function AssessmentChooser() {
         <ArrowRight aria-hidden className="h-4 w-4" />
       </a>
       <p className="mt-3 text-xs text-subtle">
-        About ten minutes. You get a scored readiness diagnostic back, then we map
-        the roadmap together. No sales call required first.
+        About 12 to 18 minutes. You get a scored diagnostic back (your Opportunity
+        Index, Readiness Score, and AI Horizon), then we map the roadmap together.
+        No sales call required first.
       </p>
     </div>
   );
