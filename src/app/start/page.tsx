@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 import { Section } from "@/components/ui/Section";
 import { QuickAnswer } from "@/components/ui/QuickAnswer";
 import { IntakeForm } from "./IntakeForm";
@@ -22,7 +23,29 @@ const DIMENSIONS = [
   "People + Knowledge Risk",
 ];
 
-export default function StartPage() {
+// The single low-friction Growth Audit (runs on the app, which has the scoring
+// + email backend). Cold/paid clicks funnel here; warm/organic keep the survey.
+const GROWTH_AUDIT_URL = "https://os.zyos.io/grow/start";
+
+export default function StartPage({
+  searchParams,
+}: {
+  searchParams: Record<string, string | string[] | undefined>;
+}) {
+  // Paid clicks arrive with an ad-click id (fbclid/gclid/msclkid) or utm_source.
+  // Send those straight to the quick audit; everyone else sees the survey below.
+  const s = (k: string) =>
+    typeof searchParams[k] === "string" ? (searchParams[k] as string) : undefined;
+  const isPaidClick = !!(s("fbclid") || s("gclid") || s("msclkid") || s("utm_source"));
+  if (isPaidClick) {
+    const qs = new URLSearchParams();
+    for (const [k, v] of Object.entries(searchParams)) {
+      if (typeof v === "string") qs.set(k, v);
+    }
+    const q = qs.toString();
+    redirect(`${GROWTH_AUDIT_URL}${q ? `?${q}` : ""}`);
+  }
+
   const url = `${SITE.url}/start`;
   return (
     <>
